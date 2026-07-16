@@ -1,5 +1,5 @@
 {
-  "output": "D:\\hekai\\DressCode\\outputs",
+  "output": "./outputs",
   "datasets_path": "",
   "caption_path": "",
   "wandb_username": "",

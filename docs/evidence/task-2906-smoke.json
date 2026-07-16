@@ -1,0 +1,24 @@
+{
+  "task_id": 2906,
+  "upstream_commit": "b623b60",
+  "environment": "DressCode",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "prompt": "button-down shirt, oversized, long sleeve",
+  "temperature": 0.7,
+  "result": "SMOKE_TEST_PASSED",
+  "generated_at": "2026-07-15T21:39:24-07:00",
+  "artifact_root": "outputs/260715-21-39-24/000",
+  "pattern": {
+    "panel_count": 7,
+    "stitch_count": 12,
+    "specification_sha256": "3d7ae7fb13626aeef73973ad30e2eae99b8dd2e89b14b2a53dbcdb4797f21cb1",
+    "svg_sha256": "b5338a9deb55444a999c02168b8d56211c0b88558594febd5e5efe37e5f8de55",
+    "png_sha256": "161e132d592e416f77406278bc518f7c780a66383e338913cfefa72d40eecd3f"
+  },
+  "license": {
+    "repository_license_file": false,
+    "github_license_api_http_status": 404,
+    "disposition": "all-rights-reserved unless explicit terms are published"
+  }
+}
