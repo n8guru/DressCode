@@ -1,0 +1,65 @@
+{
+  "task_id": 2973,
+  "project_id": 735575,
+  "ledger_step": 5,
+  "result": "GARMENT_SECONDARY_OK",
+  "contract": {
+    "version": 1,
+    "origin": "character-foundry task 2952",
+    "chains": 3,
+    "spring_bones": 6,
+    "regions": ["left sleeve", "right sleeve", "lower hem"],
+    "embedded_at": "asset.extras.foundry.secondary_motion"
+  },
+  "weights": {
+    "garment_vertices": 7990,
+    "spring_weighted_vertices": 6241,
+    "mean_spring_weight_on_selected": 0.14238471975466457,
+    "max_weight_sum_error": 1.4521356206387281e-07
+  },
+  "effect_before_export": {
+    "peak_frame": 60,
+    "max_vertex_displacement_m": 0.008526759290998567,
+    "mean_selected_vertex_displacement_m": 0.0015570204183580198,
+    "selected_vertices_moved_over_1mm": 2648
+  },
+  "glb": {
+    "path": "outputs/task-2973-g9-shirt-secondary/g9_shirt_secondary.glb",
+    "size_mb": 2.281628,
+    "sha256": "55087bd0d67e9ee46c38c1d555dffb8901b8ea2767ff8da5d8e602aedba9b36e",
+    "meshes": 1,
+    "skins": 1,
+    "animations": 1,
+    "embedded_profile_chains": 3,
+    "all_spring_bones_are_skin_joints": true
+  },
+  "roundtrip": {
+    "garment_faces": 15712,
+    "garment_vertices_after_uv_seam_split": 8343,
+    "spring_bones": 6,
+    "actions": 1,
+    "max_vertex_displacement_m": 0.00852605560896843,
+    "mean_vertex_displacement_m": 0.0011394753859527052,
+    "vertices_moved_over_1mm": 2374
+  },
+  "pbr_sha256": {
+    "diffuse": "8221eeccc9880752860e6ceeb2e099117faab1a2fda6700439a96eeb62521374",
+    "normal": "e15724cd47d0c0e30db7f39bd57255e92b803ffc5d06f7b8a55bda1a4578caa7",
+    "roughness": "98de57fd98825f659bef395b8192106b5b1dc32824f21892e210f60744ea1ed3"
+  },
+  "artifacts": {
+    "blend_sha256": "fdffb0b1a2a312c1a5b91aeaad1d67713264bb6ba73e91154e7509ba69fe89c1",
+    "profile_sha256": "e8a2d384f523694183b7a579f7d9cdb31e015f4c63e7d117fcf8a70ca059b07b",
+    "sway_rest_sha256": "bb991afeab07f09ef0aeff7e18c67ed8db54580804aed567a0bab93c6c91fa8b",
+    "sway_peak_sha256": "02c0aed537a8b53c5650c3d05c05d39390462f588d3911fe652b218561649dd9"
+  },
+  "gate": {
+    "weights_normalized": true,
+    "cloth_sway_effect": true,
+    "glb_under_25mb": true,
+    "skin_animation_profile_present": true,
+    "glb_roundtrip_effect": true,
+    "pbr_attached": true
+  },
+  "caveat": "The source GarmentCode shirt retains small ragged/open sleeve-seam spots; secondary motion and export do not repair source topology."
+}
