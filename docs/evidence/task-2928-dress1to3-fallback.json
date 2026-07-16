@@ -1,0 +1,33 @@
+{
+  "task_id": 2928,
+  "checked_at": "2026-07-16T05:50:00Z",
+  "fallback": "Dress-1-to-3",
+  "paper": "arXiv:2502.03449v2",
+  "official_project_page": "https://dress-1-to-3.github.io/",
+  "official_release": {
+    "code_link_label": "Code (coming soon)",
+    "runnable_repository_found": false,
+    "license_for_implementation": null
+  },
+  "third_party_repository": {
+    "url": "https://github.com/zuotian1012/dress1to3_repro",
+    "commit": "d950c81",
+    "created_at": "2026-07-07T08:32:35Z",
+    "license": null,
+    "declared_scope": "minimal inspired MVP scaffold",
+    "explicitly_missing": [
+      "multi-view diffusion",
+      "real SewFormer",
+      "real or differentiable CIPC",
+      "production SMPL-X fitting",
+      "high-quality texture generation"
+    ],
+    "available_simulator": "manual shirt/skirt grid with simple PBD/XPBD and proxy collision"
+  },
+  "paper_runtime": {
+    "simulator": "Codimensional Incremental Potential Contact (CIPC) with NVIDIA Warp automatic differentiation and an adjoint method",
+    "reported_hardware": "single NVIDIA RTX 3090 with 24 GB device memory",
+    "reported_runtime": "about 10 minutes of pre-optimization plus up to 2 hours of garment optimization"
+  },
+  "disposition": "BLOCKED: no released implementation can be evaluated on the white-shirt reference; the third-party toy scaffold does not implement the paper's reconstruction or differentiable-physics path"
+}

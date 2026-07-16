@@ -1,0 +1,61 @@
+{
+  "task_id": 2928,
+  "generated_at": "2026-07-16T05:55:45.382320+00:00",
+  "prompt": "bright pure white linen textile, clean white woven fibers, fine natural slub, matte fabric, uniform seamless tile, no beige, no tan",
+  "seed": 589169,
+  "model_dir": "/home/n8/DressCode/nn/material_gen",
+  "torch": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "result": "SMOKE_TEST_PASSED",
+  "artifact_root": "outputs/task-2928-pbr",
+  "maps": {
+    "diffuse": {
+      "width": 512,
+      "height": 512,
+      "mean_rgb": [
+        167.163,
+        163.543,
+        149.208
+      ],
+      "std_rgb": [
+        29.831,
+        29.076,
+        27.978
+      ],
+      "edge_mae_normalized": 0.095629,
+      "sha256": "8221eeccc9880752860e6ceeb2e099117faab1a2fda6700439a96eeb62521374"
+    },
+    "normal": {
+      "width": 512,
+      "height": 512,
+      "mean_rgb": [
+        127.13,
+        129.391,
+        228.546
+      ],
+      "std_rgb": [
+        34.832,
+        23.704,
+        7.155
+      ],
+      "edge_mae_normalized": 0.158886,
+      "sha256": "e15724cd47d0c0e30db7f39bd57255e92b803ffc5d06f7b8a55bda1a4578caa7"
+    },
+    "roughness": {
+      "width": 512,
+      "height": 512,
+      "mean_rgb": [
+        203.518,
+        203.458,
+        204.062
+      ],
+      "std_rgb": [
+        4.659,
+        5.233,
+        4.505
+      ],
+      "edge_mae_normalized": 0.035788,
+      "sha256": "98de57fd98825f659bef395b8192106b5b1dc32824f21892e210f60744ea1ed3"
+    }
+  }
+}
