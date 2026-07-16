@@ -1,0 +1,71 @@
+{
+  "task_id": 2950,
+  "project_id": 735575,
+  "ledger_step": 2,
+  "captured_at": "2026-07-16T00:09:00-07:00",
+  "host": {
+    "machine": "forge",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "driver": "595.71.05",
+    "cuda_toolkit": "12.9"
+  },
+  "sources": {
+    "dresscode_commit": "d88f8069f113a4b947aa81f55bd072a062b29129",
+    "garmentcode_upstream_commit": "d449629979028123a5c4dc9e732a2ec19b7fce31",
+    "garmentcode_task_commit": "a4b3a92",
+    "garmentcode_branch": "agents/codex/task-2950",
+    "warp_fork_commit": "63baf6855efdd89b2834b74640f84b3bb0d86b50",
+    "dress_1_to_3_status": "Official project page still says Code (coming soon) on 2026-07-16."
+  },
+  "licenses": {
+    "garmentcode": "MIT",
+    "warp_fork": "NVIDIA Source Code License; fork README explicitly limits this revision to non-commercial use"
+  },
+  "build": {
+    "command": "CUDA_PATH=/usr/local/cuda-12.9 python build_lib.py --cuda_path=/usr/local/cuda-12.9",
+    "native_library_built": true,
+    "cuda_kernel_smoke": [0.0, 1.0, 2.0, 3.0],
+    "note": "Native warp.so and CUDA kernels passed. The optional LLVM packman stage reported a non-executable checkout script, but was not needed for runtime JIT on this host."
+  },
+  "female_smpl_gate": {
+    "pattern": "GarmentCode assets/Patterns/shirt_mean_specification.json",
+    "body": "GarmentCode assets/bodies/f_smpl_average_A40.obj",
+    "body_segmentation": "GarmentCode assets/bodies/smpl_vert_segmentation.json",
+    "frames": 264,
+    "static": true,
+    "cloth_particles_reported": 7990,
+    "body_cloth_intersections": 0,
+    "self_intersections": 3,
+    "obj_vertices": 8343,
+    "obj_faces": 15712,
+    "sim_seconds": 5.93,
+    "visual_review": "Coherent sewn short-sleeve shirt on the female SMPL A-pose; sleeves and torso remain attached, silhouette is readable, and no gross penetration is visible.",
+    "artifact_dir": "outputs/task-2950-garmentcode/shirt_mean_260716-00-05-47",
+    "sim_obj_sha256": "dd637fbaf8e7be3d092da096069c09f22a260e2f3d7131bf390b3ce9d83d8be1",
+    "front_render_sha256": "7bad344617fe7db01783dda6eb2579fdc18b9d59c4af7e14585acacb43ffc7c0"
+  },
+  "sewinggpt_direct_probe": {
+    "fixture": "tests/fixtures/task-2906-sewinggpt-shirt.json",
+    "fixture_sha256": "3d7ae7fb13626aeef73973ad30e2eae99b8dd2e89b14b2a53dbcdb4797f21cb1",
+    "schema_ingested_without_conversion": true,
+    "vertical_offset_cm": 84.0,
+    "panel_assignment_after_offset": {
+      "panel_0": "right_arm",
+      "panel_1": "right_arm",
+      "panel_2": "body",
+      "panel_3": "body",
+      "panel_4": "body",
+      "panel_5": "left_arm",
+      "panel_6": "left_arm"
+    },
+    "frames": 1489,
+    "static": true,
+    "body_cloth_intersections": 136,
+    "self_intersections": 260,
+    "visual_gate": "failed; garment is grossly over-scale and hangs below/around the body",
+    "artifact_dir": "outputs/task-2950-garmentcode/sewinggpt_shirt_offset84_260716-00-08-20",
+    "sim_obj_sha256": "9420741941127937940f08883c809865fc609e9d13d8abc96ed8d5f0b596d0a8",
+    "front_render_sha256": "bef66101e27738abfd791cd71b28bce73f319b341295969707b005a71abb57a5"
+  },
+  "gate_conclusion": "PASS for an open Linux sewing-pattern draper on female SMPL; raw SewingGPT-to-GarmentCode fit remains a separate integration failure and is explicitly not claimed as passing."
+}
