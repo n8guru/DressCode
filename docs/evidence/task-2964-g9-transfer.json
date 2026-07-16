@@ -1,0 +1,47 @@
+{
+  "task_id": 2964,
+  "project_id": 735575,
+  "ledger_step": 4,
+  "captured_at": "2026-07-16T01:03:00-07:00",
+  "host": "forge",
+  "blender": "5.2.0 LTS",
+  "sources": {
+    "dresscode_branch": "agents/codex/task-2964",
+    "garmentcode_shirt_obj_sha256": "dd637fbaf8e7be3d092da096069c09f22a260e2f3d7131bf390b3ce9d83d8be1",
+    "g9_amy": "/home/n8/amy_master_v3_hd_packed.blend",
+    "garment_vertices": 7990,
+    "garment_faces": 15712
+  },
+  "method": {
+    "script": "scripts/fit_smpl_garment_to_g9.py",
+    "script_sha256": "d64733ce75435d660dd6b0909fc6b04ea4c29337f85fac7ffb7cf1404ca1049e",
+    "axis_bridge": "GarmentCode centimetre SMPL +X,+Y,+Z to Blender metre +X,+Z,-Y",
+    "target_g9_height_m": 1.7331893005175516,
+    "clearance_m": 0.004,
+    "topology_preserved": true,
+    "weight_transfer": "Blender DataTransfer VGROUP_WEIGHTS POLYINTERP_NEAREST from Genesis 9 Mesh"
+  },
+  "gates": {
+    "inside_vertices_before": 940,
+    "inside_vertices_after": 0,
+    "surface_overlap_pairs_after": 0,
+    "min_surface_distance_after_m": 0.003997689578682184,
+    "weighted_vertices": 7990,
+    "normalized_vertices": 7990,
+    "used_g9_groups": 21,
+    "pose_vertices_moved_over_1mm": 7979,
+    "pose_mean_vertex_displacement_m": 0.03739551340647024,
+    "pose_max_vertex_displacement_m": 0.14886785931027893,
+    "pass": true
+  },
+  "visual_review": "The preserved GarmentCode cropped shirt reads coherently on G9 Amy in front/back rest and asymmetric posed renders and follows both arms and torso. Small ragged/open spots remain around sleeve seams from the source garment; they are visible in the evidence and are a source-quality polish item, not body penetration (BVH overlap pairs are zero).",
+  "artifacts": {
+    "directory": "outputs/task-2964-g9-transfer",
+    "runtime_report_sha256": "7771856fe28413d5adf596a416698d966d0be2139cc2e4b2eb5f922743a44a37",
+    "blend_sha256": "bab1eff4d113b4e3301b0bfd1ab2cbfbe15df158b96218a6ef57069c17f46555",
+    "rest_front_sha256": "766677fdf6f19b8b198d850517abdb8408102c62c140d0fbc8050a3a7a278bd7",
+    "rest_back_sha256": "2cc6de208242bee69a53d51009e33322cfacf22afd20fa96a424d1af4aaee99b",
+    "posed_front_sha256": "14019e37758f959f132334f5b9e1b40bc0eb0e57025692e6458e88b0f269e845",
+    "posed_back_sha256": "36cdc203d1081289f03d4cb64182486c8a4174f933e39e76719d1de94816eb34"
+  }
+}
