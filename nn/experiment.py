@@ -237,7 +237,7 @@ class ExperimentWrappper(object):
         model = model_class()
 
         # Load model weights
-        state_dict = self.get_best_model(device='cuda:0')['model_state_dict']
+        state_dict = self.get_best_model(device=os.environ.get('DRESSCODE_DEVICE','cuda:0'))['model_state_dict']
         model.load_state_dict(state_dict)
 
         return model

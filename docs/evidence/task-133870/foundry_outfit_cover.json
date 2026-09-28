@@ -1,0 +1,12 @@
+{
+  "exposed": 119,
+  "exposed_fraction": 0.039364869335097585,
+  "max_exposed": 0.12,
+  "outfit_meshes": [
+    "Dressable Skirt",
+    "Dressable Shirt"
+  ],
+  "pass": true,
+  "ray_m": 0.08,
+  "tested": 3023
+}

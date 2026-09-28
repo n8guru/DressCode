@@ -74,7 +74,7 @@ class infer():
 	
 	def __init__(self, shape_config_path):
 		self.system_info = customconfig.Properties('./system.json')
-		self.device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
+		self.device = os.environ.get('DRESSCODE_DEVICE') or ('cuda:0' if torch.cuda.is_available() else 'cpu')
 		shape_config, save_to = get_values_from_args(shape_config_path)
 
 		# --------------- Experiment to evaluate on ---------
@@ -87,7 +87,7 @@ class infer():
 		_, _, self.data_config = shape_experiment.data_info()  # need to get data stats
 
 		
-		self.CLIP_embedding = blocks.StableDiffusion(torch.device('cuda'), False, True)
+		self.CLIP_embedding = blocks.StableDiffusion(torch.device(self.device), False, not str(self.device).startswith('cpu'))
 		self.output_folder = save_to
 
 		

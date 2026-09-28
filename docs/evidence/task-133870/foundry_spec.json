@@ -1,0 +1,34 @@
+{
+  "name": "amy_dressable_g9_s15",
+  "sex": "female",
+  "face_ref": null,
+  "body_refs": [],
+  "body_params": {},
+  "morph_overrides": {},
+  "preset": null,
+  "sliders": {},
+  "assets": {
+    "character_preset": null,
+    "hair": null,
+    "hair_material": null,
+    "outfit": {
+      "daz": null,
+      "recipe": null,
+      "source": "/Users/nathanrichmond/character-foundry-wt/task-133870-inputs/dressable_g9_outfit.blend",
+      "objects": [
+        "Dressable Skirt",
+        "Dressable Shirt"
+      ],
+      "metadata": "/Users/nathanrichmond/character-foundry-wt/task-133870-inputs/dressable_g9_outfit.json"
+    },
+    "secondary_motion": null
+  },
+  "hair_plan": {},
+  "likeness": {
+    "mode": "preset",
+    "threshold_override": null
+  },
+  "silhouette_preset": null,
+  "identity_master": "amy_gp_v3",
+  "export": {}
+}

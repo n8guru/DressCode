@@ -1,0 +1,317 @@
+{
+  "after_thickness": {
+    "cover": {
+      "cover_exposed": 389,
+      "cover_sampled": 3386,
+      "exposed_fraction": 0.1149
+    },
+    "garment_garment_overlap_pairs": {
+      "skirt|shirt": 0
+    },
+    "per_garment": {
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      },
+      "skirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      }
+    }
+  },
+  "artifacts": {
+    "blend": "/home/n8/cloth_test/task-133870/fit/outfit_final2/dressable_g9_outfit.blend",
+    "blend_sha256": "fe123af82c2b9a6fa3460190f662e83af8b98f13dfb3d001d9e08109aa3d66cb",
+    "renders": {
+      "posed_front": {
+        "path": "/home/n8/cloth_test/task-133870/fit/outfit_final2/posed_front.png",
+        "sha256": "af9fdf240a2a37ad81783027cba87fbf0d39f7ee366ac65f3c90f6eb51e5ef2a"
+      },
+      "posed_side": {
+        "path": "/home/n8/cloth_test/task-133870/fit/outfit_final2/posed_side.png",
+        "sha256": "3771a159d6f881c713edb313cac650baf71bc1b218627e18ff88f63c3acdc41d"
+      },
+      "rest_front": {
+        "path": "/home/n8/cloth_test/task-133870/fit/outfit_final2/rest_front.png",
+        "sha256": "f0610b4b836c59b151e4a191fad26ac31ca570465071a3df12f878fea8036965"
+      },
+      "ship_back": {
+        "path": "/home/n8/cloth_test/task-133870/fit/outfit_final2/ship_back.png",
+        "sha256": "61753f33d0e92d81f14017aa1f341506df5b6900cd7a1270cb184676b9f8c88c"
+      },
+      "ship_front": {
+        "path": "/home/n8/cloth_test/task-133870/fit/outfit_final2/ship_front.png",
+        "sha256": "0981592e5f60bdbd6a06a15ade2a24d9530a4e74671330c0504a103371850daa"
+      },
+      "ship_side": {
+        "path": "/home/n8/cloth_test/task-133870/fit/outfit_final2/ship_side.png",
+        "sha256": "680ef1a59bf41dd56f1ada7fa2a982908f2c93db8ba30127f2b51e04a488cf5a"
+      }
+    }
+  },
+  "before": {
+    "cover": {
+      "cover_exposed": 390,
+      "cover_sampled": 3386,
+      "exposed_fraction": 0.1152
+    },
+    "garment_garment_overlap_pairs": {
+      "skirt|shirt": 0
+    },
+    "per_garment": {
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 260,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      },
+      "skirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 326,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      }
+    }
+  },
+  "frame": "GC (x,y,z) cm -> Blender (x/100, -z/100, y/100 - lift)",
+  "gate": {
+    "all_non_interpenetrating_rest": true,
+    "all_weighted_normalized": true,
+    "closed_slabs": true,
+    "cover_ok": true,
+    "follows_pose": true,
+    "no_garment_garment_overlap_rest": true,
+    "ship_cover_ok": true,
+    "ship_no_garment_garment_overlap": true,
+    "ship_non_interpenetrating": true
+  },
+  "lift_m": 0.054874,
+  "overlap_clearance": {
+    "shirt": [
+      {
+        "iterations": 0,
+        "remaining_pairs": 0,
+        "verts_moved": 0,
+        "vs": "body"
+      },
+      {
+        "iterations": 2,
+        "remaining_pairs": 0,
+        "verts_moved": 271,
+        "vs": "Dressable Skirt"
+      }
+    ],
+    "skirt": [
+      {
+        "iterations": 0,
+        "remaining_pairs": 0,
+        "verts_moved": 0,
+        "vs": "body"
+      }
+    ]
+  },
+  "pose_follow": {
+    "garments": {
+      "shirt": {
+        "max_displacement_m": 0.1064,
+        "vertices_moved_over_1mm": 18582
+      },
+      "skirt": {
+        "max_displacement_m": 0.1355,
+        "vertices_moved_over_1mm": 31658
+      }
+    },
+    "pose": {
+      "l_forearm": [
+        -18,
+        0,
+        -8
+      ],
+      "l_thigh": [
+        -12,
+        0,
+        0
+      ],
+      "l_upperarm": [
+        12,
+        -14,
+        -18
+      ],
+      "r_forearm": [
+        14,
+        0,
+        7
+      ],
+      "r_thigh": [
+        8,
+        0,
+        0
+      ],
+      "r_upperarm": [
+        -9,
+        11,
+        21
+      ],
+      "spine2": [
+        0,
+        7,
+        4
+      ]
+    },
+    "posed_gates": {
+      "cover": {
+        "cover_exposed": 130,
+        "cover_sampled": 3090,
+        "exposed_fraction": 0.0421
+      },
+      "garment_garment_overlap_pairs": {
+        "skirt|shirt": 0
+      },
+      "per_garment": {
+        "shirt": {
+          "body_overlap_pairs": 582,
+          "boundary_edges": 0,
+          "inside_verts_normal_test": 110,
+          "inside_verts_ray_parity": 110,
+          "max_depth_mm": 10.351,
+          "non_interpenetrating": false
+        },
+        "skirt": {
+          "body_overlap_pairs": 883,
+          "boundary_edges": 0,
+          "inside_verts_normal_test": 1837,
+          "inside_verts_ray_parity": 1838,
+          "max_depth_mm": 56.296,
+          "non_interpenetrating": false
+        }
+      }
+    }
+  },
+  "rest_after_bind": {
+    "cover": {
+      "cover_exposed": 389,
+      "cover_sampled": 3386,
+      "exposed_fraction": 0.1149
+    },
+    "garment_garment_overlap_pairs": {
+      "skirt|shirt": 0
+    },
+    "per_garment": {
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      },
+      "skirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      }
+    }
+  },
+  "ship_state": {
+    "cover": {
+      "cover_exposed": 119,
+      "cover_sampled": 3023,
+      "exposed_fraction": 0.0394
+    },
+    "garment_garment_overlap_pairs": {
+      "skirt|shirt": 0
+    },
+    "per_garment": {
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      },
+      "skirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      }
+    },
+    "pose_position": "POSE"
+  },
+  "sources": {
+    "shirt": {
+      "faces": 18326,
+      "obj": "/home/n8/cloth_test/task-133870/drapes/shirt_crew_g9_260928-12-26-38/shirt_crew_g9_sim.obj",
+      "sha256": "2e9c25ceee5c891be53e5af17ee8c1f4575258ea2918913fd78e6d8797dda765",
+      "vertices": 9291
+    },
+    "skirt": {
+      "faces": 31332,
+      "obj": "/home/n8/cloth_test/task-133870/drapes/sgpt_skirt_s1_260928-12-19-06/sgpt_skirt_s1_sim.obj",
+      "sha256": "71a1e2e9c0b1e521ef63b86c6424e6768a51efd3312026315849bd512bfb0884",
+      "vertices": 15829
+    }
+  },
+  "weights": {
+    "shirt": {
+      "groups": [
+        "l_forearmtwist1",
+        "l_forearmtwist2",
+        "l_pectoral",
+        "l_shoulder",
+        "l_thightwist1",
+        "l_upperarmtwist1",
+        "l_upperarmtwist2",
+        "neck1",
+        "neck2",
+        "pelvis",
+        "r_forearmtwist1",
+        "r_forearmtwist2",
+        "r_pectoral",
+        "r_shoulder",
+        "r_thightwist1",
+        "r_upperarmtwist1",
+        "r_upperarmtwist2",
+        "spine1",
+        "spine2",
+        "spine3",
+        "spine4"
+      ],
+      "normalized": 18582,
+      "vertices": 18582,
+      "weighted": 18582
+    },
+    "skirt": {
+      "groups": [
+        "l_thightwist1",
+        "l_thightwist2",
+        "pelvis",
+        "r_thightwist1",
+        "r_thightwist2",
+        "spine1",
+        "spine2"
+      ],
+      "normalized": 31658,
+      "vertices": 31658,
+      "weighted": 31658
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "contract": "foundry outfit v1 provider wearable",
+  "provider": "dressable-g9 step 15 (task 133870) Route A: SewingGPT text->pattern + GarmentCode/Warp native-G9 drape",
+  "garments": {
+    "Dressable Skirt": {"type": "skirt", "prompt": "skirt, midi length, flared", "pattern_source": "DressCode SewingGPT (seed 1)", "layer": 0},
+    "Dressable Shirt": {"type": "shirt", "pattern_source": "GarmentCode shirt_mean (task-2973 shirt) + crew neckline + 8cm length", "layer": 1}
+  },
+  "fit_body": "identity_master amy_gp_v3 sha256 cb61156983436a9772793690ac4c620401d77449af914c32602dbf31fce9c8e1",
+  "thickness": "FoundryClothThickness character-foundry agents/forge/task-93317@f760c487 (4mm slab)",
+  "license": "DressCode/SewingGPT: no license published (evaluation only); GarmentCode MIT; Warp fork NVIDIA non-commercial",
+  "secondary_motion": "none: garments carry G9 body weights only"
+}

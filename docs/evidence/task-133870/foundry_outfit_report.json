@@ -1,0 +1,62 @@
+{
+  "contract_version": 1,
+  "meshes": [
+    {
+      "armature_modifiers": 1,
+      "faces": 62990,
+      "materials": [
+        "Dressable Skirt Cloth"
+      ],
+      "name": "Dressable Skirt",
+      "non_normalized": 0,
+      "topology_sha256": "a8b99edc42f474f650fb2c93ca294d212fe6db3ffcb836b9fe0e8a86e3e5e160",
+      "unweighted": 0,
+      "vertex_groups": 7,
+      "vertices": 31658,
+      "weighted": 31658
+    },
+    {
+      "armature_modifiers": 1,
+      "faces": 36912,
+      "materials": [
+        "Dressable Shirt Cloth"
+      ],
+      "name": "Dressable Shirt",
+      "non_normalized": 0,
+      "topology_sha256": "910405b35af3871174c769f8dc41473dc178210b936466ff93116bd6d7a1495e",
+      "unweighted": 0,
+      "vertex_groups": 21,
+      "vertices": 18582,
+      "weighted": 18582
+    }
+  ],
+  "metadata": {
+    "contract": "foundry outfit v1 provider wearable",
+    "fit_body": "identity_master amy_gp_v3 sha256 cb61156983436a9772793690ac4c620401d77449af914c32602dbf31fce9c8e1",
+    "garments": {
+      "Dressable Shirt": {
+        "layer": 1,
+        "pattern_source": "GarmentCode shirt_mean (task-2973 shirt) + crew neckline + 8cm length",
+        "type": "shirt"
+      },
+      "Dressable Skirt": {
+        "layer": 0,
+        "pattern_source": "DressCode SewingGPT (seed 1)",
+        "prompt": "skirt, midi length, flared",
+        "type": "skirt"
+      }
+    },
+    "license": "DressCode/SewingGPT: no license published (evaluation only); GarmentCode MIT; Warp fork NVIDIA non-commercial",
+    "provider": "dressable-g9 step 15 (task 133870) Route A: SewingGPT text->pattern + GarmentCode/Warp native-G9 drape",
+    "secondary_motion": "none: garments carry G9 body weights only",
+    "thickness": "FoundryClothThickness character-foundry agents/forge/task-93317@f760c487 (4mm slab)"
+  },
+  "metadata_source": "/Users/nathanrichmond/character-foundry-wt/task-133870-inputs/dressable_g9_outfit.json",
+  "source": "/Users/nathanrichmond/character-foundry-wt/task-133870-inputs/dressable_g9_outfit.blend",
+  "totals": {
+    "faces": 99902,
+    "meshes": 2,
+    "vertices": 50240,
+    "weighted": 50240
+  }
+}

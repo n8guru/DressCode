@@ -1,0 +1,229 @@
+{
+  "browser": {
+    "capture": "Playwright Chromium, 15 s load; console errors only favicon 404 + talk/health 503",
+    "glb_structure": "Dressable Shirt 18582 v + Dressable Skirt 31658 v, both skinned to the single 539-joint G9 skin",
+    "served": "forge:/home/n8/imagine-chat-flf/browser_avatar/assets/amy_dressable_g9_s15.glb (sha e4f581f8\u2026)",
+    "urls": [
+      "http://forge.tail2b8e3e.ts.net:5133/ic_dressed_amy.html?glb=amy_dressable_g9_s15.glb",
+      "http://forge.tail2b8e3e.ts.net:5133/live_alive.html?glb=amy_dressable_g9_s15.glb"
+    ]
+  },
+  "drape": {
+    "shirt_layered": {
+      "body_collisions": 0,
+      "frames": 340,
+      "self_collisions": 36
+    },
+    "skirt": {
+      "body_collisions": 0,
+      "frames": 659,
+      "self_collisions": 0
+    }
+  },
+  "fit_blend": {
+    "path": "forge:/home/n8/cloth_test/task-133870/fit/outfit_final2/dressable_g9_outfit.blend",
+    "sha256": "fe123af82c2b9a6fa3460190f662e83af8b98f13dfb3d001d9e08109aa3d66cb"
+  },
+  "fit_gate_summary": {
+    "all_non_interpenetrating_rest": true,
+    "all_weighted_normalized": true,
+    "closed_slabs": true,
+    "cover_ok": true,
+    "follows_pose": true,
+    "no_garment_garment_overlap_rest": true,
+    "ship_cover_ok": true,
+    "ship_no_garment_garment_overlap": true,
+    "ship_non_interpenetrating": true
+  },
+  "fit_gates_rest": {
+    "cover": {
+      "cover_exposed": 389,
+      "cover_sampled": 3386,
+      "exposed_fraction": 0.1149
+    },
+    "garment_garment_overlap_pairs": {
+      "skirt|shirt": 0
+    },
+    "per_garment": {
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      },
+      "skirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      }
+    }
+  },
+  "fit_gates_ship_state": {
+    "cover": {
+      "cover_exposed": 119,
+      "cover_sampled": 3023,
+      "exposed_fraction": 0.0394
+    },
+    "garment_garment_overlap_pairs": {
+      "skirt|shirt": 0
+    },
+    "per_garment": {
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      },
+      "skirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true
+      }
+    },
+    "pose_position": "POSE"
+  },
+  "foundry_build": {
+    "character_glb_bytes": 92121808,
+    "character_glb_sha256": "e4f581f8fd2310f9283c641e87abd853cf6cbae43e176a796a0798edf2e77e8b",
+    "job_dir": "mac:~/character-foundry-wt/task-133870-home/jobs/s15_dressable_133870",
+    "notes": {
+      "export": "EXPORT: ALL OK (77.9s)",
+      "garment_clear": "GLBFIX Dressable Shirt        DONE verts=18582 moved=6852 maxmove=4.40mm | vert-inside 5->0 | surface-inside 46->0 | deepest 0.31->0.00 mm",
+      "nsfw": "ASSERT_NSFW: PASS",
+      "outfit": "OUTFIT_OK meshes=2 verts=50240 weighted=50240",
+      "outfit_cover": "COVER_OK tested=3023 exposed=119 frac=0.0394 max=0.12 meshes=Dressable Skirt,Dressable Shirt"
+    },
+    "stages": [
+      {
+        "ok": true,
+        "seconds": 0.3,
+        "stage": "clone"
+      },
+      {
+        "ok": true,
+        "seconds": 5.5,
+        "stage": "outfit"
+      },
+      {
+        "ok": true,
+        "seconds": 2.9,
+        "stage": "nsfw"
+      },
+      {
+        "ok": true,
+        "seconds": 79.7,
+        "stage": "export"
+      },
+      {
+        "ok": true,
+        "seconds": 28.1,
+        "stage": "garment_clear"
+      },
+      {
+        "ok": true,
+        "seconds": 0.0,
+        "stage": "harvest"
+      }
+    ],
+    "status": "succeeded"
+  },
+  "host": "forge (+ mac foundry build)",
+  "images": {
+    "posed_front.png": "af9fdf240a2a37ad81783027cba87fbf0d39f7ee366ac65f3c90f6eb51e5ef2a",
+    "rest_front.png": "f0610b4b836c59b151e4a191fad26ac31ca570465071a3df12f878fea8036965",
+    "s15_ic_dressed.png": "47c8e76893da1f0f4e0977e718f9951358c741e0f2bb8ff016b5d0043c6d72d4",
+    "s15_live_alive.png": "1a538cce135c555f5aed4abdfd957bcddb67e9405b72479a9cd7212944048d56",
+    "s15_live_alive_demo.png": "02881928d7ec671f340fccb767d784647612ee0f41abcc4f00412a135fda589a",
+    "sewinggpt_skirt_pattern.png": "6d8a400bef3992915665a3a737da8f534c4700057a7aa068cea60aef127ff767",
+    "ship_back.png": "61753f33d0e92d81f14017aa1f341506df5b6900cd7a1270cb184676b9f8c88c",
+    "ship_front.png": "0981592e5f60bdbd6a06a15ade2a24d9530a4e74671330c0504a103371850daa",
+    "ship_side.png": "680ef1a59bf41dd56f1ada7fa2a982908f2c93db8ba30127f2b51e04a488cf5a",
+    "warp_drape_shirt_over_skirt_on_g9.png": "7f117b1595ea1d2663f6c215c22d941fef5891933208a584f9ca0645f1d16127",
+    "warp_drape_skirt_on_g9.png": "ba9b6c94867ffc6470288ab4323e4579d926afa220fc93bac66bb66696ea9965"
+  },
+  "ledger_step": 15,
+  "posed_stride_limit": {
+    "shirt": {
+      "body_overlap_pairs": 582,
+      "boundary_edges": 0,
+      "inside_verts_normal_test": 110,
+      "inside_verts_ray_parity": 110,
+      "max_depth_mm": 10.351,
+      "non_interpenetrating": false
+    },
+    "skirt": {
+      "body_overlap_pairs": 883,
+      "boundary_edges": 0,
+      "inside_verts_normal_test": 1837,
+      "inside_verts_ray_parity": 1838,
+      "max_depth_mm": 56.296,
+      "non_interpenetrating": false
+    }
+  },
+  "project": "dressable-g9",
+  "project_id": 725908,
+  "prompt": "skirt, midi length, flared",
+  "sources": {
+    "dresscode_branch": "agents/forge/task-133870 (from agents/codex/task-2973@73f1ce4)",
+    "foundry_cloth_thickness": "character-foundry agents/forge/task-93317@f760c487098eb02bd85a25e707527621bf0f68a5",
+    "foundry_commit": "character-foundry main@a928806 (unmodified)",
+    "garmentcode_commit": "d449629",
+    "identity_master": "amy_gp_v3 sha256 cb61156983436a9772793690ac4c620401d77449af914c32602dbf31fce9c8e1",
+    "warp_fork_commit": "63baf68"
+  },
+  "task_id": 133870,
+  "weights": {
+    "shirt": {
+      "groups": [
+        "l_forearmtwist1",
+        "l_forearmtwist2",
+        "l_pectoral",
+        "l_shoulder",
+        "l_thightwist1",
+        "l_upperarmtwist1",
+        "l_upperarmtwist2",
+        "neck1",
+        "neck2",
+        "pelvis",
+        "r_forearmtwist1",
+        "r_forearmtwist2",
+        "r_pectoral",
+        "r_shoulder",
+        "r_thightwist1",
+        "r_upperarmtwist1",
+        "r_upperarmtwist2",
+        "spine1",
+        "spine2",
+        "spine3",
+        "spine4"
+      ],
+      "normalized": 18582,
+      "vertices": 18582,
+      "weighted": 18582
+    },
+    "skirt": {
+      "groups": [
+        "l_thightwist1",
+        "l_thightwist2",
+        "pelvis",
+        "r_thightwist1",
+        "r_thightwist2",
+        "spine1",
+        "spine2"
+      ],
+      "normalized": 31658,
+      "vertices": 31658,
+      "weighted": 31658
+    }
+  }
+}
