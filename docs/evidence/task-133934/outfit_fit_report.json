@@ -1,0 +1,1246 @@
+{
+  "after_thickness": {
+    "cover": {
+      "cover_exposed": 429,
+      "cover_sampled": 3386,
+      "exposed_fraction": 0.1267
+    },
+    "garment_garment_overlap_pairs": {
+      "pants|shirt": 0
+    },
+    "per_garment": {
+      "pants": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 1,
+        "inside_verts_ray_parity_6axis_majority": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true,
+        "ray_parity_inside_samples": [
+          {
+            "co": [
+              0.0184,
+              0.1151,
+              0.8086
+            ],
+            "hits_+x": 3,
+            "nearest_body_mm": 15.64,
+            "odd_axis_votes_of_6": 2,
+            "outside_by_normal": true
+          }
+        ]
+      },
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "inside_verts_ray_parity_6axis_majority": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true,
+        "ray_parity_inside_samples": []
+      }
+    }
+  },
+  "artifacts": {
+    "blend": "/home/n8/cloth_test/task-133934/fit/v10/dressable_g9_outfit.blend",
+    "blend_sha256": "f7f7776ba5aab8da437074c394521b4cedd1b3ddb0386554b161e7b4bf58eafe",
+    "renders": {
+      "posed_arms_swing15_front": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_arms_swing15_front.png",
+        "sha256": "9db9c9d4dc26e0db5ef67810b2530f4d19d646df5a2af0fe33ec772437a10259"
+      },
+      "posed_arms_swing15_side": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_arms_swing15_side.png",
+        "sha256": "1409684323deba193521ea910712001ef67a884d4324c046268e6801956acf0b"
+      },
+      "posed_arms_up20_front": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_arms_up20_front.png",
+        "sha256": "edbbc2a5ad6df19b73b4f02b984e6a5e8a71ad7346bd97daf2182249402f8d4d"
+      },
+      "posed_arms_up20_side": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_arms_up20_side.png",
+        "sha256": "7bdd945b94497c32f43914fe4a0eef8df350c4f5b7b3a9f3ae15843a8415cf98"
+      },
+      "posed_arms_up45_front": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_arms_up45_front.png",
+        "sha256": "4c1d181d1b4d10f024e281cabe6d5735917a60ff56bc6250e8de1e255a768711"
+      },
+      "posed_arms_up45_side": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_arms_up45_side.png",
+        "sha256": "20b005cbc15b6e501b9e0a08087fd82366e928b02c661315b4aa46e74369bd8a"
+      },
+      "posed_step_twist_front": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_step_twist_front.png",
+        "sha256": "f42d497ee40179c5ec345fb9ae2da0fecec0f158ca1c9a7390b294469bf8a737"
+      },
+      "posed_step_twist_side": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_step_twist_side.png",
+        "sha256": "3ee363f6efd98dc4c4f9ec438ed70d3f31c816c4da814fdc8b410199aa55d2b2"
+      },
+      "posed_stride_133870_front": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_stride_133870_front.png",
+        "sha256": "e8e69001309f8c19f79c7c8cc252cb415c11d91df74f54685f42aebcc2226159"
+      },
+      "posed_stride_133870_side": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_stride_133870_side.png",
+        "sha256": "4d97975b04791148301dd4c839c8b4bf9d21554bcb5d15c1303f66c2ce9f89e1"
+      },
+      "posed_walk_front": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_walk_front.png",
+        "sha256": "c31636466ba8637900567fce32705e6809d3e1ebfc7cde65f7a6b16fd0f056ee"
+      },
+      "posed_walk_side": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_walk_side.png",
+        "sha256": "87f9fded8c541562c7141fdcc4ffbf24556757a6052d5d759bcae32191e5a6b8"
+      },
+      "posed_weight_shift_front": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_weight_shift_front.png",
+        "sha256": "4335cd664e80b8dfa91376049366a928ef493add917d2705c83ba29c2c38b9e7"
+      },
+      "posed_weight_shift_side": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/posed_weight_shift_side.png",
+        "sha256": "0124aabf40e1d87638cf724ae2534750016efd56c307ea55b3684f907737a5ad"
+      },
+      "rest_front": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/rest_front.png",
+        "sha256": "e7d9e382d1e7fdd6f73d7c7a1244f6840a2871c2ae1cb0a851131145796ca7c5"
+      },
+      "ship_back": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/ship_back.png",
+        "sha256": "88ff4c7ab67eb12c4cae2f95d751aff7c15c680c25a8f0956ad312ef14614103"
+      },
+      "ship_front": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/ship_front.png",
+        "sha256": "666514c607410c54948fd86e79b0cbfc040675f922569818d566b6d26768bd52"
+      },
+      "ship_side": {
+        "path": "/home/n8/cloth_test/task-133934/fit/v10/ship_side.png",
+        "sha256": "af1ac4aa2a4d25307721039edc3b996e7bab10da9eb91b35b08990602febc5b8"
+      }
+    }
+  },
+  "before": {
+    "cover": {
+      "cover_exposed": 434,
+      "cover_sampled": 3386,
+      "exposed_fraction": 0.1282
+    },
+    "garment_garment_overlap_pairs": {
+      "pants|shirt": 0
+    },
+    "per_garment": {
+      "pants": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 407,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "inside_verts_ray_parity_6axis_majority": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true,
+        "ray_parity_inside_samples": []
+      },
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 284,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "inside_verts_ray_parity_6axis_majority": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true,
+        "ray_parity_inside_samples": []
+      }
+    }
+  },
+  "clearance_mm": 5.0,
+  "frame": "GC (x,y,z) cm -> Blender (x/100, -z/100, y/100 - lift)",
+  "gate": {
+    "all_non_interpenetrating_rest": true,
+    "all_weighted_normalized": true,
+    "closed_slabs": true,
+    "cover_ok": false,
+    "diagnostic_frames_non_interpenetrating": {
+      "arms_swing15": {
+        "pants": true,
+        "shirt": false
+      },
+      "arms_up20": {
+        "pants": true,
+        "shirt": false
+      },
+      "arms_up45": {
+        "pants": true,
+        "shirt": false
+      },
+      "stride_133870": {
+        "pants": true,
+        "shirt": false
+      }
+    },
+    "follows_pose": true,
+    "gated_posed_frames": [
+      "walk",
+      "step_twist",
+      "weight_shift"
+    ],
+    "no_garment_garment_overlap_rest": true,
+    "posed_no_garment_garment_overlap_gated_frames": true,
+    "posed_non_interpenetrating_gated_frames": true,
+    "ship_cover_ok": true,
+    "ship_no_garment_garment_overlap": true,
+    "ship_non_interpenetrating": true
+  },
+  "lift_m": 0.054874,
+  "overlap_clearance": {
+    "pants": [
+      {
+        "iterations": 0,
+        "remaining_pairs": 0,
+        "verts_moved": 0,
+        "vs": "body"
+      }
+    ],
+    "shirt": [
+      {
+        "iterations": 0,
+        "remaining_pairs": 0,
+        "verts_moved": 0,
+        "vs": "body"
+      },
+      {
+        "iterations": 7,
+        "remaining_pairs": 0,
+        "verts_moved": 596,
+        "vs": "Dressable Pants"
+      },
+      {
+        "margin_mm": 3,
+        "margin_verts_moved": 670,
+        "vs": "Dressable Pants"
+      },
+      {
+        "iterations": 0,
+        "remaining_pairs": 0,
+        "verts_moved": 0,
+        "vs": "Dressable Pants"
+      }
+    ]
+  },
+  "posed_frames": {
+    "arms_swing15": {
+      "garments_moved": {
+        "pants": {
+          "max_displacement_m": 0.0538,
+          "vertices_moved_over_1mm": 35280
+        },
+        "shirt": {
+          "max_displacement_m": 0.1406,
+          "vertices_moved_over_1mm": 24030
+        }
+      },
+      "gates": {
+        "cover": {
+          "cover_exposed": 296,
+          "cover_sampled": 3024,
+          "exposed_fraction": 0.0979
+        },
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  0.0184,
+                  0.1151,
+                  0.8623
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 15.64,
+                "odd_axis_votes_of_6": 1,
+                "outside_by_normal": true
+              }
+            ]
+          },
+          "shirt": {
+            "body_overlap_pairs": 323,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 1,
+            "inside_verts_ray_parity": 2,
+            "inside_verts_ray_parity_6axis_majority": 1,
+            "max_depth_mm": 1.081,
+            "non_interpenetrating": false,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  -0.1718,
+                  -0.006,
+                  1.4687
+                ],
+                "hits_+x": 5,
+                "nearest_body_mm": 4.35,
+                "odd_axis_votes_of_6": 1,
+                "outside_by_normal": true
+              },
+              {
+                "co": [
+                  0.1343,
+                  -0.0248,
+                  1.3446
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 1.08,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              }
+            ]
+          }
+        }
+      },
+      "pose": {
+        "l_upperarm": [
+          15,
+          0,
+          0
+        ],
+        "r_upperarm": [
+          -15,
+          0,
+          0
+        ]
+      }
+    },
+    "arms_up20": {
+      "garments_moved": {
+        "pants": {
+          "max_displacement_m": 0.0538,
+          "vertices_moved_over_1mm": 35280
+        },
+        "shirt": {
+          "max_displacement_m": 0.2075,
+          "vertices_moved_over_1mm": 24030
+        }
+      },
+      "gates": {
+        "cover": {
+          "cover_exposed": 235,
+          "cover_sampled": 3013,
+          "exposed_fraction": 0.078
+        },
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  0.0184,
+                  0.1151,
+                  0.8623
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 15.64,
+                "odd_axis_votes_of_6": 1,
+                "outside_by_normal": true
+              }
+            ]
+          },
+          "shirt": {
+            "body_overlap_pairs": 1011,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 60,
+            "inside_verts_ray_parity": 60,
+            "inside_verts_ray_parity_6axis_majority": 60,
+            "max_depth_mm": 19.15,
+            "non_interpenetrating": false,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  0.2416,
+                  0.0221,
+                  1.424
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 3.42,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2482,
+                  0.0229,
+                  1.4188
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 4.18,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2545,
+                  0.0222,
+                  1.4114
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 6.61,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2615,
+                  0.0217,
+                  1.4044
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 8.03,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2682,
+                  0.0211,
+                  1.3973
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 9.39,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2754,
+                  0.021,
+                  1.3905
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 10.94,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2824,
+                  0.0206,
+                  1.3834
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 12.55,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2894,
+                  0.0201,
+                  1.3766
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 13.47,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              }
+            ]
+          }
+        }
+      },
+      "pose": {
+        "l_upperarm": [
+          0,
+          0,
+          20
+        ],
+        "r_upperarm": [
+          0,
+          0,
+          -20
+        ]
+      }
+    },
+    "arms_up45": {
+      "garments_moved": {
+        "pants": {
+          "max_displacement_m": 0.0538,
+          "vertices_moved_over_1mm": 35280
+        },
+        "shirt": {
+          "max_displacement_m": 0.4332,
+          "vertices_moved_over_1mm": 24030
+        }
+      },
+      "gates": {
+        "cover": {
+          "cover_exposed": 198,
+          "cover_sampled": 3025,
+          "exposed_fraction": 0.0655
+        },
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  0.0184,
+                  0.1151,
+                  0.8623
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 15.64,
+                "odd_axis_votes_of_6": 1,
+                "outside_by_normal": true
+              }
+            ]
+          },
+          "shirt": {
+            "body_overlap_pairs": 1501,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 124,
+            "inside_verts_ray_parity": 125,
+            "inside_verts_ray_parity_6axis_majority": 124,
+            "max_depth_mm": 23.203,
+            "non_interpenetrating": false,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  0.1959,
+                  0.0235,
+                  1.4715
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 0.15,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2037,
+                  0.0236,
+                  1.4658
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 3.12,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2113,
+                  0.0236,
+                  1.4599
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 6.84,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2186,
+                  0.0236,
+                  1.4538
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 10.96,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2256,
+                  0.0233,
+                  1.4476
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 14.83,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2341,
+                  0.0224,
+                  1.4375
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 19.79,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2402,
+                  0.0231,
+                  1.4367
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 20.17,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2474,
+                  0.0224,
+                  1.4311
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 20.6,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              }
+            ]
+          }
+        }
+      },
+      "pose": {
+        "l_forearm": [
+          0,
+          0,
+          10
+        ],
+        "l_upperarm": [
+          0,
+          0,
+          45
+        ],
+        "r_forearm": [
+          0,
+          0,
+          -10
+        ],
+        "r_upperarm": [
+          0,
+          0,
+          -45
+        ]
+      }
+    },
+    "step_twist": {
+      "garments_moved": {
+        "pants": {
+          "max_displacement_m": 0.2229,
+          "vertices_moved_over_1mm": 35280
+        },
+        "shirt": {
+          "max_displacement_m": 0.1187,
+          "vertices_moved_over_1mm": 24030
+        }
+      },
+      "gates": {
+        "cover": {
+          "cover_exposed": 297,
+          "cover_sampled": 3054,
+          "exposed_fraction": 0.0972
+        },
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 2,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  0.1554,
+                  0.097,
+                  0.9566
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 8.31,
+                "odd_axis_votes_of_6": 1,
+                "outside_by_normal": true
+              },
+              {
+                "co": [
+                  -0.1727,
+                  0.0741,
+                  0.927
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 4.66,
+                "odd_axis_votes_of_6": 1,
+                "outside_by_normal": true
+              }
+            ]
+          },
+          "shirt": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  -0.182,
+                  0.049,
+                  1.3461
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 15.81,
+                "odd_axis_votes_of_6": 1,
+                "outside_by_normal": true
+              }
+            ]
+          }
+        }
+      },
+      "pose": {
+        "l_shin": [
+          30,
+          0,
+          0
+        ],
+        "l_thigh": [
+          -25,
+          0,
+          -4
+        ],
+        "r_thigh": [
+          10,
+          0,
+          0
+        ],
+        "spine1": [
+          0,
+          6,
+          0
+        ],
+        "spine2": [
+          0,
+          6,
+          0
+        ]
+      }
+    },
+    "stride_133870": {
+      "garments_moved": {
+        "pants": {
+          "max_displacement_m": 0.2087,
+          "vertices_moved_over_1mm": 35280
+        },
+        "shirt": {
+          "max_displacement_m": 0.1884,
+          "vertices_moved_over_1mm": 24030
+        }
+      },
+      "gates": {
+        "cover": {
+          "cover_exposed": 316,
+          "cover_sampled": 3090,
+          "exposed_fraction": 0.1023
+        },
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  -0.1662,
+                  0.098,
+                  0.2836
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 28.78,
+                "odd_axis_votes_of_6": 1,
+                "outside_by_normal": true
+              }
+            ]
+          },
+          "shirt": {
+            "body_overlap_pairs": 1676,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 278,
+            "inside_verts_ray_parity": 278,
+            "inside_verts_ray_parity_6axis_majority": 278,
+            "max_depth_mm": 27.385,
+            "non_interpenetrating": false,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  0.3446,
+                  0.0366,
+                  1.1328
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 8.27,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.3368,
+                  0.0407,
+                  1.1363
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 10.24,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.3291,
+                  0.0426,
+                  1.1432
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 11.9,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.3216,
+                  0.0461,
+                  1.1486
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 10.9,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.3129,
+                  0.0505,
+                  1.1527
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 8.16,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.3045,
+                  0.0538,
+                  1.1599
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 5.33,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2985,
+                  0.0547,
+                  1.1672
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 5.03,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              },
+              {
+                "co": [
+                  0.2894,
+                  0.0598,
+                  1.1723
+                ],
+                "hits_+x": 1,
+                "nearest_body_mm": 0.25,
+                "odd_axis_votes_of_6": 6,
+                "outside_by_normal": false
+              }
+            ]
+          }
+        }
+      },
+      "pose": {
+        "l_forearm": [
+          -18,
+          0,
+          -8
+        ],
+        "l_thigh": [
+          -12,
+          0,
+          0
+        ],
+        "l_upperarm": [
+          12,
+          -14,
+          -18
+        ],
+        "r_forearm": [
+          14,
+          0,
+          7
+        ],
+        "r_thigh": [
+          8,
+          0,
+          0
+        ],
+        "r_upperarm": [
+          -9,
+          11,
+          21
+        ],
+        "spine2": [
+          0,
+          7,
+          4
+        ]
+      }
+    },
+    "walk": {
+      "garments_moved": {
+        "pants": {
+          "max_displacement_m": 0.4753,
+          "vertices_moved_over_1mm": 35280
+        },
+        "shirt": {
+          "max_displacement_m": 0.065,
+          "vertices_moved_over_1mm": 24030
+        }
+      },
+      "gates": {
+        "cover": {
+          "cover_exposed": 300,
+          "cover_sampled": 3037,
+          "exposed_fraction": 0.0988
+        },
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 0,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": []
+          },
+          "shirt": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 0,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": []
+          }
+        }
+      },
+      "pose": {
+        "l_thigh": [
+          -20,
+          0,
+          0
+        ],
+        "r_shin": [
+          25,
+          0,
+          0
+        ],
+        "r_thigh": [
+          15,
+          0,
+          0
+        ],
+        "spine1": [
+          0,
+          4,
+          0
+        ]
+      }
+    },
+    "weight_shift": {
+      "garments_moved": {
+        "pants": {
+          "max_displacement_m": 0.1534,
+          "vertices_moved_over_1mm": 35280
+        },
+        "shirt": {
+          "max_displacement_m": 0.0649,
+          "vertices_moved_over_1mm": 24030
+        }
+      },
+      "gates": {
+        "cover": {
+          "cover_exposed": 298,
+          "cover_sampled": 3034,
+          "exposed_fraction": 0.0982
+        },
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": [
+              {
+                "co": [
+                  -0.0185,
+                  -0.1014,
+                  0.9995
+                ],
+                "hits_+x": 3,
+                "nearest_body_mm": 4.69,
+                "odd_axis_votes_of_6": 2,
+                "outside_by_normal": true
+              }
+            ]
+          },
+          "shirt": {
+            "body_overlap_pairs": 0,
+            "boundary_edges": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 0,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "non_interpenetrating": true,
+            "ray_parity_inside_samples": []
+          }
+        }
+      },
+      "pose": {
+        "l_thigh": [
+          0,
+          0,
+          -8
+        ],
+        "r_shin": [
+          12,
+          0,
+          0
+        ],
+        "r_thigh": [
+          -6,
+          0,
+          4
+        ]
+      }
+    }
+  },
+  "rest_after_bind": {
+    "cover": {
+      "cover_exposed": 429,
+      "cover_sampled": 3386,
+      "exposed_fraction": 0.1267
+    },
+    "garment_garment_overlap_pairs": {
+      "pants|shirt": 0
+    },
+    "per_garment": {
+      "pants": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 1,
+        "inside_verts_ray_parity_6axis_majority": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true,
+        "ray_parity_inside_samples": [
+          {
+            "co": [
+              0.0184,
+              0.1151,
+              0.8086
+            ],
+            "hits_+x": 3,
+            "nearest_body_mm": 15.64,
+            "odd_axis_votes_of_6": 2,
+            "outside_by_normal": true
+          }
+        ]
+      },
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "inside_verts_ray_parity_6axis_majority": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true,
+        "ray_parity_inside_samples": []
+      }
+    }
+  },
+  "ship_state": {
+    "cover": {
+      "cover_exposed": 298,
+      "cover_sampled": 3023,
+      "exposed_fraction": 0.0986
+    },
+    "garment_garment_overlap_pairs": {
+      "pants|shirt": 0
+    },
+    "per_garment": {
+      "pants": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 2,
+        "inside_verts_ray_parity_6axis_majority": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true,
+        "ray_parity_inside_samples": [
+          {
+            "co": [
+              0.0184,
+              0.1151,
+              0.8623
+            ],
+            "hits_+x": 3,
+            "nearest_body_mm": 15.64,
+            "odd_axis_votes_of_6": 1,
+            "outside_by_normal": true
+          },
+          {
+            "co": [
+              -0.0185,
+              -0.1014,
+              0.9995
+            ],
+            "hits_+x": 3,
+            "nearest_body_mm": 4.69,
+            "odd_axis_votes_of_6": 2,
+            "outside_by_normal": true
+          }
+        ]
+      },
+      "shirt": {
+        "body_overlap_pairs": 0,
+        "boundary_edges": 0,
+        "inside_verts_normal_test": 0,
+        "inside_verts_ray_parity": 0,
+        "inside_verts_ray_parity_6axis_majority": 0,
+        "max_depth_mm": 0.0,
+        "non_interpenetrating": true,
+        "ray_parity_inside_samples": []
+      }
+    },
+    "pose_position": "POSE"
+  },
+  "sources": {
+    "pants": {
+      "faces": 34875,
+      "obj": "/home/n8/cloth_test/task-133934/drapes/bellbottom_jeans_260928-15-01-58/bellbottom_jeans_sim.obj",
+      "sha256": "33e4842fc3f50200fffeaf11b9874ded97a9a5e5647e9248a532b1027adbc09f",
+      "vertices": 17640
+    },
+    "shirt": {
+      "faces": 23750,
+      "obj": "/home/n8/cloth_test/task-133934/drapes/collar_shirt_70s_260928-15-04-42/collar_shirt_70s_sim.obj",
+      "sha256": "d5f1b3eb3fbb9d6001259c8cab13626c096ac12f29dbd1fd63ca55724a3b6985",
+      "vertices": 12015
+    }
+  },
+  "weights": {
+    "pants": {
+      "groups": [
+        "l_foot",
+        "l_shin",
+        "l_thightwist1",
+        "l_thightwist2",
+        "l_toes",
+        "pelvis",
+        "r_foot",
+        "r_shin",
+        "r_thightwist1",
+        "r_thightwist2",
+        "r_toes",
+        "spine1"
+      ],
+      "normalized": 35280,
+      "vertices": 35280,
+      "weighted": 35280
+    },
+    "shirt": {
+      "groups": [
+        "head",
+        "l_forearmtwist1",
+        "l_forearmtwist2",
+        "l_hand",
+        "l_indexmetacarpal",
+        "l_midmetacarpal",
+        "l_pectoral",
+        "l_pinkymetacarpal",
+        "l_shoulder",
+        "l_thightwist1",
+        "l_upperarmtwist1",
+        "l_upperarmtwist2",
+        "neck1",
+        "neck2",
+        "pelvis",
+        "r_forearmtwist1",
+        "r_forearmtwist2",
+        "r_hand",
+        "r_indexmetacarpal",
+        "r_midmetacarpal",
+        "r_pectoral",
+        "r_pinkymetacarpal",
+        "r_shoulder",
+        "r_thightwist1",
+        "r_upperarmtwist1",
+        "r_upperarmtwist2",
+        "spine1",
+        "spine2",
+        "spine3",
+        "spine4"
+      ],
+      "normalized": 24030,
+      "vertices": 24030,
+      "weighted": 24030
+    }
+  }
+}

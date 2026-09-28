@@ -1,0 +1,91 @@
+{
+  "props": [
+    {
+      "prop_id": 1012,
+      "name": "70's bellbottom jeans",
+      "is_new": false
+    },
+    {
+      "prop_id": 1013,
+      "name": "large collar 70's shirt",
+      "is_new": false
+    }
+  ],
+  "registered": [
+    {
+      "id": 1,
+      "project_id": 13,
+      "canonical_prop_id": 1012,
+      "source": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.blend",
+      "objects": [
+        "Dressable Pants"
+      ],
+      "metadata": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.json",
+      "secondary_motion_profile": null,
+      "bake_offline": true
+    },
+    {
+      "id": 2,
+      "project_id": 13,
+      "canonical_prop_id": 1013,
+      "source": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.blend",
+      "objects": [
+        "Dressable Shirt"
+      ],
+      "metadata": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.json",
+      "secondary_motion_profile": null,
+      "bake_offline": true
+    }
+  ],
+  "active_bindings": [
+    {
+      "id": 1,
+      "project_id": 13,
+      "canonical_prop_id": 1012,
+      "source": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.blend",
+      "objects_json": [
+        "Dressable Pants"
+      ],
+      "metadata_path": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.json",
+      "secondary_motion_profile": null,
+      "bake_offline": true,
+      "created_at": "2026-09-28 22:30:09.569892+00:00"
+    },
+    {
+      "id": 2,
+      "project_id": 13,
+      "canonical_prop_id": 1013,
+      "source": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.blend",
+      "objects_json": [
+        "Dressable Shirt"
+      ],
+      "metadata_path": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.json",
+      "secondary_motion_profile": null,
+      "bake_offline": true,
+      "created_at": "2026-09-28 22:30:09.808970+00:00"
+    }
+  ],
+  "envelope": {
+    "status": "ready",
+    "assets": {
+      "outfit": {
+        "source": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.blend",
+        "objects": [
+          "Dressable Pants",
+          "Dressable Shirt"
+        ],
+        "metadata": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.json"
+      }
+    },
+    "active_prop_ids": [
+      1012,
+      1013
+    ],
+    "binding_ids": [
+      1,
+      2
+    ],
+    "missing_prop_ids": [],
+    "conflicts": []
+  }
+}

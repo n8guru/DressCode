@@ -1,0 +1,23 @@
+{
+  "status": "ready",
+  "assets": {
+    "outfit": {
+      "source": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.blend",
+      "objects": [
+        "Dressable Pants",
+        "Dressable Shirt"
+      ],
+      "metadata": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.json"
+    }
+  },
+  "active_prop_ids": [
+    1012,
+    1013
+  ],
+  "binding_ids": [
+    1,
+    2
+  ],
+  "missing_prop_ids": [],
+  "conflicts": []
+}

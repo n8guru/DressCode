@@ -1,0 +1,613 @@
+{
+  "project": "dressable-g9",
+  "project_id": 725908,
+  "ledger_step": 15,
+  "task": 133934,
+  "decision": 1988251,
+  "operator_intent": "I suggest, \"70s bellbottom jeans, and a large coller 70s shirt.\" screenplay pipe has tools to produce the character in the proper outfit.",
+  "text_to_pattern": {
+    "sewinggpt_attempt": {
+      "prompts": [
+        "pants, long length, flared, bell-bottom",
+        "shirt, long sleeve, large collar, fitted"
+      ],
+      "seeds": [
+        1,
+        2
+      ],
+      "result": "rejected: pants seeds 1+2 have 4 stitches naming non-existent panel edges each (seed1 waist collapses to a point); shirt seeds 1+2 have no collar panel and 26-31 cm sleeves"
+    },
+    "used": "GarmentCode d449629 parametric patterns, operator prompt mapped to design params (prompt_to_design.json) on the MEASURED G9 body (g9_amy_measured.yaml)",
+    "patterns": {
+      "bellbottom_jeans": "850b66f6520130de22218c63d1b100f285d6f598b20402f57578dc56750ecff2",
+      "collar_shirt_70s": "10ce01e917edd6736ed5348c654fac066e6ba57d5e92dbca54719088c36be2b9"
+    }
+  },
+  "warp_drape": [
+    "DRAPE_OUT /home/n8/cloth_test/task-133934/drapes/bellbottom_jeans_260928-15-01-58",
+    "STATS {\"fails\": {}, \"sim_time\": {\"bellbottom_jeans\": 16.60770010948181}, \"spf\": {\"bellbottom_jeans\": 0.015506722791299544}, \"fin_frame\": {\"bellbottom_jeans\": 1071}, \"self_collisions\": {\"bellbottom_jeans\": 210}, \"body_collisions\": {\"bellbottom_jeans\": 0}}",
+    "DRAPE_OUT /home/n8/cloth_test/task-133934/drapes/collar_shirt_70s_260928-15-04-42",
+    "STATS {\"fails\": {}, \"sim_time\": {\"collar_shirt_70s\": 18.141206741333008}, \"spf\": {\"collar_shirt_70s\": 0.03262806967865649}, \"fin_frame\": {\"collar_shirt_70s\": 556}, \"self_collisions\": {\"collar_shirt_70s\": 193}, \"body_collisions\": {\"collar_shirt_70s\": 0}}"
+  ],
+  "drape_obj_sha256": {
+    "pants": {
+      "faces": 34875,
+      "obj": "/home/n8/cloth_test/task-133934/drapes/bellbottom_jeans_260928-15-01-58/bellbottom_jeans_sim.obj",
+      "sha256": "33e4842fc3f50200fffeaf11b9874ded97a9a5e5647e9248a532b1027adbc09f",
+      "vertices": 17640
+    },
+    "shirt": {
+      "faces": 23750,
+      "obj": "/home/n8/cloth_test/task-133934/drapes/collar_shirt_70s_260928-15-04-42/collar_shirt_70s_sim.obj",
+      "sha256": "d5f1b3eb3fbb9d6001259c8cab13626c096ac12f29dbd1fd63ca55724a3b6985",
+      "vertices": 12015
+    }
+  },
+  "fit": {
+    "blend": "forge:/home/n8/cloth_test/task-133934/fit/v10/dressable_g9_outfit.blend",
+    "blend_sha256": "f7f7776ba5aab8da437074c394521b4cedd1b3ddb0386554b161e7b4bf58eafe",
+    "clearance_mm": 5.0,
+    "weights": {
+      "pants": {
+        "vertices": 35280,
+        "weighted": 35280,
+        "normalized": 35280
+      },
+      "shirt": {
+        "vertices": 24030,
+        "weighted": 24030,
+        "normalized": 24030
+      }
+    },
+    "gate": {
+      "all_non_interpenetrating_rest": true,
+      "all_weighted_normalized": true,
+      "closed_slabs": true,
+      "cover_ok": false,
+      "diagnostic_frames_non_interpenetrating": {
+        "arms_swing15": {
+          "pants": true,
+          "shirt": false
+        },
+        "arms_up20": {
+          "pants": true,
+          "shirt": false
+        },
+        "arms_up45": {
+          "pants": true,
+          "shirt": false
+        },
+        "stride_133870": {
+          "pants": true,
+          "shirt": false
+        }
+      },
+      "follows_pose": true,
+      "gated_posed_frames": [
+        "walk",
+        "step_twist",
+        "weight_shift"
+      ],
+      "no_garment_garment_overlap_rest": true,
+      "posed_no_garment_garment_overlap_gated_frames": true,
+      "posed_non_interpenetrating_gated_frames": true,
+      "ship_cover_ok": true,
+      "ship_no_garment_garment_overlap": true,
+      "ship_non_interpenetrating": true
+    },
+    "rest_after_thickness": {
+      "garment_garment_overlap_pairs": {
+        "pants|shirt": 0
+      },
+      "cover_exposed_fraction": 0.1267,
+      "per_garment": {
+        "pants": {
+          "body_overlap_pairs": 0,
+          "inside_verts_normal_test": 0,
+          "inside_verts_ray_parity": 1,
+          "inside_verts_ray_parity_6axis_majority": 0,
+          "max_depth_mm": 0.0,
+          "boundary_edges": 0,
+          "non_interpenetrating": true
+        },
+        "shirt": {
+          "body_overlap_pairs": 0,
+          "inside_verts_normal_test": 0,
+          "inside_verts_ray_parity": 0,
+          "inside_verts_ray_parity_6axis_majority": 0,
+          "max_depth_mm": 0.0,
+          "boundary_edges": 0,
+          "non_interpenetrating": true
+        }
+      }
+    },
+    "ship_state": {
+      "garment_garment_overlap_pairs": {
+        "pants|shirt": 0
+      },
+      "cover_exposed_fraction": 0.0986,
+      "per_garment": {
+        "pants": {
+          "body_overlap_pairs": 0,
+          "inside_verts_normal_test": 0,
+          "inside_verts_ray_parity": 2,
+          "inside_verts_ray_parity_6axis_majority": 0,
+          "max_depth_mm": 0.0,
+          "boundary_edges": 0,
+          "non_interpenetrating": true
+        },
+        "shirt": {
+          "body_overlap_pairs": 0,
+          "inside_verts_normal_test": 0,
+          "inside_verts_ray_parity": 0,
+          "inside_verts_ray_parity_6axis_majority": 0,
+          "max_depth_mm": 0.0,
+          "boundary_edges": 0,
+          "non_interpenetrating": true
+        }
+      }
+    },
+    "posed_frames": {
+      "arms_swing15": {
+        "pose": {
+          "l_upperarm": [
+            15,
+            0,
+            0
+          ],
+          "r_upperarm": [
+            -15,
+            0,
+            0
+          ]
+        },
+        "gated": false,
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "cover_exposed_fraction": 0.0979,
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          },
+          "shirt": {
+            "body_overlap_pairs": 323,
+            "inside_verts_normal_test": 1,
+            "inside_verts_ray_parity": 2,
+            "inside_verts_ray_parity_6axis_majority": 1,
+            "max_depth_mm": 1.081,
+            "boundary_edges": 0,
+            "non_interpenetrating": false
+          }
+        }
+      },
+      "arms_up20": {
+        "pose": {
+          "l_upperarm": [
+            0,
+            0,
+            20
+          ],
+          "r_upperarm": [
+            0,
+            0,
+            -20
+          ]
+        },
+        "gated": false,
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "cover_exposed_fraction": 0.078,
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          },
+          "shirt": {
+            "body_overlap_pairs": 1011,
+            "inside_verts_normal_test": 60,
+            "inside_verts_ray_parity": 60,
+            "inside_verts_ray_parity_6axis_majority": 60,
+            "max_depth_mm": 19.15,
+            "boundary_edges": 0,
+            "non_interpenetrating": false
+          }
+        }
+      },
+      "arms_up45": {
+        "pose": {
+          "l_forearm": [
+            0,
+            0,
+            10
+          ],
+          "l_upperarm": [
+            0,
+            0,
+            45
+          ],
+          "r_forearm": [
+            0,
+            0,
+            -10
+          ],
+          "r_upperarm": [
+            0,
+            0,
+            -45
+          ]
+        },
+        "gated": false,
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "cover_exposed_fraction": 0.0655,
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          },
+          "shirt": {
+            "body_overlap_pairs": 1501,
+            "inside_verts_normal_test": 124,
+            "inside_verts_ray_parity": 125,
+            "inside_verts_ray_parity_6axis_majority": 124,
+            "max_depth_mm": 23.203,
+            "boundary_edges": 0,
+            "non_interpenetrating": false
+          }
+        }
+      },
+      "step_twist": {
+        "pose": {
+          "l_shin": [
+            30,
+            0,
+            0
+          ],
+          "l_thigh": [
+            -25,
+            0,
+            -4
+          ],
+          "r_thigh": [
+            10,
+            0,
+            0
+          ],
+          "spine1": [
+            0,
+            6,
+            0
+          ],
+          "spine2": [
+            0,
+            6,
+            0
+          ]
+        },
+        "gated": true,
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "cover_exposed_fraction": 0.0972,
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 2,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          },
+          "shirt": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          }
+        }
+      },
+      "stride_133870": {
+        "pose": {
+          "l_forearm": [
+            -18,
+            0,
+            -8
+          ],
+          "l_thigh": [
+            -12,
+            0,
+            0
+          ],
+          "l_upperarm": [
+            12,
+            -14,
+            -18
+          ],
+          "r_forearm": [
+            14,
+            0,
+            7
+          ],
+          "r_thigh": [
+            8,
+            0,
+            0
+          ],
+          "r_upperarm": [
+            -9,
+            11,
+            21
+          ],
+          "spine2": [
+            0,
+            7,
+            4
+          ]
+        },
+        "gated": false,
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "cover_exposed_fraction": 0.1023,
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          },
+          "shirt": {
+            "body_overlap_pairs": 1676,
+            "inside_verts_normal_test": 278,
+            "inside_verts_ray_parity": 278,
+            "inside_verts_ray_parity_6axis_majority": 278,
+            "max_depth_mm": 27.385,
+            "boundary_edges": 0,
+            "non_interpenetrating": false
+          }
+        }
+      },
+      "walk": {
+        "pose": {
+          "l_thigh": [
+            -20,
+            0,
+            0
+          ],
+          "r_shin": [
+            25,
+            0,
+            0
+          ],
+          "r_thigh": [
+            15,
+            0,
+            0
+          ],
+          "spine1": [
+            0,
+            4,
+            0
+          ]
+        },
+        "gated": true,
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "cover_exposed_fraction": 0.0988,
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 0,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          },
+          "shirt": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 0,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          }
+        }
+      },
+      "weight_shift": {
+        "pose": {
+          "l_thigh": [
+            0,
+            0,
+            -8
+          ],
+          "r_shin": [
+            12,
+            0,
+            0
+          ],
+          "r_thigh": [
+            -6,
+            0,
+            4
+          ]
+        },
+        "gated": true,
+        "garment_garment_overlap_pairs": {
+          "pants|shirt": 0
+        },
+        "cover_exposed_fraction": 0.0982,
+        "per_garment": {
+          "pants": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 1,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          },
+          "shirt": {
+            "body_overlap_pairs": 0,
+            "inside_verts_normal_test": 0,
+            "inside_verts_ray_parity": 0,
+            "inside_verts_ray_parity_6axis_majority": 0,
+            "max_depth_mm": 0.0,
+            "boundary_edges": 0,
+            "non_interpenetrating": true
+          }
+        }
+      }
+    }
+  },
+  "jcm_diagnostic": {
+    "jcm_on:arms_up20": {
+      "body_overlap_pairs": 1011,
+      "inside_verts_normal_test": 60,
+      "max_depth_mm": 19.15
+    },
+    "jcm_on:arms_swing15": {
+      "body_overlap_pairs": 323,
+      "inside_verts_normal_test": 1,
+      "max_depth_mm": 1.081
+    },
+    "jcm_on:arms_up45": {
+      "body_overlap_pairs": 1501,
+      "inside_verts_normal_test": 124,
+      "max_depth_mm": 23.203
+    },
+    "jcm_off:arms_up20": {
+      "body_overlap_pairs": 1726,
+      "inside_verts_normal_test": 219,
+      "max_depth_mm": 15.786
+    },
+    "jcm_off:arms_swing15": {
+      "body_overlap_pairs": 1018,
+      "inside_verts_normal_test": 151,
+      "max_depth_mm": 7.686
+    },
+    "jcm_off:arms_up45": {
+      "body_overlap_pairs": 2164,
+      "inside_verts_normal_test": 265,
+      "max_depth_mm": 25.543
+    }
+  },
+  "screenplay": {
+    "status": "ready",
+    "assets": {
+      "outfit": {
+        "source": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.blend",
+        "objects": [
+          "Dressable Pants",
+          "Dressable Shirt"
+        ],
+        "metadata": "/Users/nathanrichmond/character-foundry-wt/task-133934-inputs/dressable_g9_outfit_70s.json"
+      }
+    },
+    "active_prop_ids": [
+      1012,
+      1013
+    ],
+    "binding_ids": [
+      1,
+      2
+    ],
+    "missing_prop_ids": [],
+    "conflicts": []
+  },
+  "foundry_build": {
+    "job_dir": "mac:~/character-foundry-wt/task-133934-home/jobs/s15_dressable_70s_133934",
+    "foundry_commit": "character-foundry a928806 (unmodified, worktree task-133870)",
+    "character_glb_sha256": "679a26cee0088c7eaeafcfcb96798928f04b8de900d3016e9958812e0d7ae069",
+    "character_glb_bytes": 92666036,
+    "glb_structure": "Dressable Pants 35280v + Dressable Shirt 24030v, JOINTS_0/WEIGHTS_0, both bound to skin 0 (539 joints) shared with Genesis 9 Mesh",
+    "manifest": {
+      "hair_plan": {
+        "path": "hair_plan.json",
+        "role": "build contract; source groom remains authoritative"
+      },
+      "clone": {
+        "identity_master": "amy_gp_v3",
+        "master": "/Users/nathanrichmond/character-foundry/jobs/amy_gp_v3/master.blend",
+        "sha256": "cb61156983436a9772793690ac4c620401d77449af914c32602dbf31fce9c8e1"
+      },
+      "outfit": "OUTFIT_OK meshes=2 verts=59310 weighted=59310",
+      "outfit_cover": "COVER_OK tested=3023 exposed=296 frac=0.0979 max=0.12 meshes=Dressable Pants,Dressable Shirt",
+      "nsfw": "ASSERT_NSFW: PASS",
+      "export": "EXPORT: ALL OK (125.2s)",
+      "genital_gate": "STEP35_GLB_OK targets=46",
+      "garment_clear": "GLBFIX Dressable Pants        DONE verts=35280 moved=2084 maxmove=5.64mm | vert-inside 11->0 | surface-inside 103->0 | deepest 3.01->0.00 mm",
+      "harvest": "champion saved for amy_dressable_g9_s15_70s: score=None margin=None"
+    }
+  },
+  "browser": {
+    "served": "forge:/home/n8/imagine-chat-flf/browser_avatar/assets/amy_dressable_g9_s15_70s.glb",
+    "captures": {
+      "s15_70s_live_alive.png": "2781521776bc74d3b76da2b69938100606c660c3978c7498ca6d0b56bbd2491e",
+      "s15_70s_ic_dressed.png": "23e68b97caa0f47326fbaa7c86feb4f4d3c5f182fe9e7baaac532e7566ec29c8"
+    },
+    "urls": [
+      "http://forge.tail2b8e3e.ts.net:5133/ic_dressed_amy.html?glb=amy_dressable_g9_s15_70s.glb",
+      "http://forge.tail2b8e3e.ts.net:5133/live_alive.html?glb=amy_dressable_g9_s15_70s.glb"
+    ],
+    "capture": "Playwright 1.63 + chromium-1234 headless, 25 s load; console errors only a 404 (favicon) + 503 (talk/health)"
+  },
+  "renders": {
+    "bellbottom_jeans_pattern.png": "da79ffbeba73ad1917e45a8a0aa247a4f4b1fee5a3c03446430483766476c085",
+    "collar_shirt_70s_pattern.png": "3d0be2b294a4044e173088f4e8cbf93757ce0e923b94f2adc8bc53713c476463",
+    "posed_arms_swing15_front.png": "9db9c9d4dc26e0db5ef67810b2530f4d19d646df5a2af0fe33ec772437a10259",
+    "posed_arms_swing15_side.png": "1409684323deba193521ea910712001ef67a884d4324c046268e6801956acf0b",
+    "posed_arms_up20_front.png": "edbbc2a5ad6df19b73b4f02b984e6a5e8a71ad7346bd97daf2182249402f8d4d",
+    "posed_arms_up20_side.png": "7bdd945b94497c32f43914fe4a0eef8df350c4f5b7b3a9f3ae15843a8415cf98",
+    "posed_arms_up45_front.png": "4c1d181d1b4d10f024e281cabe6d5735917a60ff56bc6250e8de1e255a768711",
+    "posed_arms_up45_side.png": "20b005cbc15b6e501b9e0a08087fd82366e928b02c661315b4aa46e74369bd8a",
+    "posed_step_twist_front.png": "f42d497ee40179c5ec345fb9ae2da0fecec0f158ca1c9a7390b294469bf8a737",
+    "posed_step_twist_side.png": "3ee363f6efd98dc4c4f9ec438ed70d3f31c816c4da814fdc8b410199aa55d2b2",
+    "posed_stride_133870_front.png": "e8e69001309f8c19f79c7c8cc252cb415c11d91df74f54685f42aebcc2226159",
+    "posed_stride_133870_side.png": "4d97975b04791148301dd4c839c8b4bf9d21554bcb5d15c1303f66c2ce9f89e1",
+    "posed_walk_front.png": "c31636466ba8637900567fce32705e6809d3e1ebfc7cde65f7a6b16fd0f056ee",
+    "posed_walk_side.png": "87f9fded8c541562c7141fdcc4ffbf24556757a6052d5d759bcae32191e5a6b8",
+    "posed_weight_shift_front.png": "4335cd664e80b8dfa91376049366a928ef493add917d2705c83ba29c2c38b9e7",
+    "posed_weight_shift_side.png": "0124aabf40e1d87638cf724ae2534750016efd56c307ea55b3684f907737a5ad",
+    "rest_front.png": "e7d9e382d1e7fdd6f73d7c7a1244f6840a2871c2ae1cb0a851131145796ca7c5",
+    "s15_70s_ic_dressed.png": "23e68b97caa0f47326fbaa7c86feb4f4d3c5f182fe9e7baaac532e7566ec29c8",
+    "s15_70s_live_alive.png": "2781521776bc74d3b76da2b69938100606c660c3978c7498ca6d0b56bbd2491e",
+    "ship_back.png": "88ff4c7ab67eb12c4cae2f95d751aff7c15c680c25a8f0956ad312ef14614103",
+    "ship_front.png": "666514c607410c54948fd86e79b0cbfc040675f922569818d566b6d26768bd52",
+    "ship_side.png": "af1ac4aa2a4d25307721039edc3b996e7bab10da9eb91b35b08990602febc5b8"
+  },
+  "not_met": [
+    "criterion 4 secondary motion: no provider spring bones can enter assets.outfit (insight 75266 contract gap, unchanged); garments carry G9 body weights only",
+    "criterion 5 120-frame spring sim gate: not run (no spring chains exist to simulate)",
+    "shirt under ARM motion (diagnostic frames arms_swing15/arms_up20/arms_up45/stride_133870) is NOT non-interpenetrating: 323-1676 overlap pairs, 1.1-27.4 mm; pants are clean in all 7 posed frames",
+    "no independent visual inspection of the renders was possible in this session (model without image input; image-capable subagent failed)"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "contract": "foundry outfit v1 provider wearable",
+  "provider": "dressable-g9 step 15 (task 133934, operator decision #1988251) Route A: operator prompt -> GarmentCode sewing patterns -> Warp native-G9 drape",
+  "prompt": "70's bellbottom jeans, and a large coller 70's shirt.",
+  "screenplay": {"project_id": 13, "canonical_character_id": 90, "props": {"70's bellbottom jeans": 1012, "large collar 70's shirt": 1013}},
+  "garments": {
+    "Dressable Pants": {"type": "pants", "style": "1970s bell-bottom jeans (Pants flare 1.2 + CuffSkirt bell, StraightWB)", "pattern_source": "GarmentCode d449629 design params mapped from the operator prompt", "pattern_sha256": "850b66f6520130de22218c63d1b100f285d6f598b20402f57578dc56750ecff2", "layer": 0},
+    "Dressable Shirt": {"type": "shirt", "style": "1970s long-sleeve shirt, oversized SimpleLapel collar (depth 11) over a V neck", "pattern_source": "GarmentCode d449629 design params mapped from the operator prompt", "pattern_sha256": "10ce01e917edd6736ed5348c654fac066e6ba57d5e92dbca54719088c36be2b9", "layer": 1}
+  },
+  "fit_body": "identity_master amy_gp_v3 (G9 base cage, measured into GarmentCode body params g9_amy_measured.yaml)",
+  "thickness": "FoundryClothThickness (character-foundry agents/forge/task-93317@f760c487), 4mm slab, 5mm skin clearance",
+  "license": "GarmentCode MIT; Warp fork NVIDIA non-commercial",
+  "secondary_motion": "none: garments carry G9 body weights only (insight 75266 contract gap)"
+}

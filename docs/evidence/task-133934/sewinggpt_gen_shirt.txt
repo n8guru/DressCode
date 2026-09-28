@@ -1,0 +1,2 @@
+SPEC {"prompt": "shirt, long sleeve, large collar, fitted", "seed": 1, "spec": "/home/n8/cloth_test/task-133870/DressCode/outputs/260928-14-35-03/000/pred_0/specification.json"}
+SPEC {"prompt": "shirt, long sleeve, large collar, fitted", "seed": 2, "spec": "/home/n8/cloth_test/task-133870/DressCode/outputs/260928-14-35-03/001/pred_0/specification.json"}

@@ -1,0 +1,149 @@
+{
+  "job_id": "s15_dressable_70s_133934",
+  "spec": {
+    "name": "amy_dressable_g9_s15_70s",
+    "sex": "female"
+  },
+  "status": "succeeded",
+  "error": null,
+  "stages_planned": [
+    "clone",
+    "outfit",
+    "nsfw",
+    "export",
+    "garment_clear",
+    "harvest"
+  ],
+  "stages": [
+    {
+      "stage": "clone",
+      "ok": true,
+      "seconds": 0.3
+    },
+    {
+      "stage": "outfit",
+      "ok": true,
+      "seconds": 8.3
+    },
+    {
+      "stage": "nsfw",
+      "ok": true,
+      "seconds": 3.2
+    },
+    {
+      "stage": "export",
+      "ok": true,
+      "seconds": 127.1
+    },
+    {
+      "stage": "garment_clear",
+      "ok": true,
+      "seconds": 48.0
+    },
+    {
+      "stage": "harvest",
+      "ok": true,
+      "seconds": 0.0
+    }
+  ],
+  "reports": {
+    "outfit": "outfit_report.json",
+    "outfit_cover": "outfit_cover.json",
+    "export": "report.json",
+    "genital_inventory": "genital_inventory.json",
+    "garment_clear": "garment_clear.json"
+  },
+  "notes": {
+    "hair_plan": {
+      "path": "hair_plan.json",
+      "role": "build contract; source groom remains authoritative"
+    },
+    "clone": {
+      "identity_master": "amy_gp_v3",
+      "master": "/Users/nathanrichmond/character-foundry/jobs/amy_gp_v3/master.blend",
+      "sha256": "cb61156983436a9772793690ac4c620401d77449af914c32602dbf31fce9c8e1"
+    },
+    "outfit": "OUTFIT_OK meshes=2 verts=59310 weighted=59310",
+    "outfit_cover": "COVER_OK tested=3023 exposed=296 frac=0.0979 max=0.12 meshes=Dressable Pants,Dressable Shirt",
+    "nsfw": "ASSERT_NSFW: PASS",
+    "export": "EXPORT: ALL OK (125.2s)",
+    "genital_gate": "STEP35_GLB_OK targets=46",
+    "garment_clear": "GLBFIX Dressable Pants        DONE verts=35280 moved=2084 maxmove=5.64mm | vert-inside 11->0 | surface-inside 103->0 | deepest 3.01->0.00 mm",
+    "harvest": "champion saved for amy_dressable_g9_s15_70s: score=None margin=None"
+  },
+  "verifiers": {
+    "outfit_cover": {
+      "cover_pass": true,
+      "summary": "",
+      "report_path": "/Users/nathanrichmond/character-foundry-wt/task-133934-home/jobs/s15_dressable_70s_133934/outfit_cover.json"
+    }
+  },
+  "likeness": null,
+  "artifacts": [
+    {
+      "name": "character.glb",
+      "bytes": 92666036,
+      "sha256": "679a26cee0088c7eaeafcfcb96798928f04b8de900d3016e9958812e0d7ae069"
+    },
+    {
+      "name": "eye_baked_eye_left.png",
+      "bytes": 1854114
+    },
+    {
+      "name": "garment_clear.json",
+      "bytes": 1236
+    },
+    {
+      "name": "genital_inventory.json",
+      "bytes": 4332
+    },
+    {
+      "name": "glb_face_check.png",
+      "bytes": 708710
+    },
+    {
+      "name": "hair_plan.json",
+      "bytes": 5486
+    },
+    {
+      "name": "master.blend",
+      "bytes": 68251900,
+      "sha256": "9b77afe1e2c8264b21aeb4ec9d1e50fc352cedc35c23807a388143263e2cc1c9"
+    },
+    {
+      "name": "outfit_cover.json",
+      "bytes": 209
+    },
+    {
+      "name": "outfit_report.json",
+      "bytes": 2791
+    },
+    {
+      "name": "pose_combos.json",
+      "bytes": 3021
+    },
+    {
+      "name": "report.json",
+      "bytes": 19682
+    },
+    {
+      "name": "slider_config.json",
+      "bytes": 81
+    },
+    {
+      "name": "spec.json",
+      "bytes": 841
+    },
+    {
+      "name": "with_outfit.blend",
+      "bytes": 68252652
+    },
+    {
+      "name": "working.blend",
+      "bytes": 64289692
+    }
+  ],
+  "started_at": "2026-09-28T15:30:28",
+  "finished_at": "2026-09-28T15:33:35",
+  "total_seconds": 187.5
+}

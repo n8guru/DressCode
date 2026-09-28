@@ -1,0 +1,2 @@
+SPEC {"prompt": "pants, long length, flared, bell-bottom", "seed": 1, "spec": "/home/n8/cloth_test/task-133870/DressCode/outputs/260928-14-34-41/000/pred_0/specification.json"}
+SPEC {"prompt": "pants, long length, flared, bell-bottom", "seed": 2, "spec": "/home/n8/cloth_test/task-133870/DressCode/outputs/260928-14-34-41/001/pred_0/specification.json"}

@@ -1,0 +1,44 @@
+{
+  "prompt": "70's bellbottom jeans, and a large coller 70's shirt.",
+  "mapping": {
+    "bellbottom_jeans": {
+      "meta.upper": null,
+      "meta.wb": "StraightWB",
+      "meta.bottom": "Pants",
+      "waistband.width": 0.2,
+      "waistband.waist": 1.0,
+      "pants.length": 0.77,
+      "pants.width": 1.05,
+      "pants.flare": 1.2,
+      "pants.rise": 0.9,
+      "pants.cuff.type": "CuffSkirt",
+      "pants.cuff.cuff_len": 0.3,
+      "pants.cuff.skirt_flare": 1.7,
+      "pants.cuff.skirt_fraction": 0.9,
+      "pants.cuff.top_ruffle": 1.0
+    },
+    "collar_shirt_70s": {
+      "meta.upper": "Shirt",
+      "meta.wb": null,
+      "meta.bottom": null,
+      "shirt.length": 1.6,
+      "shirt.width": 1.1,
+      "shirt.flare": 1.15,
+      "collar.f_collar": "VNeckHalf",
+      "collar.b_collar": "CircleNeckHalf",
+      "collar.width": 0.25,
+      "collar.fc_depth": 1.1,
+      "collar.bc_depth": 0.0,
+      "collar.component.style": "SimpleLapel",
+      "collar.component.depth": 11,
+      "collar.component.lapel_standing": false,
+      "sleeve.sleeveless": false,
+      "sleeve.armhole_shape": "ArmholeCurve",
+      "sleeve.length": 0.73,
+      "sleeve.end_width": 0.55,
+      "sleeve.connecting_width": 0.2,
+      "sleeve.sleeve_angle": 10
+    }
+  },
+  "body": "/home/n8/cloth_test/task-133934/g9_amy_measured.yaml"
+}

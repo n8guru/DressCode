@@ -1,0 +1,4 @@
+DRAPE_OUT /home/n8/cloth_test/task-133934/drapes/bellbottom_jeans_260928-15-01-58
+STATS {"fails": {}, "sim_time": {"bellbottom_jeans": 16.60770010948181}, "spf": {"bellbottom_jeans": 0.015506722791299544}, "fin_frame": {"bellbottom_jeans": 1071}, "self_collisions": {"bellbottom_jeans": 210}, "body_collisions": {"bellbottom_jeans": 0}}
+DRAPE_OUT /home/n8/cloth_test/task-133934/drapes/collar_shirt_70s_260928-15-04-42
+STATS {"fails": {}, "sim_time": {"collar_shirt_70s": 18.141206741333008}, "spf": {"collar_shirt_70s": 0.03262806967865649}, "fin_frame": {"collar_shirt_70s": 556}, "self_collisions": {"collar_shirt_70s": 193}, "body_collisions": {"collar_shirt_70s": 0}}
