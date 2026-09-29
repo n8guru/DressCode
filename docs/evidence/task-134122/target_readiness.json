@@ -1,0 +1,50 @@
+{
+ "producer": "claude-opus-5-5 mesh task 134122",
+ "intention_qc": [
+  {
+   "schema": "forage.intention-qc/v1",
+   "subject_sha256": "eb160c81c6ae609268fe628ba1b7b4c15aca8e46e302296608f987f54c9b1656",
+   "subject_name": "s15_134122_target_vs_build.png",
+   "media_kind": "image",
+   "producer": "claude-opus-5-5 mesh task 134122",
+   "runner": "tools/qc_gate/run_gate.py",
+   "judged_at": "2026-09-29T05:55:08.242825+00:00",
+   "checklist": {
+    "ref": "studio decision 1994543 (operator: use the image pipeline for a 'dressed amy' photo reference to work toward) + dressable-g9 step 15",
+    "items": [
+     {
+      "id": "photo-target",
+      "text": "At least one panel is a photographic image of a red-haired woman wearing blue bell-bottom jeans and a mustard/yellow shirt with a large collar"
+     },
+     {
+      "id": "build-panel",
+      "text": "At least one panel is a 3D render of a red-haired woman wearing blue bell-bottom jeans and a mustard/yellow collared shirt"
+     },
+     {
+      "id": "labels",
+      "text": "The panels are labelled, distinguishing the photo target from the 3D build"
+     }
+    ],
+    "sha256": "e791a771d6e03abf954e29c13e1b7f4aa88355e058d5d95f7b301e1ebf64b1e7"
+   },
+   "judge": {
+    "model": "google/gemini-2.5-flash",
+    "provider": "openrouter"
+   },
+   "results": [
+    {
+     "id": "photo-target",
+     "raw": "```json\n{\"verdict\": \"pass\", \"evidence\": \"The first panel on the left is a photographic image of a red-haired woman wearing blue bell-bottom jeans and a mustard/yellow shirt with a large collar.\"}\n```"
+    },
+    {
+     "id": "build-panel",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The two rightmost panels are 3D renders of a red-haired woman wearing blue bell-bottom jeans and a yellow collared shirt.\"}"
+    },
+    {
+     "id": "labels",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The panels are clearly labeled 'photo target' and '3D build (Cycles)' and '3D build side', distinguishing the photo target from the 3D build.\"}"
+    }
+   ]
+  }
+ ]
+}

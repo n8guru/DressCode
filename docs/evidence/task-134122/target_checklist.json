@@ -1,0 +1,4 @@
+{"ref": "studio decision 1994543 (operator: use the image pipeline for a 'dressed amy' photo reference to work toward) + dressable-g9 step 15", "items": [
+ {"id": "photo-target", "text": "At least one panel is a photographic image of a red-haired woman wearing blue bell-bottom jeans and a mustard/yellow shirt with a large collar"},
+ {"id": "build-panel", "text": "At least one panel is a 3D render of a red-haired woman wearing blue bell-bottom jeans and a mustard/yellow collared shirt"},
+ {"id": "labels", "text": "The panels are labelled, distinguishing the photo target from the 3D build"}]}
