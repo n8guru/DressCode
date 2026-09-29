@@ -1,0 +1,18 @@
+{
+  "action": "Foundry Secondary Motion",
+  "frames": [
+    1,
+    120
+  ],
+  "garments": {
+    "Dressable Pants": {
+      "tracked_vertices": 6618,
+      "max_sway_mm": 6.18
+    },
+    "Dressable Shirt": {
+      "tracked_vertices": 373,
+      "max_sway_mm": 1.6
+    }
+  },
+  "pass_gt_1mm": true
+}

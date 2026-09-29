@@ -1,0 +1,65 @@
+{
+  "target_body": "/home/n8/cloth_test/task-134122/inputs/amy_a08_v3_master.blend",
+  "gp_body": "/home/n8/cloth_test/task-133870/g9/amy_gp_v3_master.blend",
+  "params": {
+    "gp_blend": "/home/n8/cloth_test/task-133870/g9/amy_gp_v3_master.blend",
+    "lift_m": 0.054874,
+    "out_dir": "inputs/rt8",
+    "garment": [
+      "pants:drapes/bellbottom_jeans_260928-20-54-59/bellbottom_jeans_sim.obj",
+      "shirt:/home/n8/cloth_test/task-134122/drapes/collar_shirt_70s_260928-21-00-27/collar_shirt_70s_sim.obj"
+    ],
+    "jeans_ease_mm": 3.5,
+    "jeans_keep": 0.12,
+    "shirt_ease_mm": 7.0,
+    "shirt_keep": 0.2,
+    "sleeve_ease_mm": 12.0,
+    "sleeve_keep": 0.5,
+    "relax_iters": 12,
+    "shirt_relax": 0.3,
+    "jeans_relax_iters": 6,
+    "flare_smooth": 0.35,
+    "flare_iters": 14,
+    "fill_iters": 30,
+    "over_jeans_ease_mm": 17.0
+  },
+  "garments": {
+    "pants": {
+      "source_obj": "drapes/bellbottom_jeans_260928-20-54-59/bellbottom_jeans_sim.obj",
+      "out_obj": "inputs/rt8/bellbottom_jeans_sim.obj",
+      "vertices": 15773,
+      "tight_zone_vertices": 7108,
+      "offset_mm_tight_zone_before": {
+        "median": 6.44,
+        "p90": 27.2
+      },
+      "offset_mm_tight_zone_after": {
+        "median": 3.52,
+        "p90": 6.43,
+        "min": 1.9
+      },
+      "offset_mm_rest_after": {
+        "median": 35.35
+      }
+    },
+    "shirt": {
+      "source_obj": "/home/n8/cloth_test/task-134122/drapes/collar_shirt_70s_260928-21-00-27/collar_shirt_70s_sim.obj",
+      "out_obj": "inputs/rt8/collar_shirt_70s_sim.obj",
+      "vertices": 9975,
+      "tight_zone_vertices": 9133,
+      "offset_mm_tight_zone_before": {
+        "median": 10.68,
+        "p90": 28.55
+      },
+      "offset_mm_tight_zone_after": {
+        "median": 10.2,
+        "p90": 16.31,
+        "min": 5.54
+      },
+      "offset_mm_rest_after": {
+        "median": 9.63
+      }
+    }
+  },
+  "jeans_top_z": 1.0706253051757812
+}

@@ -1,0 +1,68 @@
+{
+  "kind": "pants",
+  "obj": "inputs/rt8/bellbottom_jeans_sim.obj",
+  "res": 4096,
+  "mm_per_uv": 1761.3141513157088,
+  "mm_per_px": 0.43000833772356173,
+  "weave_tile_mm": 14.0,
+  "weave_uv_scale": 125.80815366540777,
+  "roughness": 0.82,
+  "panels": [
+    "pant_b_l",
+    "pant_b_r",
+    "pant_f_l",
+    "pant_f_r",
+    "pant_l_cuff_skirt_b",
+    "pant_l_cuff_skirt_f",
+    "pant_r_cuff_skirt_b",
+    "pant_r_cuff_skirt_f",
+    "wb_back",
+    "wb_front"
+  ],
+  "details": {
+    "back_pocket_l": [
+      [
+        0.01,
+        1.0066
+      ],
+      [
+        0.14,
+        1.0066
+      ],
+      [
+        0.134,
+        0.8916
+      ],
+      [
+        0.075,
+        0.8666
+      ],
+      [
+        0.016,
+        0.8916
+      ]
+    ],
+    "back_pocket_r": [
+      [
+        -0.14,
+        1.0066
+      ],
+      [
+        -0.01,
+        1.0066
+      ],
+      [
+        -0.016,
+        0.8916
+      ],
+      [
+        -0.075,
+        0.8666
+      ],
+      [
+        -0.134,
+        0.8916
+      ]
+    ]
+  }
+}

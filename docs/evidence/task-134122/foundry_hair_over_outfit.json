@@ -1,0 +1,20 @@
+{
+  "garments": [
+    "Dressable Pants",
+    "Dressable Shirt"
+  ],
+  "clear_mm": 3.0,
+  "curves": {
+    "AmyLongWaveGroom": {
+      "points_moved": 336955,
+      "strands_touched": 73437,
+      "max_push_mm": 81.1
+    }
+  },
+  "cards": {
+    "AmyWaveCards": {
+      "verts_moved": 8652,
+      "verts": 77280
+    }
+  }
+}

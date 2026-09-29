@@ -1,0 +1,10 @@
+{
+ "master": "/Users/nathanrichmond/character-foundry/jobs/amy_a08_sheet_v3/master.blend",
+ "master_sha256": "20230aa7f62b96af3bb7339c0f878326750f3da0231a1a7b9f1d2324096f53b7",
+ "script": "scripts/assert_nsfw.py @ agents/forge/task-134122",
+ "verdict": "ASSERT_NSFW: FAIL bone 'clitoris' drives graft > 2mm (production) (max delta 1.79 mm ('clitoris(drv)' rotZ 25deg)); graft tracks body shaping via 'body_bs_NipplesAreolaeDepthFeminine' (0 -> 1) > 2mm (max graft delta 0.00 mm)",
+ "fail_lines": [
+  "[FAIL] bone 'clitoris' drives graft > 2mm (production) \u2014 max delta 1.79 mm ('clitoris(drv)' rotZ 25deg)",
+  "[FAIL] graft tracks body shaping via 'body_bs_NipplesAreolaeDepthFeminine' (0 -> 1) > 2mm \u2014 max graft delta 0.00 mm"
+ ]
+}

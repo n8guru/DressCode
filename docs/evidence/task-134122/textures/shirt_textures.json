@@ -1,0 +1,31 @@
+{
+  "kind": "shirt",
+  "obj": "inputs/rt8/collar_shirt_70s_sim.obj",
+  "res": 4096,
+  "mm_per_uv": 1422.2653254332893,
+  "mm_per_px": 0.34723274546711164,
+  "weave_tile_mm": 6.0,
+  "weave_uv_scale": 237.0442209055482,
+  "roughness": 0.7,
+  "panels": [
+    "left_btorso",
+    "left_collar_back",
+    "left_collar_front",
+    "left_ftorso",
+    "left_sleeve_b",
+    "left_sleeve_f",
+    "right_btorso",
+    "right_collar_back",
+    "right_collar_front",
+    "right_ftorso",
+    "right_sleeve_b",
+    "right_sleeve_f"
+  ],
+  "details": {
+    "buttons_z": [
+      1.281,
+      1.196,
+      1.111
+    ]
+  }
+}

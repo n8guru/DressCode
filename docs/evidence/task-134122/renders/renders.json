@@ -1,0 +1,14 @@
+{
+ "rest_front": "render/final_f8/rest_front.png",
+ "rest_back": "render/final_f8/rest_back.png",
+ "rest_side": "render/final_f8/rest_side.png",
+ "rest_back34": "render/final_f8/rest_back34.png",
+ "walk_front34": "render/final_f8/walk_front34.png",
+ "sit_side": "render/final_f8/sit_side.png",
+ "arms_up45_front": "render/final_f8/arms_up45_front.png",
+ "step_twist_front34": "render/final_f8/step_twist_front34.png",
+ "face_front": "render/final_f8/face_front.png",
+ "face_34": "render/final_f8/face_34.png",
+ "seat_back34": "render/final_f8/seat_back34.png",
+ "jeans_front_detail": "render/final_f8/jeans_front_detail.png"
+}

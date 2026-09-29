@@ -1,0 +1,61 @@
+{
+  "src": "/Users/nathanrichmond/character-foundry-wt/task-134122-home/jobs/s15_dressable_70s_134122/character.glb",
+  "dst": "/Users/nathanrichmond/character-foundry-wt/task-134122-home/jobs/s15_dressable_70s_134122/_glbfix.glb",
+  "clearance_mm": 6.0,
+  "rim_mm": 0.5,
+  "rim_ramp_hops": 4,
+  "smooth_passes": 8,
+  "rounds": 8,
+  "garments": [
+    {
+      "mesh": "Dressable Pants",
+      "primitive": 0,
+      "verts": 33030,
+      "tris": 63096,
+      "boundary_verts": 2936,
+      "moved": 9344,
+      "max_move_mm": 2.095,
+      "vert_inside": [
+        0,
+        0
+      ],
+      "surface_samples_inside": [
+        0,
+        0
+      ],
+      "surface_deepest_mm": [
+        0.0,
+        0.0
+      ],
+      "samples_under_clearance": [
+        60527,
+        28290
+      ]
+    },
+    {
+      "mesh": "Dressable Shirt",
+      "primitive": 0,
+      "verts": 21080,
+      "tris": 39908,
+      "boundary_verts": 2228,
+      "moved": 3449,
+      "max_move_mm": 2.831,
+      "vert_inside": [
+        0,
+        0
+      ],
+      "surface_samples_inside": [
+        0,
+        0
+      ],
+      "surface_deepest_mm": [
+        0.0,
+        0.0
+      ],
+      "samples_under_clearance": [
+        14482,
+        6870
+      ]
+    }
+  ]
+}
