@@ -1,0 +1,58 @@
+{
+ "producer": "claude-opus-5-5 mesh task 134122",
+ "intention_qc": [
+  {
+   "schema": "forage.intention-qc/v1",
+   "subject_sha256": "8fe1e503399b6622bbfe921b50b921bf6c19b32c994a0ec8be2338cb4e64bbba",
+   "subject_name": "s15_134122_details.png",
+   "media_kind": "image",
+   "producer": "claude-opus-5-5 mesh task 134122",
+   "runner": "tools/qc_gate/run_gate.py",
+   "judged_at": "2026-09-29T05:29:58.113847+00:00",
+   "checklist": {
+    "ref": "studio decision 1994543 (hair and face not reverted; textured denim) + dressable-g9 step 15",
+    "items": [
+     {
+      "id": "face-intact",
+      "text": "The face close-ups show a woman with visible eyebrows, open eyes and freckles, with no missing or distorted facial features"
+     },
+     {
+      "id": "hair-full",
+      "text": "The hair is long, wavy and copper/auburn with no bald patches"
+     },
+     {
+      "id": "denim-seat",
+      "text": "The seat close-up shows blue denim jeans fitting tightly over the buttocks with back pockets or topstitching visible"
+     },
+     {
+      "id": "no-holes-spikes",
+      "text": "No garment shows torn holes, long pointed spikes, or detached floating pieces"
+     }
+    ],
+    "sha256": "83f111ff869644f4eb1a8af34f7feb3100fd473793850a80aff4edeb2ad1d566"
+   },
+   "judge": {
+    "model": "google/gemini-2.5-flash",
+    "provider": "openrouter"
+   },
+   "results": [
+    {
+     "id": "face-intact",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The woman has visible eyebrows, open eyes, freckles, and no missing or distorted facial features in both close-ups.\"}"
+    },
+    {
+     "id": "hair-full",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The hair is long, wavy, and copper/auburn with no visible bald patches.\"}"
+    },
+    {
+     "id": "denim-seat",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The seat close-up shows blue denim jeans fitting tightly over the buttocks with visible back pockets and topstitching.\"}"
+    },
+    {
+     "id": "no-holes-spikes",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"No visible torn holes, long pointed spikes, or detached floating pieces on the garments.\"}"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+{"ref": "studio decision 1994543 + dressable-g9 step 15 pass_criteria (5): three.js viewer loads the composed outfit on G9", "items": [
+ {"id": "browser-outfit", "text": "3D renders of a woman in a viewer wearing tight blue bell-bottom jeans and a mustard/yellow shirt with a large collar"},
+ {"id": "gate-line", "text": "A text line at the top of the image begins with BROWSER_GATE PASS or 'three.js r160 browser'"},
+ {"id": "hair-present", "text": "The woman has long copper/auburn hair (not bald)"},
+ {"id": "no-holes-spikes", "text": "No garment shows torn holes, long pointed spikes, or detached floating pieces"}]}
