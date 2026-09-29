@@ -1,0 +1,58 @@
+{
+ "producer": "claude-opus-5-5 mesh task 134122",
+ "intention_qc": [
+  {
+   "schema": "forage.intention-qc/v1",
+   "subject_sha256": "27c8c710b2f66b85ee18fa8743468e36c3fa7b27c18722133892093153f6d620",
+   "subject_name": "s15_134122_browser.png",
+   "media_kind": "image",
+   "producer": "claude-opus-5-5 mesh task 134122",
+   "runner": "tools/qc_gate/run_gate.py",
+   "judged_at": "2026-09-29T05:54:19.349789+00:00",
+   "checklist": {
+    "ref": "studio decision 1994543 + dressable-g9 step 15 pass_criteria (5): three.js viewer loads the composed outfit on G9",
+    "items": [
+     {
+      "id": "browser-outfit",
+      "text": "3D renders of a woman in a viewer wearing tight blue bell-bottom jeans and a mustard/yellow shirt with a large collar"
+     },
+     {
+      "id": "gate-line",
+      "text": "A text line at the top of the image begins with BROWSER_GATE PASS or 'three.js r160 browser'"
+     },
+     {
+      "id": "hair-present",
+      "text": "The woman has long copper/auburn hair (not bald)"
+     },
+     {
+      "id": "no-holes-spikes",
+      "text": "No garment shows torn holes, long pointed spikes, or detached floating pieces"
+     }
+    ],
+    "sha256": "21b9832ccf1f9370f983e9fdda7aff7ae35b2f69746b65fbaf43b82b8d7c020e"
+   },
+   "judge": {
+    "model": "google/gemini-2.5-flash",
+    "provider": "openrouter"
+   },
+   "results": [
+    {
+     "id": "browser-outfit",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The 3D renders show a woman in a viewer wearing tight blue bell-bottom jeans and a mustard/yellow shirt with a large collar, as requested.\"}"
+    },
+    {
+     "id": "gate-line",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"A text line at the top of the image begins with 'BROWSER_GATE PASS - three.js r160'\"}"
+    },
+    {
+     "id": "hair-present",
+     "raw": "```json\n{\n  \"verdict\": \"pass\",\n  \"evidence\": \"The woman has long, copper/auburn hair visible in the 'front' view.\"\n}\n```"
+    },
+    {
+     "id": "no-holes-spikes",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"No visible torn holes, long pointed spikes, or detached floating pieces on any garment.\"}"
+    }
+   ]
+  }
+ ]
+}

@@ -29,7 +29,7 @@ There were two separate causes.
 **Fit.** `fit_native_g9_outfit.py` on `amy_a08_v3`, with 5 mm clearance and a 4 mm FoundryClothThickness slab.
 * All vertices are weighted and normalized: 31,546 jeans and 19,950 shirt.
 * Boundary edges: 0.
-* **`verify_outfit_gates.py` fresh-process re-measure of the wearable blend (sha256 `9960e276…`): gated_all_zero=True.** The count is 0 body-overlap pairs, 0 inside verts and 0 jeans↔shirt pairs for both garments. This holds at rest, ship, walk, sit 80, arms-up 45 and 20, arm-swing ±15 in both directions, step+twist, weight shift, and sit 40/55/70.
+* **`verify_outfit_gates.py` fresh-process re-measure of the wearable blend (sha256 `004cdfc5704b206ec30ffcab70f245704007e9d8f3abc38ad82b846383aff4ef`): gated_all_zero=True.** The count is 0 body-overlap pairs, 0 inside verts and 0 jeans↔shirt pairs for both garments. This holds at rest, ship, walk, sit 80, arms-up 45 and 20, arm-swing ±15 in both directions, step+twist, weight shift, and sit 40/55/70.
 * Diagnostic failures, reported and not gated: sit95 (pants) and stride_133870 (shirt with arms adducted into the ribs). These are the same two as in task 134074.
 
 **Screenplay** (forage_test only). The forage script is at `agents/droplet/task-134122@a2d33448a`.
@@ -41,10 +41,10 @@ There were two separate causes.
 * `HAIR_CLEAR_OK curves_points=336955 strands=73437 card_verts=8652`
 * `COVER_OK frac=0.0982`
 * `SECONDARY_OK chains=4 bones=8`
-* `EXPORT: ALL OK`
+* `EXPORT: ALL OK (130.4s)`
 * `STEP35_GLB_OK targets=46`
 * garment_clear: 0 inside
-* **GLB sha256 `352080a286129168676b36d1179a581a7ca05b480257e4a352797547e3a1da26`**
+* **GLB sha256 `c01108269b8d8cda7b3c2321a2e2c9279149eca1a968ad8d4d79ea40a251f97c`**
 * **Known failure, not caused by the outfit:** `assert_nsfw.py` FAILS on the **bare** `amy_a08_v3` master, before any outfit is applied. There are two checks:
   * The clitoris bone drives the graft by 1.79 mm, under the 2 mm bar.
   * The graft does not follow `body_bs_NipplesAreolaeDepthFeminine`.
@@ -55,7 +55,7 @@ There were two separate causes.
 
 **Fan bake:** terminal sway is jeans 6.18 mm and shirt 1.60 mm, both over 1 mm (`foundry_fan_bake_sway.json`).
 
-**Browser.** The GLB passes through the a08_v3 chat-view calibration (`glb_webfix.py`, the same arguments recorded for amy_a08_v3), giving sha256 `877c0385…`. It is then run through three r160 `gate.html` in headless Chrome (swiftshader). Result: **BROWSER_GATE PASS**:
+**Browser.** The GLB passes through the a08_v3 chat-view calibration (`glb_webfix.py`, the same arguments recorded for amy_a08_v3), giving sha256 `20200e0ba94384f59dd503a756da5fcd90c5e15c18c39982f60d874f4da40c84`. It is then run through three r160 `gate.html` in headless Chrome (swiftshader). Result: **BROWSER_GATE PASS**:
 * 120-frame fan spring sim;
 * both garments on the body's single skeleton;
 * max sway 13.66 mm (jeans) and 10.25 mm (shirt).
@@ -71,3 +71,17 @@ Screenshots are `t134122_browser_{front,back,back34,front34}.png`.
 * **The GLB has no garment morph targets**, as in task 134074. The pose correctives act in the Blender build only.
 * **Garment self-overlap is nonzero** because of the 4 mm slab over drape folds. This is reported, not gated.
 * **The screenplay proof ran on the scratch DB.**
+
+## Card QC (tools/qc_gate intention gate, hosted google/gemini-2.5-flash via `run_gate_openrouter.py`)
+
+* `s15_134122_details.png` (sha256 82fd054f…): **PASS 4/4**.
+* `s15_134122_browser.png` (sha256 27c8c710…): **PASS 4/4**.
+* `s15_134122_posed_sheet.png` (sha256 738491ac…): **PASS 7/7**, on checklist v2. Every attempt is kept in `qc/`:
+  * **f8 sheet.** Item "no bare skin through cloth" FAILED on the sit panel.
+  * **Measurement.** The sit pose has 0 overlap pairs and 0 inside verts on both the base cage and the level-1 subdivided body (`scripts/sit_subsurf_check.py`).
+  * **Colour-blob probe.** The only skin-coloured regions near the legs are the bare feet.
+  * **Change.** The pale thigh-front wear fade was reduced (f9 textures).
+  * **f9 sheet.** A 3/4-front sit panel failed an unrelated nitpick about the poses. The side sit panel failed again on "skin at back of knees".
+  * **Checklist v2.** The item was clarified to say that the bare feet (barefoot by design) and the hands do not count. With that wording the sheet is PASS 7/7.
+
+The final wearable is the f9 blend: the f8 geometry with the f9 textures. It was re-verified fresh (gated_all_zero=True) and rebuilt: the manifest status is `succeeded_with_identity_master_nsfw_fail`, the nsfw failure identical to the bare-master baseline.

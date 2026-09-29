@@ -166,7 +166,8 @@ FB = (5.6, 0.87, 70, 800, 1250)  # full-body: dist, target z, lens, w, h
 for name, pose, yaw, spec in (
         ("rest_front", "rest", 0, FB), ("rest_back", "rest", 180, FB), ("rest_side", "rest", 90, FB),
         ("rest_back34", "rest", 145, FB), ("walk_front34", "walk", -30, FB),
-        ("sit_side", "sit", 70, (5.0, 0.62, 70, 800, 1250)), ("arms_up45_front", "arms_up45", 0, FB),
+        ("sit_side", "sit", 70, (5.0, 0.62, 70, 800, 1250)),
+        ("sit_front34", "sit", -35, (5.0, 0.62, 70, 800, 1250)), ("arms_up45_front", "arms_up45", 0, FB),
         ("step_twist_front34", "step_twist", 30, FB)):
     done[name] = shot(name, P[pose], yaw, *spec)
 def face_shot(name, yaw, dist=0.65, lens=65, w=800, h=1000):

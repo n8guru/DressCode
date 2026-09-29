@@ -82,8 +82,8 @@
     "retarget": {
       "from_body": "amy_gp_v3",
       "out_obj_sha256": {
-        "pants": "c16b222017802f54e4468adabd91c5ede7780c9a174aa6d79bfb522be4c1af38",
-        "shirt": "e6cfdfc8088bbe9b7c38db649031496b3a828435fc33ef212ba976d62c72c929"
+        "pants": "a871383f0cc8b917d480fa155cf72cbaec77b1d06facca58ef26ca927f483a59",
+        "shirt": "699d902cae65244a4154aa5367ade1473000874d06faf8e8055410a11383cddb"
       },
       "params": {
         "fill_iters": 30,
@@ -140,7 +140,7 @@
     "skinning": "G9 weights; loose sleeves skinned along the arm axis; dual-quaternion (Preserve Volume) like the G9 SkinBinding; pose-space corrective shape keys fit_sit/_sit55/_sit40/_swing_a/_swing_b driven by thigh / upper-arm rotation",
     "task": "task-134122",
     "thickness": "FoundryClothThickness (character-foundry agents/forge/task-93317@f760c487), 4mm slab, 5mm skin clearance",
-    "wearable_blend_sha256": "9960e2763778a3db9e06f48cae7d764947bbb1cd8180b0278eef834b09b77f6b"
+    "wearable_blend_sha256": "004cdfc5704b206ec30ffcab70f245704007e9d8f3abc38ad82b846383aff4ef"
   },
   "metadata_source": "/Users/nathanrichmond/character-foundry-wt/task-134122-inputs/dressable_g9_outfit_70s_134122.json",
   "provider_bones": [

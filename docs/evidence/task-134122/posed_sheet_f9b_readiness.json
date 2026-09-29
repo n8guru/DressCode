@@ -1,0 +1,82 @@
+{
+ "producer": "claude-opus-5-5 mesh task 134122",
+ "intention_qc": [
+  {
+   "schema": "forage.intention-qc/v1",
+   "subject_sha256": "738491acb5b6ec9e9ee5f4967aa63a5edec04dcab1352d19c28defa9a30b4987",
+   "subject_name": "s15_134122_posed_sheet.png",
+   "media_kind": "image",
+   "producer": "claude-opus-5-5 mesh task 134122",
+   "runner": "tools/qc_gate/run_gate.py",
+   "judged_at": "2026-09-29T05:45:09.266736+00:00",
+   "checklist": {
+    "ref": "studio decision 1994543 (Nate: hair/face must not revert from previous best; jeans tight around butt and upper legs reading as textured denim; shirt fit) + 1988251 garment scope + dressable-g9 step 15 pass_criteria (2)/(5)",
+    "items": [
+     {
+      "id": "hair-full",
+      "text": "In every panel the woman has full, long, wavy copper/auburn hair (no bald scalp or bald crown)"
+     },
+     {
+      "id": "jeans-tight-denim",
+      "text": "The trousers are blue denim jeans that fit tightly over the hips, seat and upper thighs and flare out wide below the knee (bell-bottoms)"
+     },
+     {
+      "id": "jeans-details",
+      "text": "The jeans show visible denim construction details such as contrast topstitching or pockets"
+     },
+     {
+      "id": "shirt-large-collar",
+      "text": "The figure wears a mustard/yellow long-sleeve shirt with a large pointed collar"
+     },
+     {
+      "id": "poses-walk-sit-armsup",
+      "text": "The panels show the same dressed figure standing, walking, seated with thighs horizontal, and with arms raised out to the sides"
+     },
+     {
+      "id": "no-skin-through-cloth",
+      "text": "In no panel does bare skin of the body poke through the trousers or the shirt fabric"
+     },
+     {
+      "id": "no-holes-spikes",
+      "text": "No garment shows torn holes, long pointed spikes, or detached floating pieces"
+     }
+    ],
+    "sha256": "83281d3aeede34e71b782be9e8b293d7b51fa80e7097c3934d141b0aa51a4ea3"
+   },
+   "judge": {
+    "model": "google/gemini-2.5-flash",
+    "provider": "openrouter"
+   },
+   "results": [
+    {
+     "id": "hair-full",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"All panels show the woman with full, long, wavy copper/auburn hair, with no bald scalp or bald crown visible.\"}"
+    },
+    {
+     "id": "jeans-tight-denim",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The trousers are blue denim jeans that fit tightly over the hips, seat, and upper thighs and flare out wide below the knee (bell-bottoms) in all visible poses.\"}"
+    },
+    {
+     "id": "jeans-details",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The jeans clearly show contrast topstitching on the seams and pockets.\"}"
+    },
+    {
+     "id": "shirt-large-collar",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The figure wears a yellow long-sleeve shirt with a large pointed collar.\"}"
+    },
+    {
+     "id": "poses-walk-sit-armsup",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The panels show the dressed figure standing (rest front, rest side, rest back, back 3/4, arms up 45, step + twist), walking (walk gated), seated with thighs horizontal (sit 80 gated), and with arms raised out to the sides (arms up 45, step + twist).\"}"
+    },
+    {
+     "id": "no-skin-through-cloth",
+     "raw": "{\"verdict\": \"fail\", \"evidence\": \"In the 'sit 80 (gated)' panel, bare skin of the body is visible poking through the trousers at the back of the knees and the upper thighs.\"}"
+    },
+    {
+     "id": "no-holes-spikes",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"No visible torn holes, long pointed spikes, or detached floating pieces on the garments.\"}"
+    }
+   ]
+  }
+ ]
+}

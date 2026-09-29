@@ -188,8 +188,8 @@ if a.kind == "pants":
     front = np.clip(-Y3 / 0.06, 0, 1) * (1 - np.clip(np.abs(Z3 - 0.72) / 0.18, 0, 1))
     seat = np.clip(Y3 / 0.06, 0, 1) * (1 - np.clip(np.abs(Z3 - 0.88) / 0.10, 0, 1))
     rope = np.clip(1 - np.abs(edge - 3.0) / 3.0, 0, 1) * (0.5 + 0.5 * ((s_along / 9.0) % 1.0 < 0.5))
-    lum += 0.14 * front + 0.10 * seat + 0.14 * rope
-    wmix = wmix + 0.10 * front + 0.06 * seat + 0.08 * rope
+    lum += 0.05 * front + 0.05 * seat + 0.12 * rope
+    wmix = wmix + 0.03 * front + 0.03 * seat + 0.07 * rope
     img = img * (1 - wmix[..., None]) + white * wmix[..., None]
     img = np.clip(img * lum[..., None], 0, 1)
     gold = (196, 138, 52)

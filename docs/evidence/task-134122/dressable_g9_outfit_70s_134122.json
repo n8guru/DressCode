@@ -99,7 +99,7 @@
       "shirt": "699d902cae65244a4154aa5367ade1473000874d06faf8e8055410a11383cddb"
     }
   },
-  "wearable_blend_sha256": "9960e2763778a3db9e06f48cae7d764947bbb1cd8180b0278eef834b09b77f6b",
+  "wearable_blend_sha256": "004cdfc5704b206ec30ffcab70f245704007e9d8f3abc38ad82b846383aff4ef",
   "materials": {
     "pants": "Dressable Pants Fabric: packed 4096 pattern-UV basecolor atlas + tiled 3/1 twill normal (14 mm tile)",
     "shirt": "Dressable Shirt Fabric: packed 4096 atlas + tiled plain-weave normal (6 mm tile)"

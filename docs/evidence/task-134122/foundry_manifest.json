@@ -19,33 +19,33 @@
     {
       "stage": "clone",
       "ok": true,
-      "seconds": 1.4
+      "seconds": 2.3
     },
     {
       "stage": "outfit",
       "ok": true,
-      "seconds": 96.8
+      "seconds": 266.0
     },
     {
       "stage": "secondary_motion",
       "ok": true,
-      "seconds": 3.3
+      "seconds": 3.0
     },
     {
       "stage": "nsfw",
       "ok": false,
-      "seconds": 3.6,
+      "seconds": 4.0,
       "known_identity_master_failure": true
     },
     {
       "stage": "export",
       "ok": true,
-      "seconds": 116.8
+      "seconds": 133.4
     },
     {
       "stage": "garment_clear",
       "ok": true,
-      "seconds": 32.8
+      "seconds": 34.4
     },
     {
       "stage": "harvest",
@@ -81,7 +81,7 @@
       "[FAIL] bone 'clitoris' drives graft > 2mm (production) \u2014 max delta 1.79 mm ('clitoris(drv)' rotZ 25deg)",
       "[FAIL] graft tracks body shaping via 'body_bs_NipplesAreolaeDepthFeminine' (0 -> 1) > 2mm \u2014 max graft delta 0.00 mm"
     ],
-    "export": "EXPORT: ALL OK (114.0s)",
+    "export": "EXPORT: ALL OK (130.4s)",
     "genital_gate": "STEP35_GLB_OK targets=46",
     "garment_clear": "GLBFIX Dressable Pants        DONE verts=33030 moved=9344 maxmove=2.09mm | vert-inside 0->0 | surface-inside 0->0 | deepest 0.00->0.00 mm",
     "harvest": "champion saved for amy_dressable_g9_s15_70s_134122: score=None margin=None"
@@ -97,8 +97,8 @@
   "artifacts": [
     {
       "name": "character.glb",
-      "bytes": 50531872,
-      "sha256": "352080a286129168676b36d1179a581a7ca05b480257e4a352797547e3a1da26"
+      "bytes": 50526324,
+      "sha256": "c01108269b8d8cda7b3c2321a2e2c9279149eca1a968ad8d4d79ea40a251f97c"
     },
     {
       "name": "eye_baked_eye_left.png",
@@ -118,7 +118,7 @@
     },
     {
       "name": "glb_face_check.png",
-      "bytes": 727014
+      "bytes": 726982
     },
     {
       "name": "hair_over_outfit.json",
@@ -130,8 +130,8 @@
     },
     {
       "name": "master.blend",
-      "bytes": 387390515,
-      "sha256": "4dca2611155d19b71f1bbab61b295a109cb6027b0f3f7029a189373a363ff15b"
+      "bytes": 387360356,
+      "sha256": "95285feef9afa75325e2f1a4035948d9eb799410f69849414faf4328ed98d0c0"
     },
     {
       "name": "outfit_cover.json",
@@ -163,22 +163,22 @@
     },
     {
       "name": "with_outfit.blend",
-      "bytes": 387101370
+      "bytes": 387071211
     },
     {
       "name": "with_outfit.blend1",
-      "bytes": 387100666
+      "bytes": 387070507
     },
     {
       "name": "with_secondary_motion.blend",
-      "bytes": 387390515
+      "bytes": 387360356
     },
     {
       "name": "working.blend",
       "bytes": 356477689
     }
   ],
-  "started_at": "2026-09-28T22:19:17",
-  "finished_at": "2026-09-28T22:23:34",
-  "total_seconds": 256.5
+  "started_at": "2026-09-28T22:44:13",
+  "finished_at": "2026-09-28T22:51:37",
+  "total_seconds": 444.7
 }
