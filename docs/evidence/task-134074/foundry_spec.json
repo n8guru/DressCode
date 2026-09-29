@@ -1,0 +1,37 @@
+{
+  "name": "amy_dressable_g9_s15_70s_134074",
+  "sex": "female",
+  "face_ref": null,
+  "body_refs": [],
+  "body_params": {},
+  "morph_overrides": {},
+  "preset": null,
+  "sliders": {},
+  "assets": {
+    "character_preset": null,
+    "hair": null,
+    "hair_material": null,
+    "outfit": {
+      "daz": null,
+      "recipe": null,
+      "source": "/Users/nathanrichmond/character-foundry-wt/task-134074-inputs/dressable_g9_outfit_70s_134074.blend",
+      "objects": [
+        "Dressable Pants",
+        "Dressable Shirt"
+      ],
+      "metadata": "/Users/nathanrichmond/character-foundry-wt/task-134074-inputs/dressable_g9_outfit_70s_134074.json"
+    },
+    "secondary_motion": {
+      "profile": "/Users/nathanrichmond/character-foundry-wt/task-134074-inputs/dressable_g9_70s_secondary_motion.json",
+      "bake_offline": true
+    }
+  },
+  "hair_plan": {},
+  "likeness": {
+    "mode": "preset",
+    "threshold_override": null
+  },
+  "silhouette_preset": null,
+  "identity_master": "amy_gp_v3",
+  "export": {}
+}

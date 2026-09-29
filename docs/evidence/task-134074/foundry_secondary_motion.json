@@ -1,0 +1,125 @@
+{
+  "contract_version": 1,
+  "counts": {
+    "bones": 8,
+    "chains": 4,
+    "colliders": 2
+  },
+  "offline": {
+    "action": "Foundry Secondary Motion",
+    "frames": 120,
+    "solver": "foundry-deterministic-spring-bake-v1",
+    "wiggle2": {
+      "compatible_bones": [
+        "cloth_pants_l_flare_0",
+        "cloth_pants_l_flare_1",
+        "cloth_pants_r_flare_0",
+        "cloth_pants_r_flare_1",
+        "cloth_shirt_l_collar_0",
+        "cloth_shirt_l_collar_1",
+        "cloth_shirt_r_collar_0",
+        "cloth_shirt_r_collar_1"
+      ],
+      "note": "Same rig and profile; Wiggle2 may replace this headless deterministic bake without reweighting."
+    }
+  },
+  "profile": {
+    "chains": [
+      {
+        "bones": [
+          "cloth_pants_l_flare_0",
+          "cloth_pants_l_flare_1"
+        ],
+        "drag": 0.3,
+        "gravity_power": 0.4,
+        "hit_radius_m": 0.03,
+        "id": "jeans_flare_l",
+        "kind": "clothing",
+        "stiffness": 0.45,
+        "wind_reactivity": 1.4
+      },
+      {
+        "bones": [
+          "cloth_pants_r_flare_0",
+          "cloth_pants_r_flare_1"
+        ],
+        "drag": 0.3,
+        "gravity_power": 0.4,
+        "hit_radius_m": 0.03,
+        "id": "jeans_flare_r",
+        "kind": "clothing",
+        "stiffness": 0.45,
+        "wind_reactivity": 1.4
+      },
+      {
+        "bones": [
+          "cloth_shirt_l_collar_0",
+          "cloth_shirt_l_collar_1"
+        ],
+        "drag": 0.35,
+        "gravity_power": 0.2,
+        "hit_radius_m": 0.012,
+        "id": "shirt_collar_l",
+        "kind": "clothing",
+        "stiffness": 0.6,
+        "wind_reactivity": 1.1
+      },
+      {
+        "bones": [
+          "cloth_shirt_r_collar_0",
+          "cloth_shirt_r_collar_1"
+        ],
+        "drag": 0.35,
+        "gravity_power": 0.2,
+        "hit_radius_m": 0.012,
+        "id": "shirt_collar_r",
+        "kind": "clothing",
+        "stiffness": 0.6,
+        "wind_reactivity": 1.1
+      }
+    ],
+    "colliders": [
+      {
+        "bone": "l_shin",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.05
+      },
+      {
+        "bone": "r_shin",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "radius_m": 0.05
+      }
+    ],
+    "fan": {
+      "direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "frequency_hz": 0.7,
+      "strength": 2.5,
+      "turbulence": 0.25
+    },
+    "offline": {
+      "fps": 24,
+      "frames": 120,
+      "substeps": 4,
+      "warmup_frames": 24
+    },
+    "root_parent": "hip",
+    "version": 1
+  },
+  "profile_source": "/Users/nathanrichmond/character-foundry-wt/task-134074-inputs/dressable_g9_70s_secondary_motion.json",
+  "runtime": {
+    "glb_extra": "asset.extras.foundry.secondary_motion",
+    "solver": "vrm-springbone-compatible"
+  }
+}

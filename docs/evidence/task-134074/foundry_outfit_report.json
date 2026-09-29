@@ -1,0 +1,257 @@
+{
+  "contract_version": 1,
+  "meshes": [
+    {
+      "armature_modifiers": 1,
+      "drivers_retargeted": 6,
+      "faces": 70157,
+      "materials": [
+        "Dressable Pants Cloth"
+      ],
+      "name": "Dressable Pants",
+      "non_normalized": 0,
+      "shape_keys": 6,
+      "topology_sha256": "2dee6fd96e37b41ac4a2636ab4bb2eeae80ba8e62b04c59744d39e8d71a8e242",
+      "unweighted": 0,
+      "vertex_groups": 16,
+      "vertices": 35280,
+      "weighted": 35280
+    },
+    {
+      "armature_modifiers": 1,
+      "drivers_retargeted": 6,
+      "faces": 47784,
+      "materials": [
+        "Dressable Shirt Cloth"
+      ],
+      "name": "Dressable Shirt",
+      "non_normalized": 0,
+      "shape_keys": 6,
+      "topology_sha256": "8dfdd7879728ea1c93e098067b1b14d99da49f88f3a0d28fdb2cd1ba9a724649",
+      "unweighted": 0,
+      "vertex_groups": 26,
+      "vertices": 24030,
+      "weighted": 24030
+    }
+  ],
+  "metadata": {
+    "contract": "foundry outfit v1 provider wearable (+ provider secondary bones, task-134074)",
+    "fit_body": "identity_master amy_gp_v3 (G9 base cage, measured into GarmentCode body params g9_amy_measured.yaml)",
+    "garments": {
+      "Dressable Pants": {
+        "layer": 0,
+        "pattern_sha256": "850b66f6520130de22218c63d1b100f285d6f598b20402f57578dc56750ecff2",
+        "pattern_source": "GarmentCode d449629 design params mapped from the operator prompt",
+        "style": "1970s bell-bottom jeans (Pants flare 1.2 + CuffSkirt bell, StraightWB)",
+        "type": "pants"
+      },
+      "Dressable Shirt": {
+        "layer": 1,
+        "pattern_sha256": "10ce01e917edd6736ed5348c654fac066e6ba57d5e92dbca54719088c36be2b9",
+        "pattern_source": "GarmentCode d449629 design params mapped from the operator prompt",
+        "style": "1970s long-sleeve shirt, oversized SimpleLapel collar (depth 11) over a V neck",
+        "type": "shirt"
+      }
+    },
+    "gates": {
+      "diagnostic_fail": [
+        "sit95",
+        "stride_133870"
+      ],
+      "gated_all_zero": true,
+      "gated_frames": [
+        "walk",
+        "sit",
+        "arms_up45",
+        "arms_up20",
+        "arms_swing15",
+        "arms_swing15b",
+        "step_twist",
+        "weight_shift",
+        "sit40",
+        "sit55",
+        "sit70"
+      ]
+    },
+    "license": "GarmentCode MIT; Warp fork NVIDIA non-commercial",
+    "pattern_specs_sha256": {
+      "bellbottom_jeans": "850b66f6520130de22218c63d1b100f285d6f598b20402f57578dc56750ecff2",
+      "collar_shirt_70s": "10ce01e917edd6736ed5348c654fac066e6ba57d5e92dbca54719088c36be2b9"
+    },
+    "prompt": "70's bellbottom jeans, and a large coller 70's shirt.",
+    "prompt_sha256": "ba420f56f717e82a6bbd75219dc7551494315a9267ba70ad0e22077288f561f3",
+    "provider": "dressable-g9 step 15 (task 134074, operator decision #1988251) Route A: operator prompt -> GarmentCode sewing patterns -> Warp native-G9 drape -> fit_native_g9_outfit.py",
+    "raw_drapes": {
+      "pants": {
+        "faces": 34875,
+        "obj_sha256": "33e4842fc3f50200fffeaf11b9874ded97a9a5e5647e9248a532b1027adbc09f",
+        "vertices": 17640
+      },
+      "shirt": {
+        "faces": 23750,
+        "obj_sha256": "d5f1b3eb3fbb9d6001259c8cab13626c096ac12f29dbd1fd63ca55724a3b6985",
+        "vertices": 12015
+      }
+    },
+    "secondary_motion": {
+      "provider_bones": {
+        "jeans_flare_l": {
+          "bones": [
+            "cloth_pants_l_flare_0",
+            "cloth_pants_l_flare_1"
+          ],
+          "garment": "pants",
+          "weighted_vertices": 6236
+        },
+        "jeans_flare_r": {
+          "bones": [
+            "cloth_pants_r_flare_0",
+            "cloth_pants_r_flare_1"
+          ],
+          "garment": "pants",
+          "weighted_vertices": 7057
+        },
+        "shirt_collar_l": {
+          "bones": [
+            "cloth_shirt_l_collar_0",
+            "cloth_shirt_l_collar_1"
+          ],
+          "garment": "shirt",
+          "weighted_vertices": 419
+        },
+        "shirt_collar_r": {
+          "bones": [
+            "cloth_shirt_r_collar_0",
+            "cloth_shirt_r_collar_1"
+          ],
+          "garment": "shirt",
+          "weighted_vertices": 393
+        }
+      }
+    },
+    "skinning": "G9 weights; loose sleeves skinned along the arm axis; dual-quaternion (Preserve Volume) like the G9 SkinBinding; pose-space corrective shape keys fit_sit/_sit55/_sit40/_swing_a/_swing_b driven by thigh / upper-arm rotation",
+    "thickness": "FoundryClothThickness (character-foundry agents/forge/task-93317@f760c487), 4mm slab, 5mm skin clearance"
+  },
+  "metadata_source": "/Users/nathanrichmond/character-foundry-wt/task-134074-inputs/dressable_g9_outfit_70s_134074.json",
+  "provider_bones": [
+    {
+      "head": [
+        0.114089,
+        0.033585,
+        0.340969
+      ],
+      "name": "cloth_pants_l_flare_0",
+      "parent": "l_shin",
+      "tail": [
+        0.119248,
+        0.043865,
+        0.193216
+      ]
+    },
+    {
+      "head": [
+        0.119248,
+        0.043865,
+        0.193216
+      ],
+      "name": "cloth_pants_l_flare_1",
+      "parent": "cloth_pants_l_flare_0",
+      "tail": [
+        0.124407,
+        0.054146,
+        0.045463
+      ]
+    },
+    {
+      "head": [
+        -0.114094,
+        0.03358,
+        0.340969
+      ],
+      "name": "cloth_pants_r_flare_0",
+      "parent": "r_shin",
+      "tail": [
+        -0.119253,
+        0.04386,
+        0.193216
+      ]
+    },
+    {
+      "head": [
+        -0.119253,
+        0.04386,
+        0.193216
+      ],
+      "name": "cloth_pants_r_flare_1",
+      "parent": "cloth_pants_r_flare_0",
+      "tail": [
+        -0.124412,
+        0.05414,
+        0.045463
+      ]
+    },
+    {
+      "head": [
+        0.075627,
+        -0.021427,
+        1.549528
+      ],
+      "name": "cloth_shirt_l_collar_0",
+      "parent": "spine4",
+      "tail": [
+        0.066299,
+        -0.099604,
+        1.442711
+      ]
+    },
+    {
+      "head": [
+        0.066299,
+        -0.099604,
+        1.442711
+      ],
+      "name": "cloth_shirt_l_collar_1",
+      "parent": "cloth_shirt_l_collar_0",
+      "tail": [
+        0.009847,
+        -0.135482,
+        1.337549
+      ]
+    },
+    {
+      "head": [
+        -0.094294,
+        -0.009203,
+        1.542021
+      ],
+      "name": "cloth_shirt_r_collar_0",
+      "parent": "spine4",
+      "tail": [
+        -0.05442,
+        -0.095038,
+        1.438926
+      ]
+    },
+    {
+      "head": [
+        -0.05442,
+        -0.095038,
+        1.438926
+      ],
+      "name": "cloth_shirt_r_collar_1",
+      "parent": "cloth_shirt_r_collar_0",
+      "tail": [
+        -0.008573,
+        -0.12995,
+        1.337915
+      ]
+    }
+  ],
+  "source": "/Users/nathanrichmond/character-foundry-wt/task-134074-inputs/dressable_g9_outfit_70s_134074.blend",
+  "totals": {
+    "faces": 117941,
+    "meshes": 2,
+    "vertices": 59310,
+    "weighted": 59310
+  }
+}

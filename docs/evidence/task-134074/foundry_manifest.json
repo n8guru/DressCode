@@ -1,0 +1,169 @@
+{
+  "job_id": "s15_dressable_70s_134074",
+  "spec": {
+    "name": "amy_dressable_g9_s15_70s_134074",
+    "sex": "female"
+  },
+  "status": "succeeded",
+  "error": null,
+  "stages_planned": [
+    "clone",
+    "outfit",
+    "secondary_motion",
+    "nsfw",
+    "export",
+    "garment_clear",
+    "harvest"
+  ],
+  "stages": [
+    {
+      "stage": "clone",
+      "ok": true,
+      "seconds": 0.2
+    },
+    {
+      "stage": "outfit",
+      "ok": true,
+      "seconds": 6.4
+    },
+    {
+      "stage": "secondary_motion",
+      "ok": true,
+      "seconds": 2.3
+    },
+    {
+      "stage": "nsfw",
+      "ok": true,
+      "seconds": 2.8
+    },
+    {
+      "stage": "export",
+      "ok": true,
+      "seconds": 103.0
+    },
+    {
+      "stage": "garment_clear",
+      "ok": true,
+      "seconds": 41.4
+    },
+    {
+      "stage": "harvest",
+      "ok": true,
+      "seconds": 0.0
+    }
+  ],
+  "reports": {
+    "outfit": "outfit_report.json",
+    "outfit_cover": "outfit_cover.json",
+    "secondary_motion": "secondary_motion.json",
+    "export": "report.json",
+    "genital_inventory": "genital_inventory.json",
+    "garment_clear": "garment_clear.json"
+  },
+  "notes": {
+    "hair_plan": {
+      "path": "hair_plan.json",
+      "role": "build contract; source groom remains authoritative"
+    },
+    "clone": {
+      "identity_master": "amy_gp_v3",
+      "master": "/Users/nathanrichmond/character-foundry/jobs/amy_gp_v3/master.blend",
+      "sha256": "cb61156983436a9772793690ac4c620401d77449af914c32602dbf31fce9c8e1"
+    },
+    "outfit": "OUTFIT_OK meshes=2 verts=59310 weighted=59310 provider_bones=8",
+    "outfit_cover": "COVER_OK tested=3023 exposed=296 frac=0.0979 max=0.12 meshes=Dressable Pants,Dressable Shirt",
+    "secondary_motion": "SECONDARY_OK chains=4 bones=8 frames=120 fan=2.500",
+    "nsfw": "ASSERT_NSFW: PASS",
+    "export": "EXPORT: ALL OK (101.2s)",
+    "genital_gate": "STEP35_GLB_OK targets=46",
+    "garment_clear": "GLBFIX Dressable Pants        DONE verts=35280 moved=2084 maxmove=5.64mm | vert-inside 11->0 | surface-inside 103->0 | deepest 3.01->0.00 mm",
+    "harvest": "champion saved for amy_dressable_g9_s15_70s_134074: score=None margin=None"
+  },
+  "verifiers": {
+    "outfit_cover": {
+      "cover_pass": true,
+      "summary": "",
+      "report_path": "/Users/nathanrichmond/character-foundry-wt/task-134074-home/jobs/s15_dressable_70s_134074/outfit_cover.json"
+    }
+  },
+  "likeness": null,
+  "artifacts": [
+    {
+      "name": "character.glb",
+      "bytes": 93060736,
+      "sha256": "606782342cbbbeee451686fc0c2f84d9c1a30febea1dffa047f93ce36a6d87e5"
+    },
+    {
+      "name": "eye_baked_eye_left.png",
+      "bytes": 1854114
+    },
+    {
+      "name": "fan_bake_sway.json",
+      "bytes": 300
+    },
+    {
+      "name": "garment_clear.json",
+      "bytes": 1236
+    },
+    {
+      "name": "genital_inventory.json",
+      "bytes": 4332
+    },
+    {
+      "name": "glb_face_check.png",
+      "bytes": 709010
+    },
+    {
+      "name": "hair_plan.json",
+      "bytes": 5493
+    },
+    {
+      "name": "master.blend",
+      "bytes": 70294753,
+      "sha256": "727b8cd3e9714231f0dd38048361096e54551c1348627fc088dff48225803bdc"
+    },
+    {
+      "name": "outfit_cover.json",
+      "bytes": 209
+    },
+    {
+      "name": "outfit_report.json",
+      "bytes": 6864
+    },
+    {
+      "name": "pose_combos.json",
+      "bytes": 3021
+    },
+    {
+      "name": "report.json",
+      "bytes": 19766
+    },
+    {
+      "name": "secondary_motion.json",
+      "bytes": 2849
+    },
+    {
+      "name": "slider_config.json",
+      "bytes": 81
+    },
+    {
+      "name": "spec.json",
+      "bytes": 1013
+    },
+    {
+      "name": "with_outfit.blend",
+      "bytes": 70265525
+    },
+    {
+      "name": "with_secondary_motion.blend",
+      "bytes": 70295469
+    },
+    {
+      "name": "working.blend",
+      "bytes": 64289692
+    }
+  ],
+  "started_at": "2026-09-28T20:00:25",
+  "finished_at": "2026-09-28T20:03:02",
+  "total_seconds": 156.8
+}

@@ -1,0 +1,80 @@
+{
+  "glb": "/Users/nathanrichmond/character-foundry-wt/task-134074-home/jobs/s15_dressable_70s_134074/character.glb",
+  "skins_in_json": 1,
+  "joints_per_skin": [
+    547
+  ],
+  "armatures_after_import": [
+    "Genesis 9"
+  ],
+  "meshes": {
+    "Dressable Pants": {
+      "vertices": 35280,
+      "armature": "Genesis 9",
+      "parent": "Genesis 9",
+      "vertex_groups": 547,
+      "spring_groups": [
+        "cloth_pants_l_flare_0",
+        "cloth_pants_l_flare_1",
+        "cloth_pants_r_flare_0",
+        "cloth_pants_r_flare_1",
+        "cloth_shirt_l_collar_0",
+        "cloth_shirt_l_collar_1",
+        "cloth_shirt_r_collar_0",
+        "cloth_shirt_r_collar_1"
+      ],
+      "morph_targets": 0,
+      "unweighted": 0
+    },
+    "Dressable Shirt": {
+      "vertices": 24030,
+      "armature": "Genesis 9",
+      "parent": "Genesis 9",
+      "vertex_groups": 547,
+      "spring_groups": [
+        "cloth_pants_l_flare_0",
+        "cloth_pants_l_flare_1",
+        "cloth_pants_r_flare_0",
+        "cloth_pants_r_flare_1",
+        "cloth_shirt_l_collar_0",
+        "cloth_shirt_l_collar_1",
+        "cloth_shirt_r_collar_0",
+        "cloth_shirt_r_collar_1"
+      ],
+      "morph_targets": 0,
+      "unweighted": 0
+    }
+  },
+  "secondary_motion_extra": {
+    "chains": [
+      "jeans_flare_l",
+      "jeans_flare_r",
+      "shirt_collar_l",
+      "shirt_collar_r"
+    ],
+    "bones": [
+      "cloth_pants_l_flare_0",
+      "cloth_pants_l_flare_1",
+      "cloth_pants_r_flare_0",
+      "cloth_pants_r_flare_1",
+      "cloth_shirt_l_collar_0",
+      "cloth_shirt_l_collar_1",
+      "cloth_shirt_r_collar_0",
+      "cloth_shirt_r_collar_1"
+    ]
+  },
+  "spring_bones_on_armature": [
+    "cloth_pants_l_flare_0",
+    "cloth_pants_l_flare_1",
+    "cloth_pants_r_flare_0",
+    "cloth_pants_r_flare_1",
+    "cloth_shirt_l_collar_0",
+    "cloth_shirt_l_collar_1",
+    "cloth_shirt_r_collar_0",
+    "cloth_shirt_r_collar_1"
+  ],
+  "body_armature": [
+    "Genesis 9"
+  ],
+  "both_bound_to_body_skin": true
+}
