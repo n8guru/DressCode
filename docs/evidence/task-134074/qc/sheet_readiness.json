@@ -1,0 +1,66 @@
+{
+ "producer": "claude-opus-5-5 mesh task 134074",
+ "intention_qc": [
+  {
+   "schema": "forage.intention-qc/v1",
+   "subject_sha256": "0f3187155c2fb28232135b5c41392011cf981f92a857fab567498f293b3096ed",
+   "subject_name": "s15_70s_posed_sheet.png",
+   "media_kind": "image",
+   "producer": "claude-opus-5-5 mesh task 134074",
+   "runner": "tools/qc_gate/run_gate.py",
+   "judged_at": "2026-09-29T03:12:29.359674+00:00",
+   "checklist": {
+    "ref": "studio decision 1988251 (Nate: \"70's bellbottom jeans, and a large coller 70's shirt.\") + dressable-g9 step 15 pass_criteria (2)/(5)",
+    "items": [
+     {
+      "id": "jeans-bellbottom",
+      "text": "The figure wears blue denim-coloured trousers that are fitted at the hip and flare wide from the knee down to the hem (bell-bottoms)"
+     },
+     {
+      "id": "shirt-large-collar",
+      "text": "The figure wears a mustard/yellow long-sleeve shirt with a large collar over an open V neckline, worn untucked over the trousers"
+     },
+     {
+      "id": "poses-walk-sit-armsup",
+      "text": "The panels show the same dressed figure standing, walking, seated with thighs horizontal, and with arms raised out to the sides"
+     },
+     {
+      "id": "no-skin-through-cloth",
+      "text": "In no panel does bare skin of the body poke through the trousers or the shirt fabric"
+     },
+     {
+      "id": "no-holes-spikes",
+      "text": "No garment shows torn holes, long pointed spikes, or detached floating pieces"
+     }
+    ],
+    "sha256": "daac7dce66bd5d6769d4835c2eac4b067e5eab822c0aa1ade8e3b7644282cf83"
+   },
+   "judge": {
+    "model": "google/gemini-2.5-flash",
+    "provider": "openrouter"
+   },
+   "results": [
+    {
+     "id": "jeans-bellbottom",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The figure wears blue denim-coloured trousers that are fitted at the hip and flare wide from the knee down to the hem (bell-bottoms) in all poses.\"}"
+    },
+    {
+     "id": "shirt-large-collar",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The figure wears a mustard/yellow long-sleeve shirt with a large collar over an open V neckline, worn untucked over the trousers in all visible poses.\"}"
+    },
+    {
+     "id": "poses-walk-sit-armsup",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The panels show the dressed figure standing, walking, seated with thighs horizontal, and with arms raised out to the sides.\"}"
+    },
+    {
+     "id": "no-skin-through-cloth",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"No bare skin is visible poking through the trousers or shirt fabric in any panel.\"}"
+    },
+    {
+     "id": "no-holes-spikes",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"No garment shows torn holes, long pointed spikes, or detached floating pieces in any of the poses.\"}"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+{"ref": "studio decision 1988251 (Nate: \"70's bellbottom jeans, and a large coller 70's shirt.\") + dressable-g9 step 15 pass_criteria (2)/(5)", "items": [
+ {"id": "jeans-bellbottom", "text": "The figure wears blue denim-coloured trousers that are fitted at the hip and flare wide from the knee down to the hem (bell-bottoms)"},
+ {"id": "shirt-large-collar", "text": "The figure wears a mustard/yellow long-sleeve shirt with a large collar over an open V neckline, worn untucked over the trousers"},
+ {"id": "poses-walk-sit-armsup", "text": "The panels show the same dressed figure standing, walking, seated with thighs horizontal, and with arms raised out to the sides"},
+ {"id": "no-skin-through-cloth", "text": "In no panel does bare skin of the body poke through the trousers or the shirt fabric"},
+ {"id": "no-holes-spikes", "text": "No garment shows torn holes, long pointed spikes, or detached floating pieces"}]}

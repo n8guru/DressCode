@@ -1,0 +1,58 @@
+{
+ "producer": "claude-opus-5-5 mesh task 134074",
+ "intention_qc": [
+  {
+   "schema": "forage.intention-qc/v1",
+   "subject_sha256": "e1519b21211243d65ba203577a7c290b4f575561c137fd151fee2ee2702ac399",
+   "subject_name": "t134074_browser_gate_34.png",
+   "media_kind": "image",
+   "producer": "claude-opus-5-5 mesh task 134074",
+   "runner": "tools/qc_gate/run_gate.py",
+   "judged_at": "2026-09-29T03:14:28.398750+00:00",
+   "checklist": {
+    "ref": "studio decision 1988251 + dressable-g9 step 15 pass_criteria (5): three.js viewer loads the composed outfit on G9",
+    "items": [
+     {
+      "id": "browser-outfit",
+      "text": "A 3D woman in a viewer wears blue bell-bottom trousers and a mustard/yellow shirt with a large collar"
+     },
+     {
+      "id": "gate-line",
+      "text": "A text line at the top of the image begins with BROWSER_GATE PASS"
+     },
+     {
+      "id": "no-skin-through-cloth",
+      "text": "No bare skin pokes through the trousers or the shirt fabric"
+     },
+     {
+      "id": "no-holes-spikes",
+      "text": "No garment shows torn holes, long pointed spikes, or detached floating pieces"
+     }
+    ],
+    "sha256": "bcea7845e3206df1b5c0b06a4c84470e895dfe84b434f80d9183215901235de0"
+   },
+   "judge": {
+    "model": "google/gemini-2.5-flash",
+    "provider": "openrouter"
+   },
+   "results": [
+    {
+     "id": "browser-outfit",
+     "raw": "```json\n{\"verdict\": \"pass\", \"evidence\": \"The image shows a 3D woman wearing blue bell-bottom trousers and a mustard/yellow shirt with a large collar.\"}\n```"
+    },
+    {
+     "id": "gate-line",
+     "raw": "```json\n{\"verdict\": \"pass\", \"evidence\": \"The text line at the top of the image begins with \\\"BROWSER GATE PASS\\\".\"}\n```"
+    },
+    {
+     "id": "no-skin-through-cloth",
+     "raw": "{\"verdict\": \"fail\", \"evidence\": \"Bare skin is visible poking through the trousers at the bottom of the left leg.\"}"
+    },
+    {
+     "id": "no-holes-spikes",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"No torn holes, long pointed spikes, or detached floating pieces are visible on the garments.\"}"
+    }
+   ]
+  }
+ ]
+}

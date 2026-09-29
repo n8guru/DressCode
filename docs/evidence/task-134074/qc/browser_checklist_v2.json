@@ -1,0 +1,21 @@
+{
+ "ref": "studio decision 1988251 + dressable-g9 step 15 pass_criteria (5): three.js viewer loads the composed outfit on G9",
+ "items": [
+  {
+   "id": "browser-outfit",
+   "text": "A 3D woman in a viewer wears blue bell-bottom trousers and a mustard/yellow shirt with a large collar"
+  },
+  {
+   "id": "gate-line",
+   "text": "A text line at the top of the image begins with BROWSER_GATE PASS"
+  },
+  {
+   "id": "no-skin-through-cloth",
+   "text": "The character is barefoot, so bare feet below the trouser hems and bare hands below the sleeves are expected; apart from those, no bare skin shows through or pokes out of the trousers or the shirt fabric"
+  },
+  {
+   "id": "no-holes-spikes",
+   "text": "No garment shows torn holes, long pointed spikes, or detached floating pieces"
+  }
+ ]
+}

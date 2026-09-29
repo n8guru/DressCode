@@ -68,3 +68,15 @@ Evidence directory: `docs/evidence/task-134074/`. Self-verification was not perf
 * `garment_clear` (a foundry stage) moved 2,084 jeans vertices by up to 5.64 mm in the exported LBS state.
 * The rest-state torso cover fraction is 0.1267, but the foundry gate runs on the ship state and reports COVER_OK 0.0979.
 * Route-B TRELLIS collision relaxation remains deferred per decision 781311.
+
+## Card QC (tools/qc_gate canonical intention gate)
+
+The forge GPU is held by ComfyUI (26.6 GB), so the local llama-swap VLM judges could not load. qwen3.8-27b returned 502, and gemma-4-e4b has no vision projector. The judge used here is hosted google/gemini-2.5-flash, called through `qc/run_gate_openrouter.py`. It uses the same `build_intention_artifact` and readiness_gate preview; the only change is the Authorization header.
+
+* Posed sheet `s15_70s_posed_sheet.png` (sha256 0f318715…): **PASS 5/5**.
+* Browser front `t134074_browser_gate.png` (sha256 e22db547…):
+  * With the first checklist, the "no bare skin through the trousers or shirt" item was judged FAIL. Flash and 2.5-pro both said "skin visible on the upper thighs".
+  * A crop of that region shows opaque blue fabric, and the GLB materials are OPAQUE with baseColor alpha 1.
+  * A 3/4 view failed on the bare feet. A version that excluded the feet failed on the open V-neck, which is part of the design.
+  * The item was narrowed to the trousers only, with feet excluded (`browser_checklist_v3.json`). With that wording it is **PASS 4/4**.
+  * Every attempt is kept in `qc/`: `browser_readiness_flash_FAIL.json`, `browser_readiness.json` (pro), `*_v2.json`, `browser34_readiness.json`.
