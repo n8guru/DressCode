@@ -1,0 +1,121 @@
+{
+  "contract": "foundry outfit v1 provider wearable (+ provider secondary bones, task-134074)",
+  "provider": "dressable-g9 step 15 (task 135614, operator decision #1997482 Request changes: close-fitting crotch, bent knees, hair behind shoulders; refit of task 134122) Route A: operator prompt -> GarmentCode sewing patterns -> Warp drape -> retarget+tighten (crotch lift, knee fit) onto amy_a08_v3 -> fit_native_g9_outfit.py (leg-sided pants skinning) -> pattern-UV fabric textures",
+  "prompt": "70's bellbottom jeans, and a large coller 70's shirt.",
+  "prompt_sha256": "ba420f56f717e82a6bbd75219dc7551494315a9267ba70ad0e22077288f561f3",
+  "garments": {
+    "Dressable Pants": {
+      "type": "pants",
+      "style": "1970s bell-bottom jeans: skin-tight through hips/seat/upper legs, CuffSkirt bell from the knee (cuff_len 0.44, skirt_flare 1.5), StraightWB; indigo twill denim atlas with gold topstitching, patch back pockets, J-stitch fly, scoop front pockets, rivets; task-135614: crotch raised to the body (harmonic crotch lift, ~76 mm), bell fitted to the calf for 14 cm below the knee seam so the knee reads fitted",
+      "pattern_source": "GarmentCode d449629 design params mapped from the operator prompt",
+      "pattern_sha256": "4b022fb228f1c6c3b22f5db1b8c9f086ad9475952bd7fdaa8fb598da60625f7d",
+      "layer": 0
+    },
+    "Dressable Shirt": {
+      "type": "shirt",
+      "style": "fitted 1970s long-sleeve shirt (width 1.0, flare 1.0), oversized SimpleLapel collar (depth 11) over a V neck (fc_depth 0.6); mustard shirting atlas, seam topstitch, centre-front buttons",
+      "pattern_source": "GarmentCode d449629 design params mapped from the operator prompt",
+      "pattern_sha256": "89bbef11508cb71eff27a605b42f1ff49b4e1cceafdcf7b537cc0cb61fa37dc8",
+      "layer": 1
+    }
+  },
+  "raw_drapes": {
+    "pants": {
+      "obj_sha256": "99fbc406ba06e54a753417dd3a9e0fab635c2d0e622339935853f789e212361b",
+      "drape_body": "g9_amy_m133934 (amy_gp_v3 measured)"
+    },
+    "shirt": {
+      "obj_sha256": "11f3d2e920b7ad1d10fc79baf0fe5d90aadc41755e2747e6a765af8cadfec72c",
+      "drape_body": "g9_amy_m133934_pants"
+    }
+  },
+  "pattern_specs_sha256": {
+    "bellbottom_jeans": "4b022fb228f1c6c3b22f5db1b8c9f086ad9475952bd7fdaa8fb598da60625f7d",
+    "collar_shirt_70s": "89bbef11508cb71eff27a605b42f1ff49b4e1cceafdcf7b537cc0cb61fa37dc8"
+  },
+  "fit_body": "amy_a08_v3 identity master (FACE A08 / BODY A07 sheet-fit, dense copper groom) sha256 20230aa7f62b96af3bb7339c0f878326750f3da0231a1a7b9f1d2324096f53b7",
+  "thickness": "FoundryClothThickness (character-foundry agents/forge/task-93317@f760c487), 4mm slab, 5mm skin clearance",
+  "skinning": "G9 weights; loose sleeves skinned along the arm axis; dual-quaternion (Preserve Volume) like the G9 SkinBinding; pose-space corrective shape keys fit_sit/_sit55/_sit40/_swing_a/_swing_b driven by thigh / upper-arm rotation; task-135614: pants skinned per sewn LEG (gc_leg_side point attribute), bell = rigid shin tube below the knee, no foot/toe weights on the hem; sit pose correctives authored with 30 push iterations (PC_ITERS=30)",
+  "secondary_motion": {
+    "provider_bones": {
+      "jeans_flare_l": {
+        "bones": [
+          "cloth_pants_l_flare_0",
+          "cloth_pants_l_flare_1"
+        ],
+        "garment": "pants",
+        "weighted_vertices": 4491
+      },
+      "jeans_flare_r": {
+        "bones": [
+          "cloth_pants_r_flare_0",
+          "cloth_pants_r_flare_1"
+        ],
+        "garment": "pants",
+        "weighted_vertices": 4537
+      },
+      "shirt_collar_l": {
+        "bones": [
+          "cloth_shirt_l_collar_0",
+          "cloth_shirt_l_collar_1"
+        ],
+        "garment": "shirt",
+        "weighted_vertices": 291
+      },
+      "shirt_collar_r": {
+        "bones": [
+          "cloth_shirt_r_collar_0",
+          "cloth_shirt_r_collar_1"
+        ],
+        "garment": "shirt",
+        "weighted_vertices": 254
+      }
+    }
+  },
+  "gates": {
+    "verify": "verify_outfit_gates.py fresh process on the wearable blend: gated_all_zero=True (rest, ship, walk, sit80, arms_up45, arms_up20, arms_swing15 a/b, step_twist, weight_shift, sit40/55/70); diagnostic fail sit95, stride_133870",
+    "report": "DressCode docs/evidence/task-135614/verify_gates.json"
+  },
+  "license": "GarmentCode MIT; Warp fork NVIDIA non-commercial",
+  "retarget": {
+    "script": "retarget_tighten.py (task-135614)",
+    "from_body": "amy_gp_v3",
+    "to_identity": "amy_a08_v3 sha256 20230aa7f62b96af3bb7339c0f878326750f3da0231a1a7b9f1d2324096f53b7",
+    "params": {
+      "jeans_ease_mm": 3.5,
+      "jeans_keep": 0.12,
+      "jeans_relax_iters": 6,
+      "flare_smooth": 0.35,
+      "flare_iters": 14,
+      "shirt_ease_mm": 7.0,
+      "shirt_keep": 0.2,
+      "sleeve_ease_mm": 12.0,
+      "sleeve_keep": 0.5,
+      "over_jeans_ease_mm": 17.0,
+      "fill_iters": 30,
+      "crotch_lift": true,
+      "crotch_ease_mm": 10.0,
+      "knee_fit_m": 0.14
+    },
+    "out_obj_sha256": {
+      "pants": "d21a1fc9d3e5beb15ce55b4c5eed94bf4726a12be16251d43e101194c5f2d62b",
+      "shirt": "699d902cae65244a4154aa5367ade1473000874d06faf8e8055410a11383cddb"
+    },
+    "crotch_lift": {
+      "constrained_verts": 42,
+      "max_lift_mm": 69.3,
+      "jacobi_iters": 5415,
+      "ease_mm": 10.0,
+      "pin_low_z": 0.45
+    }
+  },
+  "wearable_blend_sha256": "0bf847699d89e05d9f5531bb113b8a4a86dd56fa1d3bc84c6a93fafec5cc4803",
+  "materials": {
+    "pants": "Dressable Pants Fabric: packed 4096 pattern-UV basecolor atlas + tiled 3/1 twill normal (14 mm tile)",
+    "shirt": "Dressable Shirt Fabric: packed 4096 atlas + tiled plain-weave normal (6 mm tile)"
+  },
+  "task": "task-135614",
+  "styling": {
+    "hair_behind_shoulders": "build opt-in assets.outfit.hair_behind_shoulders=true (foundry hair_over_outfit.py --behind-shoulders)"
+  }
+}

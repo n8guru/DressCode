@@ -1,0 +1,66 @@
+{
+ "producer": "claude-opus-5-5 mesh task 135614",
+ "intention_qc": [
+  {
+   "schema": "forage.intention-qc/v1",
+   "subject_sha256": "afae383db70a48ab1691f102fa0caa993af702243507bf5ae41d2e6296d42ef3",
+   "subject_name": "s15_135614_before_after.png",
+   "media_kind": "image",
+   "producer": "claude-opus-5-5 mesh task 135614",
+   "runner": "tools/qc_gate/run_gate.py",
+   "judged_at": "2026-09-30T23:55:46.740391+00:00",
+   "checklist": {
+    "ref": "studio decision 1997482 (Nate: crotch must be close fit; knees look funny when bent; hair behind the shoulder) + dressable-g9 step 15 pass_criteria",
+    "items": [
+     {
+      "id": "crotch-close-fit",
+      "text": "In the AFTER crotch/rise panels the jeans fabric follows the body up into the crotch between the upper thighs; there is no loose fabric web or low-hanging crotch between the thighs"
+     },
+     {
+      "id": "knees-bent-clean",
+      "text": "In the AFTER walk and sit panels the two trouser legs are separate at the knees and shins (no sheet of fabric joining the two legs) and each knee bends as a fitted fold"
+     },
+     {
+      "id": "hair-behind-shoulders",
+      "text": "In the AFTER hair / shoulders / collar panel the long hair falls behind the shoulders, so the shirt front, buttons and collar are clearly visible and not covered by hair"
+     },
+     {
+      "id": "no-skin-through-cloth",
+      "text": "In no AFTER panel does bare skin poke through the trousers or the shirt (bare feet and hands do not count)"
+     },
+     {
+      "id": "no-holes-spikes",
+      "text": "No AFTER panel shows torn holes, long pointed spikes, or detached floating garment pieces"
+     }
+    ],
+    "sha256": "5afa4dffb9ba7818a71fbbe2242a7bb3cd2c97d6397f8f9b4e97baa96965f832"
+   },
+   "judge": {
+    "model": "google/gemini-2.5-flash",
+    "provider": "openrouter"
+   },
+   "results": [
+    {
+     "id": "crotch-close-fit",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"In the AFTER crotch/rise panels, the jeans fabric follows the body up into the crotch between the upper thighs, with no loose fabric web or low-hanging crotch visible.\"}"
+    },
+    {
+     "id": "knees-bent-clean",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"In the AFTER walk and sit panels, the two trouser legs are separate at the knees and shins, and each knee bends with fitted folds.\"}"
+    },
+    {
+     "id": "hair-behind-shoulders",
+     "raw": "```json\n{\n  \"verdict\": \"pass\",\n  \"evidence\": \"In the AFTER hair / shoulders / collar panel, the long hair falls behind the shoulders, and the shirt front, buttons, and collar are clearly visible and not covered by hair.\"\n}\n```"
+    },
+    {
+     "id": "no-skin-through-cloth",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"No bare skin is visible poking through the trousers or shirt in any of the AFTER panels.\"}"
+    },
+    {
+     "id": "no-holes-spikes",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"No torn holes, long pointed spikes, or detached floating garment pieces are visible in the AFTER panels.\"}"
+    }
+   ]
+  }
+ ]
+}

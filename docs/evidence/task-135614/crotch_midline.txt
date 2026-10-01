@@ -1,0 +1,4 @@
+before_134122 body crotch z 0.8125 jeans outer-surface midline crotch z 0.7252 gap_mm 87.3
+after_135614 body crotch z 0.8125 jeans outer-surface midline crotch z 0.7543 gap_mm 58.2
+before_134122 midline crotch fabric verts 23 median z 0.735 below 0.79: 23 below 0.77: 23 web area proxy: verts |x|<15mm, z<0.79, |y|<0.04: 138
+after_135614 midline crotch fabric verts 35 median z 0.804 below 0.79: 8 below 0.77: 6 web area proxy: verts |x|<15mm, z<0.79, |y|<0.04: 191

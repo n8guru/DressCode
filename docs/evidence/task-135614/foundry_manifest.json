@@ -1,0 +1,184 @@
+{
+  "job_id": "s15_dressable_70s_135614",
+  "spec": {
+    "name": "amy_dressable_g9_s15_70s_135614",
+    "sex": "female"
+  },
+  "status": "succeeded_with_identity_master_nsfw_fail",
+  "error": null,
+  "stages_planned": [
+    "clone",
+    "outfit",
+    "secondary_motion",
+    "nsfw",
+    "export",
+    "garment_clear",
+    "harvest"
+  ],
+  "stages": [
+    {
+      "stage": "clone",
+      "ok": true,
+      "seconds": 1.3
+    },
+    {
+      "stage": "outfit",
+      "ok": true,
+      "seconds": 177.0
+    },
+    {
+      "stage": "secondary_motion",
+      "ok": true,
+      "seconds": 3.5
+    },
+    {
+      "stage": "nsfw",
+      "ok": false,
+      "seconds": 4.5,
+      "known_identity_master_failure": true
+    },
+    {
+      "stage": "export",
+      "ok": true,
+      "seconds": 134.4
+    },
+    {
+      "stage": "garment_clear",
+      "ok": true,
+      "seconds": 39.6
+    },
+    {
+      "stage": "harvest",
+      "ok": true,
+      "seconds": 0.0
+    }
+  ],
+  "reports": {
+    "outfit": "outfit_report.json",
+    "hair_over_outfit": "hair_over_outfit.json",
+    "outfit_cover": "outfit_cover.json",
+    "secondary_motion": "secondary_motion.json",
+    "export": "report.json",
+    "genital_inventory": "genital_inventory.json",
+    "garment_clear": "garment_clear.json"
+  },
+  "notes": {
+    "hair_plan": {
+      "path": "hair_plan.json",
+      "role": "build contract; source groom remains authoritative"
+    },
+    "clone": {
+      "identity_master": "amy_a08_v3",
+      "master": "/Users/nathanrichmond/character-foundry/jobs/amy_a08_sheet_v3/master.blend",
+      "sha256": "20230aa7f62b96af3bb7339c0f878326750f3da0231a1a7b9f1d2324096f53b7"
+    },
+    "outfit": "OUTFIT_OK meshes=2 verts=51496 weighted=51496 provider_bones=8",
+    "hair_over_outfit": "HAIR_CLEAR_OK curves_points=221427 strands=84515 card_verts=5244",
+    "outfit_cover": "COVER_OK tested=14779 exposed=1451 frac=0.0982 max=0.12 meshes=Dressable Pants,Dressable Shirt",
+    "secondary_motion": "SECONDARY_OK chains=4 bones=8 frames=120 fan=2.500",
+    "nsfw": "ASSERT_NSFW: FAIL identical to the bare amy_a08_v3 master baseline (a08_v3_bare_master_nsfw_baseline.json); no new failure from the outfit",
+    "nsfw_fail_lines": [
+      "[FAIL] bone 'clitoris' drives graft > 2mm (production) \u2014 max delta 1.79 mm ('clitoris(drv)' rotZ 25deg)",
+      "[FAIL] graft tracks body shaping via 'body_bs_NipplesAreolaeDepthFeminine' (0 -> 1) > 2mm \u2014 max graft delta 0.00 mm"
+    ],
+    "export": "EXPORT: ALL OK (131.5s)",
+    "genital_gate": "STEP35_GLB_OK targets=46",
+    "garment_clear": "GLBFIX Dressable Pants        DONE verts=33030 moved=9870 maxmove=2.09mm | vert-inside 0->0 | surface-inside 0->0 | deepest 0.00->0.00 mm",
+    "harvest": "champion saved for amy_dressable_g9_s15_70s_135614: score=None margin=None"
+  },
+  "verifiers": {
+    "outfit_cover": {
+      "cover_pass": true,
+      "summary": "",
+      "report_path": "/Users/nathanrichmond/character-foundry-wt/task-135614-home/jobs/s15_dressable_70s_135614/outfit_cover.json"
+    }
+  },
+  "likeness": null,
+  "artifacts": [
+    {
+      "name": "character.glb",
+      "bytes": 50513244,
+      "sha256": "1f29dc2fe80c9f0f82e5e86303eeac151ea3e7540c935d650c1c390041db9cf6"
+    },
+    {
+      "name": "eye_baked_eye_left.png",
+      "bytes": 955346
+    },
+    {
+      "name": "eye_baked_eye_right.png",
+      "bytes": 957905
+    },
+    {
+      "name": "garment_clear.json",
+      "bytes": 1235
+    },
+    {
+      "name": "genital_inventory.json",
+      "bytes": 4450
+    },
+    {
+      "name": "glb_face_check.png",
+      "bytes": 726388
+    },
+    {
+      "name": "hair_over_outfit.json",
+      "bytes": 677
+    },
+    {
+      "name": "hair_plan.json",
+      "bytes": 5493
+    },
+    {
+      "name": "master.blend",
+      "bytes": 387585548,
+      "sha256": "f74a7ada30c6767337f3f25b3198b179194ffd000d5a8e9beff1d267f58d7691"
+    },
+    {
+      "name": "outfit_cover.json",
+      "bytes": 211
+    },
+    {
+      "name": "outfit_report.json",
+      "bytes": 9264
+    },
+    {
+      "name": "pose_combos.json",
+      "bytes": 3021
+    },
+    {
+      "name": "report.json",
+      "bytes": 19666
+    },
+    {
+      "name": "secondary_motion.json",
+      "bytes": 2849
+    },
+    {
+      "name": "slider_config.json",
+      "bytes": 81
+    },
+    {
+      "name": "spec.json",
+      "bytes": 1083
+    },
+    {
+      "name": "with_outfit.blend",
+      "bytes": 387296403
+    },
+    {
+      "name": "with_outfit.blend1",
+      "bytes": 387295699
+    },
+    {
+      "name": "with_secondary_motion.blend",
+      "bytes": 387585548
+    },
+    {
+      "name": "working.blend",
+      "bytes": 356477689
+    }
+  ],
+  "started_at": "2026-09-30T16:43:30",
+  "finished_at": "2026-09-30T16:49:32",
+  "total_seconds": 362.7
+}

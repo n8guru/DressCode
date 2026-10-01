@@ -1,0 +1,38 @@
+{
+  "garments": [
+    "Dressable Pants",
+    "Dressable Shirt"
+  ],
+  "clear_mm": 3.0,
+  "curves": {
+    "AmyLongWaveGroom": {
+      "points_moved": 221427,
+      "strands_touched": 84515,
+      "max_push_mm": 139.7
+    }
+  },
+  "cards": {
+    "AmyWaveCards": {
+      "verts_moved": 5244,
+      "verts": 77280
+    }
+  },
+  "behind_shoulders": {
+    "z_top": 1.422,
+    "band_m": 0.09,
+    "curves": {
+      "AmyLongWaveGroom": {
+        "strands_swung": 67753,
+        "points_moved": 2025295,
+        "strands": 96930
+      }
+    },
+    "cards": {
+      "AmyWaveCards": {
+        "islands_swung": 1788,
+        "verts_moved": 27293,
+        "islands": 2576
+      }
+    }
+  }
+}
