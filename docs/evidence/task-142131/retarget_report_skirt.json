@@ -1,0 +1,49 @@
+{
+  "target_body": "/home/n8/cloth_test/task-142131/inputs/amy_a08_v3_master.blend",
+  "gp_body": "/home/n8/cloth_test/task-133870/g9/amy_gp_v3_master.blend",
+  "params": {
+    "gp_blend": "/home/n8/cloth_test/task-133870/g9/amy_gp_v3_master.blend",
+    "lift_m": 0.054874,
+    "out_dir": "inputs/rt3s",
+    "garment": [
+      "skirt:drapes/aline_knee_skirt_261008-08-15-23/aline_knee_skirt_sim.obj"
+    ],
+    "jeans_ease_mm": 2.5,
+    "jeans_keep": 0.06,
+    "shirt_ease_mm": 9.0,
+    "shirt_keep": 1.0,
+    "sleeve_ease_mm": 12.0,
+    "sleeve_keep": 0.5,
+    "relax_iters": 25,
+    "shirt_relax": 0.8,
+    "jeans_relax_iters": 4,
+    "flare_smooth": 0.35,
+    "flare_iters": 8,
+    "fill_iters": 0,
+    "over_jeans_ease_mm": 24.0,
+    "knee_fit_m": 0.0,
+    "crotch_lift": false,
+    "crotch_ease_mm": 4.0,
+    "crotch_pin_low": 0.45
+  },
+  "garments": {
+    "skirt": {
+      "source_obj": "drapes/aline_knee_skirt_261008-08-15-23/aline_knee_skirt_sim.obj",
+      "out_obj": "inputs/rt3s/aline_knee_skirt_sim.obj",
+      "vertices": 9607,
+      "tight_zone_vertices": 9607,
+      "offset_mm_tight_zone_before": {
+        "median": 19.51,
+        "p90": 75.39
+      },
+      "offset_mm_tight_zone_after": {
+        "median": 20.17,
+        "p90": 73.54,
+        "min": 7.32
+      },
+      "offset_mm_rest_after": {
+        "median": null
+      }
+    }
+  }
+}

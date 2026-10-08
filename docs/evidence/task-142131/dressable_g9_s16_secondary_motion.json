@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "root_parent": "hip",
+  "chains": [
+    {
+      "id": "shirt_collar_l",
+      "bones": [
+        "cloth_shirt_l_collar_0",
+        "cloth_shirt_l_collar_1"
+      ],
+      "kind": "clothing",
+      "stiffness": 0.55,
+      "drag": 0.35,
+      "gravity_power": 0.3,
+      "hit_radius_m": 0.02,
+      "wind_reactivity": 1.1
+    },
+    {
+      "id": "shirt_collar_r",
+      "bones": [
+        "cloth_shirt_r_collar_0",
+        "cloth_shirt_r_collar_1"
+      ],
+      "kind": "clothing",
+      "stiffness": 0.55,
+      "drag": 0.35,
+      "gravity_power": 0.3,
+      "hit_radius_m": 0.02,
+      "wind_reactivity": 1.1
+    },
+    {
+      "id": "skirt_hem_l",
+      "bones": [
+        "cloth_skirt_l_hem_0",
+        "cloth_skirt_l_hem_1"
+      ],
+      "kind": "clothing",
+      "stiffness": 0.4,
+      "drag": 0.3,
+      "gravity_power": 0.35,
+      "hit_radius_m": 0.04,
+      "wind_reactivity": 1.5
+    },
+    {
+      "id": "skirt_hem_r",
+      "bones": [
+        "cloth_skirt_r_hem_0",
+        "cloth_skirt_r_hem_1"
+      ],
+      "kind": "clothing",
+      "stiffness": 0.4,
+      "drag": 0.3,
+      "gravity_power": 0.35,
+      "hit_radius_m": 0.04,
+      "wind_reactivity": 1.5
+    }
+  ],
+  "colliders": [
+    {
+      "bone": "l_thigh",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "radius_m": 0.075
+    },
+    {
+      "bone": "r_thigh",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "radius_m": 0.075
+    }
+  ],
+  "fan": {
+    "direction": [
+      1,
+      0,
+      0
+    ],
+    "strength": 2.5,
+    "turbulence": 0.25,
+    "frequency_hz": 0.7
+  },
+  "offline": {
+    "frames": 120,
+    "fps": 24,
+    "substeps": 4,
+    "warmup_frames": 24
+  }
+}

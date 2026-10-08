@@ -1,0 +1,71 @@
+{
+ "body": "Genesis 9 Mesh",
+ "boundary_edges": {
+  "Dressable Shirt": 0,
+  "Dressable Skirt": 0
+ },
+ "bvh_overlap_pairs": 0,
+ "cover_exposed": 407,
+ "cover_sampled": 3688,
+ "exposed_fraction": 0.1104,
+ "exposed_sample_pts": [
+  [
+   0.1633,
+   0.0632,
+   1.2862
+  ],
+  [
+   0.1602,
+   0.0328,
+   1.2963
+  ],
+  [
+   0.1689,
+   0.0286,
+   1.2842
+  ],
+  [
+   0.1648,
+   0.0738,
+   1.2884
+  ],
+  [
+   0.1685,
+   0.0631,
+   1.2792
+  ],
+  [
+   0.1652,
+   0.0106,
+   1.3063
+  ],
+  [
+   0.1503,
+   0.016,
+   1.306
+  ],
+  [
+   0.1721,
+   0.017,
+   1.2886
+  ],
+  [
+   0.1638,
+   0.0306,
+   1.2913
+  ],
+  [
+   0.1658,
+   0.0193,
+   1.2958
+  ]
+ ],
+ "inside_verts": 0,
+ "interpenetration_ok": true,
+ "max_depth_mm": 0.0,
+ "overlap_by_garment": {
+  "Dressable Shirt": 0,
+  "Dressable Skirt": 0
+ },
+ "tag": "s16_rest"
+}

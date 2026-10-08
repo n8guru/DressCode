@@ -1,0 +1,68 @@
+{
+  "prompt": "an A-line knee-length skirt, and a hooded zip-up jacket",
+  "garments": {
+    "aline_knee_skirt": {
+      "design": {
+        "meta.upper": null,
+        "meta.wb": "StraightWB",
+        "meta.bottom": "SkirtCircle",
+        "waistband.width": 0.2,
+        "waistband.waist": 1.0,
+        "flare-skirt.length": 0.36,
+        "flare-skirt.rise": 1.0,
+        "flare-skirt.suns": 0.3
+      }
+    },
+    "hooded_zip_jacket": {
+      "design": {
+        "meta.upper": "Shirt",
+        "meta.wb": null,
+        "meta.bottom": null,
+        "shirt.length": 1.65,
+        "shirt.width": 1.1,
+        "shirt.flare": 1.0,
+        "collar.f_collar": "CircleNeckHalf",
+        "collar.b_collar": "CircleNeckHalf",
+        "collar.width": 0.0,
+        "collar.fc_depth": 0.15,
+        "collar.bc_depth": 0.0,
+        "collar.component.style": "Hood2Panels",
+        "collar.component.hood_depth": 1.0,
+        "collar.component.hood_length": 1.0,
+        "sleeve.sleeveless": false,
+        "sleeve.armhole_shape": "ArmholeCurve",
+        "sleeve.length": 0.8,
+        "sleeve.end_width": 0.5,
+        "sleeve.connecting_width": 0.2,
+        "sleeve.sleeve_angle": 10
+      },
+      "panel_placement": {
+        "left_hood": {
+          "rotation": [
+            180,
+            90,
+            0
+          ],
+          "translation": [
+            10.13,
+            156.48,
+            -40.13
+          ]
+        },
+        "right_hood": {
+          "rotation": [
+            180,
+            -90,
+            0
+          ],
+          "translation": [
+            -10.13,
+            156.48,
+            -40.13
+          ]
+        }
+      }
+    }
+  },
+  "_placement_note": "hood DOWN: GarmentCode places Hood2Panels around the head (hood up); the two hood panels are flipped to hang behind the upper back so the drape lays the hood on the back (spec-only placement, no code)"
+}

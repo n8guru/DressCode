@@ -1,0 +1,196 @@
+--- /home/n8/cloth_test/task-135614/dc_wt/docs/evidence/task-135614/scripts/fit_native_g9_outfit.py	2026-09-30 16:43:50.726219643 -0700
++++ scripts/fit_native_g9_outfit.py	2026-10-08 08:23:49.421669539 -0700
+@@ -40,6 +40,7 @@
+ 
+ sys.path.insert(0, str(Path(__file__).resolve().parent))
+ from foundry_cloth_thickness import apply_thickness_route  # noqa: E402
++from garment_chain_math import chain_shift, parse_chain_labels, skirt_hem_plan  # noqa: E402
+ 
+ RIG, BODY = "Genesis 9", "Genesis 9 Mesh"
+ SKIRT_GROUP_PREFIXES = ("pelvis", "hip", "abdomen", "spine1", "spine2",
+@@ -70,7 +71,15 @@
+     # the step-12 default is 2 mm.  task-133934 uses 5 mm so LBS-vs-JCM skin
+     # deviations under pose stay on the outside of the fabric.
+     ap.add_argument("--clearance-mm", type=float, default=2.0)
+-    return ap.parse_args(argv)
++    # task-142131 (s16 generality): which upper-garment panel carries the
++    # loose neck-component spring chain per side.  Defaults are the step-15
++    # 70s shirt's SimpleLapel collar points; a hood passes l=left_hood etc.
++    # A side whose label is absent from the drape gets no chain (no crash).
++    ap.add_argument("--collar-chain-label", action="append", default=None,
++                    help="side=panel_label, e.g. l=left_collar_front")
++    a = ap.parse_args(argv)
++    a.collar_chain_label = parse_chain_labels(a.collar_chain_label)
++    return a
+ 
+ 
+ def sha256(p: Path) -> str:
+@@ -700,7 +709,7 @@
+ SPRING_PREFIX = "cloth_"
+ 
+ 
+-def add_spring_chains(rig, garments, shirt_labels):
++def add_spring_chains(rig, garments, shirt_labels, collar_labels=None):
+     """Provider-authored secondary-motion bones (task-134074, criterion 4).
+ 
+     Foundry assets.secondary_motion can only drive bones that exist on the
+@@ -736,11 +745,45 @@
+             chains[f"jeans_flare_{side}"] = {"bones": names, "garment": "pants",
+                                              "zone": (side, z0, z1, z2, f"{side}_shin")}
+     # --- shirt collar points ---------------------------------------------
++    # --- skirt hem (task-142131): one chain per side, child of that thigh;
++    # it takes a share of the THIGH weight only, like the jeans flare takes
++    # the shin weight, so posed gates are unchanged with the spring at rest.
++    skirt = garments.get("skirt")
++    if skirt is not None:
++        sw_ = skirt.matrix_world
++        zs_ = [(sw_ @ v.co).z for v in skirt.data.vertices]
++        z0, z1, z2 = skirt_hem_plan(max(zs_), min(zs_))
++        # parent per side = that leg's thigh-family group (thigh / thightwist*)
++        # carrying the most weight on the hem band: its weight is the share
++        # handed to the spring, so nothing else in the skinning changes.
++        gnm = {g.index: g.name for g in skirt.vertex_groups}
++        hem_w = Counter()
++        for v, z in zip(skirt.data.vertices, zs_):
++            if z <= z0:
++                for e in v.groups:
++                    hem_w[gnm[e.group]] += e.weight
++        for side in ("l", "r"):
++            fam = [n for n in hem_w if n.startswith(f"{side}_thigh")]
++            parent = max(fam, key=lambda n: hem_w[n]) if fam else f"{side}_thigh"
++            th = rig.data.bones[parent]
++            a = rig.matrix_world @ th.head_local
++            b = rig.matrix_world @ th.tail_local
++            def at(z, a=a, b=b):
++                return a.lerp(b, (a.z - z) / (a.z - b.z))
++            names = [f"{SPRING_PREFIX}skirt_{side}_hem_0", f"{SPRING_PREFIX}skirt_{side}_hem_1"]
++            plans.append((names[0], parent, at(z0), at(z1)))
++            plans.append((names[1], names[0], at(z1), at(z2)))
++            chains[f"skirt_hem_{side}"] = {"bones": names, "garment": "skirt",
++                                           "zone": (side, z0, z1, z2, parent)}
+     shirt = garments.get("shirt")
+     if shirt is not None and shirt_labels is not None:
+         rest, labels = shirt_labels
+-        for side, lab in (("l", "left_collar_front"), ("r", "right_collar_front")):
++        cl = collar_labels or {"l": "left_collar_front", "r": "right_collar_front"}
++        for side, lab in cl.items():
+             pts = [p for p, l in zip(rest, labels) if l == lab]
++            if not pts:
++                print(f"SPRING_SKIP no '{lab}' panel in the upper garment", flush=True)
++                continue
+             zs = sorted(p.z for p in pts)
+             ztop, ztip = zs[-1], zs[0]
+             def band(lo, hi):
+@@ -804,6 +847,29 @@
+                     g1.add([v.index], moved * k, "REPLACE")
+                 n += 1
+             stats[cid] = n
++    if skirt is not None:
++        names = {g.index: g.name for g in skirt.vertex_groups}
++        sw_ = skirt.matrix_world
++        for cid in ("skirt_hem_l", "skirt_hem_r"):
++            side, z0, z1, z2, thigh = chains[cid]["zone"]
++            b0, b1 = chains[cid]["bones"]
++            g0 = skirt.vertex_groups.get(b0) or skirt.vertex_groups.new(name=b0)
++            g1 = skirt.vertex_groups.get(b1) or skirt.vertex_groups.new(name=b1)
++            gt = skirt.vertex_groups.get(thigh)
++            n = 0
++            if gt is not None:
++                for v in skirt.data.vertices:
++                    w = sum(e.weight for e in v.groups if e.group == gt.index)
++                    wp, w0, w1 = chain_shift(w, (sw_ @ v.co).z, z0, z1, z2)
++                    if w0 + w1 <= 1e-6:
++                        continue
++                    gt.add([v.index], wp, "REPLACE")
++                    if w0 > 1e-6:
++                        g0.add([v.index], w0, "REPLACE")
++                    if w1 > 1e-6:
++                        g1.add([v.index], w1, "REPLACE")
++                    n += 1
++            stats[cid] = n
+     if shirt is not None and shirt_labels is not None:
+         rest, labels = shirt_labels
+         kd = KDTree(len(rest))
+@@ -811,7 +877,7 @@
+             kd.insert(p, i)
+         kd.balance()
+         sw = shirt.matrix_world
+-        for cid in ("shirt_collar_l", "shirt_collar_r"):
++        for cid in [c for c in ("shirt_collar_l", "shirt_collar_r") if c in chains]:
+             side, lab, root, mid, tip = chains[cid]["zone"]
+             b0, b1 = chains[cid]["bones"]
+             g0 = shirt.vertex_groups.get(b0) or shirt.vertex_groups.new(name=b0)
+@@ -839,7 +905,7 @@
+                   "weighted_vertices": stats.get(cid, 0)} for cid, c in chains.items()}
+ 
+ 
+-def resolve_overlaps(garment, target, step=0.001, iters=40):
++def resolve_overlaps(garment, target, step=0.001, iters=40, body=None):
+     """Push garment verts of every triangle crossing `target` outward.
+ 
+     Vertex-inside tests miss triangles that slice the target with all three
+@@ -848,6 +914,13 @@
+     target's nearest-surface normal.
+     """
+     tb, _ = bvh_of(target)
++    # task-142131: against an INNER GARMENT the push direction is the BODY's
++    # outward normal.  A closed 4 mm slab's nearest face is often its inner
++    # shell, whose normal points INTO the body, so pushing along it drove a
++    # jacket hem lying on a skirt 80 mm into the seat (s16 f1).  (The same
++    # ambiguity pose_correctives.py already avoids by casting along the body
++    # normal.)  With body=None (target IS the body) behaviour is unchanged.
++    db = bvh_of(body)[0] if body is not None else tb
+     mw = garment.matrix_world
+     inv = mw.inverted()
+     moved = set()
+@@ -861,7 +934,7 @@
+         idx = {vi for pi, _ in pairs for vi in me.polygons[pi].vertices}
+         for vi in idx:
+             p = V[vi]
+-            loc, nrm, _, dist = tb.find_nearest(p)
++            loc, nrm, _, dist = db.find_nearest(p)
+             if loc is None:
+                 continue
+             # push along the target normal by one step; never relocate the
+@@ -1073,13 +1146,13 @@
+         for _round in range(3):
+             clear.append({"vs": "body", **resolve_overlaps(g, body)})
+             for inner in done:
+-                clear.append({"vs": inner.name, **resolve_overlaps(g, inner)})
++                clear.append({"vs": inner.name, **resolve_overlaps(g, inner, body=body)})
+             if all(c["remaining_pairs"] == 0 for c in clear[-(1 + len(done)):]):
+                 break
+         for inner in done:
+             clear.append({"vs": inner.name, "margin_mm": 3,
+                           "margin_verts_moved": ensure_margin(g, inner)})
+-            clear.append({"vs": inner.name, **resolve_overlaps(g, inner)})
++            clear.append({"vs": inner.name, **resolve_overlaps(g, inner, body=body)})
+         report.setdefault("overlap_clearance", {})[kind] = clear
+         done.append(g)
+         g.data.materials.clear()  # GN apply leaves an empty slot 0
+@@ -1097,7 +1170,7 @@
+     shirt_labels = SIM_LABELS.get(garments["shirt"].name) if "shirt" in garments else None
+     if shirt_labels is None and "shirt" in garments:
+         shirt_labels = next(iter(v for k2, v in SIM_LABELS.items() if "Shirt" in k2), None)
+-    report["secondary_bones"] = add_spring_chains(rig, garments, shirt_labels)
++    report["secondary_bones"] = add_spring_chains(rig, garments, shirt_labels, a.collar_chain_label)
+     print("SECONDARY_BONES " + json.dumps(report["secondary_bones"]), flush=True)
+     import pose_correctives as PC
+     rig.data.pose_position = "POSE"
+--- /home/n8/cloth_test/task-135614/dc_wt/docs/evidence/task-135614/scripts/verify_outfit_gates.py	2026-09-30 16:43:50.726545035 -0700
++++ scripts/verify_outfit_gates.py	2026-10-08 08:18:38.617047559 -0700
+@@ -18,7 +18,13 @@
+ rig = bpy.data.objects[F.RIG]; body = bpy.data.objects[F.BODY]
+ for m in body.modifiers:
+     if m.type == "SUBSURF": m.show_viewport = False
+-g = {"pants": bpy.data.objects["Dressable Pants"], "shirt": bpy.data.objects["Dressable Shirt"]}
++# task-142131: every fitted wearable ("Dressable <Kind>", inner layer first as
++# saved by fit_native_g9_outfit.py), not a hard-coded pants+shirt pair.
++_order = {"skirt": 0, "pants": 0, "shirt": 1}
++g = {o.name.split(" ", 1)[1].lower(): o for o in sorted(
++    (o for o in bpy.data.objects if o.type == "MESH" and o.name.startswith("Dressable ")),
++    key=lambda o: (_order.get(o.name.split(" ", 1)[1].lower(), 2), o.name))}
++print("VERIFY_GARMENTS", list(g), flush=True)
+ def self_pairs(ob):
+     V, T = F.world_tris(ob)
+     b = BVHTree.FromPolygons(V, T)

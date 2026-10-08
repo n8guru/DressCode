@@ -1,0 +1,28 @@
+{
+ "kind": "skirt",
+ "base_rgb": [
+  24,
+  30,
+  58
+ ],
+ "heather": 0.05,
+ "fade": 0.06,
+ "weave": "twill",
+ "weave_mm": 7.0,
+ "weave_relief": 1.6,
+ "roughness": 0.78,
+ "normal_strength": 0.35,
+ "sheen": 0.12,
+ "topstitch": {
+  "rgb": [
+   24,
+   28,
+   46
+  ],
+  "at_mm": [
+   3.0
+  ],
+  "width_mm": 0.7,
+  "dash_mm": 2.6
+ }
+}

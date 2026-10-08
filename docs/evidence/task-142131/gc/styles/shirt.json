@@ -1,0 +1,43 @@
+{
+ "kind": "shirt",
+ "base_rgb": [
+  72,
+  80,
+  92
+ ],
+ "heather": 0.1,
+ "fade": 0.04,
+ "weave": "knit",
+ "weave_mm": 5.0,
+ "weave_relief": 1.2,
+ "roughness": 0.9,
+ "normal_strength": 0.4,
+ "sheen": 0.25,
+ "topstitch": {
+  "rgb": [
+   52,
+   58,
+   68
+  ],
+  "at_mm": [
+   3.0,
+   7.0
+  ],
+  "width_mm": 0.8,
+  "dash_mm": 2.4
+ },
+ "closures": [
+  {
+   "type": "zip",
+   "panels": "ftorso",
+   "rgb": [
+    28,
+    28,
+    32
+   ],
+   "tape_mm": 10,
+   "teeth_mm": 5,
+   "pull_z_from_top_m": 0.02
+  }
+ ]
+}

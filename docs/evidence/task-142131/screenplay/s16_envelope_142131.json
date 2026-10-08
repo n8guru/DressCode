@@ -1,0 +1,88 @@
+{
+  "canonical_character_id": 102117,
+  "database": "forage_test",
+  "http_status": 200,
+  "project_id": 101419,
+  "props": [
+    {
+      "name": "A-line knee-length skirt",
+      "object": "Dressable Skirt",
+      "prop_id": 100003
+    },
+    {
+      "name": "hooded zip-up jacket",
+      "object": "Dressable Shirt",
+      "prop_id": 100004
+    }
+  ],
+  "registered": [
+    {
+      "bake_offline": true,
+      "canonical_prop_id": 100003,
+      "id": 100009,
+      "metadata": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_outfit_s16_142131.json",
+      "objects": [
+        "Dressable Skirt"
+      ],
+      "project_id": 101419,
+      "secondary_motion_profile": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_s16_secondary_motion.json",
+      "source": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_outfit_s16_142131.blend"
+    },
+    {
+      "bake_offline": true,
+      "canonical_prop_id": 100004,
+      "id": 100010,
+      "metadata": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_outfit_s16_142131.json",
+      "objects": [
+        "Dressable Shirt"
+      ],
+      "project_id": 101419,
+      "secondary_motion_profile": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_s16_secondary_motion.json",
+      "source": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_outfit_s16_142131.blend"
+    }
+  ],
+  "response": {
+    "active_prop_ids": [
+      100003,
+      100004
+    ],
+    "assets": {
+      "outfit": {
+        "metadata": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_outfit_s16_142131.json",
+        "objects": [
+          "Dressable Skirt",
+          "Dressable Shirt"
+        ],
+        "source": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_outfit_s16_142131.blend"
+      },
+      "secondary_motion": {
+        "bake_offline": true,
+        "profile": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_s16_secondary_motion.json"
+      }
+    },
+    "binding_ids": [
+      100009,
+      100010
+    ],
+    "canonical_character_id": 102117,
+    "conflicts": [],
+    "missing_prop_ids": [],
+    "outfit_provenance": [
+      {
+        "decision_source": "project_725908_s16:scene_start",
+        "prop_id": 100003,
+        "source_sentence_id": 110076
+      },
+      {
+        "decision_source": "project_725908_s16:scene_start",
+        "prop_id": 100004,
+        "source_sentence_id": 110076
+      }
+    ],
+    "project_id": 101419,
+    "status": "ready",
+    "target_sentence_id": 110076
+  },
+  "route": "GET /api/screenplay/101419/v4/wearable_spec/102117?sentence_id=110076",
+  "sentence_id": 110076
+}

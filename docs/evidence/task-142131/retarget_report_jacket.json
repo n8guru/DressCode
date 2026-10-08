@@ -1,0 +1,49 @@
+{
+  "target_body": "/home/n8/cloth_test/task-142131/inputs/amy_a08_v3_master.blend",
+  "gp_body": "/home/n8/cloth_test/task-133870/g9/amy_gp_v3_master.blend",
+  "params": {
+    "gp_blend": "/home/n8/cloth_test/task-133870/g9/amy_gp_v3_master.blend",
+    "lift_m": 0.054874,
+    "out_dir": "inputs/rt2j",
+    "garment": [
+      "shirt:drapes/hooded_zip_jacket_261008-08-22-29/hooded_zip_jacket_sim.obj"
+    ],
+    "jeans_ease_mm": 2.5,
+    "jeans_keep": 0.06,
+    "shirt_ease_mm": 10.0,
+    "shirt_keep": 0.45,
+    "sleeve_ease_mm": 14.0,
+    "sleeve_keep": 0.6,
+    "relax_iters": 12,
+    "shirt_relax": 0.3,
+    "jeans_relax_iters": 4,
+    "flare_smooth": 0.35,
+    "flare_iters": 8,
+    "fill_iters": 0,
+    "over_jeans_ease_mm": 24.0,
+    "knee_fit_m": 0.0,
+    "crotch_lift": false,
+    "crotch_ease_mm": 4.0,
+    "crotch_pin_low": 0.45
+  },
+  "garments": {
+    "shirt": {
+      "source_obj": "drapes/hooded_zip_jacket_261008-08-22-29/hooded_zip_jacket_sim.obj",
+      "out_obj": "inputs/rt2j/hooded_zip_jacket_sim.obj",
+      "vertices": 12753,
+      "tight_zone_vertices": 12753,
+      "offset_mm_tight_zone_before": {
+        "median": 13.81,
+        "p90": 38.39
+      },
+      "offset_mm_tight_zone_after": {
+        "median": 12.25,
+        "p90": 24.92,
+        "min": 8.15
+      },
+      "offset_mm_rest_after": {
+        "median": null
+      }
+    }
+  }
+}

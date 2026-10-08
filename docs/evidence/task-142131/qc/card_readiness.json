@@ -1,0 +1,74 @@
+{
+ "producer": "task-142131/claude-opus-5-5",
+ "intention_qc": [
+  {
+   "schema": "forage.intention-qc/v1",
+   "subject_sha256": "c2e5a550ca3259534f2fb017a85cc866f4d22b58e01f86dd4b8c467c9ce444de",
+   "subject_name": "s16_142131_operator_card.jpg",
+   "media_kind": "image",
+   "producer": "task-142131/claude-opus-5-5",
+   "runner": "tools/qc_gate/run_gate.py",
+   "judged_at": "2026-10-08T15:51:00.872742+00:00",
+   "checklist": {
+    "ref": "studio project 725908 (dressable-g9) step 16 pass_criteria (5) + decision 1994543 (hair/face must not regress)",
+    "items": [
+     {
+      "id": "skirt-aline-knee",
+      "text": "The woman wears an A-line skirt that flares from the waist and ends around knee length"
+     },
+     {
+      "id": "jacket-hooded-zip",
+      "text": "Over it she wears a long-sleeved zip-up jacket with a visible centre-front zip"
+     },
+     {
+      "id": "no-skin-through-cloth",
+      "text": "No bare skin pokes through the skirt or the jacket in any panel (bare feet, hands, legs below the hem, neck and face are expected and do not count)"
+     },
+     {
+      "id": "no-holes-spikes",
+      "text": "No visible holes, tears, spikes or shredded geometry in either garment in any panel"
+     },
+     {
+      "id": "garments-follow-poses",
+      "text": "In the walking, sitting, arms-raised and twisting panels the garments move with the body and stay on it"
+     },
+     {
+      "id": "hair-face-intact",
+      "text": "The character has a full head of long copper/auburn hair and an intact face with eyes (not bald, not featureless)"
+     }
+    ],
+    "sha256": "fa78537c527d2832a9222bd59f18aa5e6c5639f63fcd3015fd7d5beada45b045"
+   },
+   "judge": {
+    "model": "qwen3.8-27b-uncensored",
+    "provider": "llama-swap"
+   },
+   "results": [
+    {
+     "id": "skirt-aline-knee",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The woman is wearing a blue skirt that fits at the waist and flares out towards the hem, which ends just above the knee, consistent with an A-line silhouette.\"}"
+    },
+    {
+     "id": "jacket-hooded-zip",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The character is wearing a light blue long-sleeved jacket with a clearly visible vertical zipper running down the center front, including a zipper pull at the collar.\"}"
+    },
+    {
+     "id": "no-skin-through-cloth",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"In all panels, the character's legs are fully covered by the skirt down to the hem, and arms are covered by the jacket sleeves; no bare skin pokes through the garments (feet and face are visible but excluded per instructions).\"}"
+    },
+    {
+     "id": "no-holes-spikes",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The light blue top and blue skirt appear intact across all standing, sitting, and close-up panels, with no visible holes, tears, spikes, or shredded geometry.\"}"
+    },
+    {
+     "id": "garments-follow-poses",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"In the walking, sitting, arms-raised, and twisting poses, the blue top and skirt consistently conform to the body's shape and movement without clipping or detaching.\"}"
+    },
+    {
+     "id": "hair-face-intact",
+     "raw": "{\"verdict\": \"pass\", \"evidence\": \"The character is shown with a full head of long copper/auburn hair and a clearly defined face with visible eyes in multiple views, including close-up face shots.\"}"
+    }
+   ]
+  }
+ ]
+}

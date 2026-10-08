@@ -1,0 +1,98 @@
+{
+  "prompt": "an A-line knee-length skirt, and a hooded zip-up jacket",
+  "spec_file": "/home/n8/cloth_test/task-142131/gc/s16_spec.json",
+  "body": "/home/n8/cloth_test/task-133934/g9_amy_measured.yaml",
+  "garments": {
+    "aline_knee_skirt": {
+      "spec": "/home/n8/cloth_test/task-142131/patterns/aline_knee_skirt/aline_knee_skirt_specification.json",
+      "sha256": "49d31884700f96ba873e10c7eb3fd3a1d1de38bf10f2df0447f6bc3048d79fe8",
+      "self_intersecting": false,
+      "panels": 4,
+      "stitches": 6,
+      "panel_names": [
+        "skirt_back",
+        "skirt_front",
+        "wb_back",
+        "wb_front"
+      ],
+      "design": {
+        "meta.upper": null,
+        "meta.wb": "StraightWB",
+        "meta.bottom": "SkirtCircle",
+        "waistband.width": 0.2,
+        "waistband.waist": 1.0,
+        "flare-skirt.length": 0.36,
+        "flare-skirt.rise": 1.0,
+        "flare-skirt.suns": 0.3
+      },
+      "panel_placement": {}
+    },
+    "hooded_zip_jacket": {
+      "spec": "/home/n8/cloth_test/task-142131/patterns/hooded_zip_jacket/hooded_zip_jacket_specification.json",
+      "sha256": "b5056e819d619a78bcfdac8d5c6d2f274f6c25e2a2cafa7825876ae77aabc4f6",
+      "self_intersecting": false,
+      "panels": 10,
+      "stitches": 20,
+      "panel_names": [
+        "left_btorso",
+        "left_ftorso",
+        "left_hood",
+        "left_sleeve_b",
+        "left_sleeve_f",
+        "right_btorso",
+        "right_ftorso",
+        "right_hood",
+        "right_sleeve_b",
+        "right_sleeve_f"
+      ],
+      "design": {
+        "meta.upper": "Shirt",
+        "meta.wb": null,
+        "meta.bottom": null,
+        "shirt.length": 1.65,
+        "shirt.width": 1.1,
+        "shirt.flare": 1.0,
+        "collar.f_collar": "CircleNeckHalf",
+        "collar.b_collar": "CircleNeckHalf",
+        "collar.width": 0.0,
+        "collar.fc_depth": 0.15,
+        "collar.bc_depth": 0.0,
+        "collar.component.style": "Hood2Panels",
+        "collar.component.hood_depth": 1.0,
+        "collar.component.hood_length": 1.0,
+        "sleeve.sleeveless": false,
+        "sleeve.armhole_shape": "ArmholeCurve",
+        "sleeve.length": 0.8,
+        "sleeve.end_width": 0.5,
+        "sleeve.connecting_width": 0.2,
+        "sleeve.sleeve_angle": 10
+      },
+      "panel_placement": {
+        "left_hood": {
+          "rotation": [
+            180,
+            90,
+            0
+          ],
+          "translation": [
+            10.13,
+            156.48,
+            -40.13
+          ]
+        },
+        "right_hood": {
+          "rotation": [
+            180,
+            -90,
+            0
+          ],
+          "translation": [
+            -10.13,
+            156.48,
+            -40.13
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+ "elapsed_s": 8.5,
+ "gate": {
+  "g": {
+   "pass": true,
+   "three": "160",
+   "glb": "character.glb",
+   "frames": 120,
+   "dt": 0.016666666666666666,
+   "garments": [
+    {
+     "name": "Dressable_Shirt",
+     "vertices": 26736,
+     "joints": 425
+    },
+    {
+     "name": "Dressable_Skirt",
+     "vertices": 19632,
+     "joints": 425
+    }
+   ],
+   "chains": [
+    "shirt_collar_l",
+    "shirt_collar_r",
+    "skirt_hem_l",
+    "skirt_hem_r"
+   ],
+   "tracked_vertices": 9440,
+   "max_garment_sway_mm": 24.59,
+   "per_garment_max_sway_mm": {
+    "Dressable_Shirt": 9.72,
+    "Dressable_Skirt": 24.59
+   },
+   "terminal_bone_quat_delta": [
+    0.0002383,
+    0.0002142,
+    0.0004199,
+    0.0004268
+   ],
+   "fan": {
+    "direction": [
+     1,
+     0,
+     0
+    ],
+    "frequency_hz": 0.7,
+    "strength": 2.5,
+    "turbulence": 0.25
+   }
+  },
+  "t": "BROWSER_GATE PASS \u00b7 three r160 \u00b7 2 G9 garments on one skin \u00b7 4 spring chains \u00b7 120-frame fan sim \u00b7 max garment sway 24.59 mm\n{\"pass\":true,\"three\":\"160\",\"glb\":\"character.glb\",\"frames\":120,\"dt\":0.016666666666666666,\"garments\":[{\"name\":\"Dressable_Shirt\",\"vertices\":26736,\"joints\":425},{\"name\":\"Dressable_Skirt\",\"vertices\":19632,\"joints\":425}],\"chains\":[\"shirt_collar_l\",\"shirt_collar_r\",\"skirt_hem_l\",\"skirt_hem_r\"],\"tracked_vertices\":9440,\"max_garment_sway_mm\":24.59,\"per_garment_max_sway_mm\":{\"Dressable_Shirt\":9.72,\"Dressable_Skirt\":24.59},\"terminal_bone_quat_delta\":[0.0002383,0.0002142,0.0004199,0.0004268],\"fan\":{\"direction\":[1,0,0],\"frequency_hz\":0.7,\"strength\":2.5,\"turbulence\":0.25}}"
+ }
+}

@@ -1,0 +1,9 @@
+{"title": "dressable-g9 s16 generality proof (task-142131)",
+ "prompt": "an A-line knee-length skirt, and a hooded zip-up jacket",
+ "sentence": "Amy zips up her hooded jacket over an A-line knee-length skirt.",
+ "task": "task-142131", "pin": "project_725908_s16:scene_start", "decision": "ledger 725908 step 16",
+ "source": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_outfit_s16_142131.blend", "metadata": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_outfit_s16_142131.json",
+ "profile": "/Users/nathanrichmond/character-foundry-wt/task-142131-inputs/dressable_g9_s16_secondary_motion.json",
+ "props": [
+  {"name": "A-line knee-length skirt", "object": "Dressable Skirt", "appearance": "Navy twill A-line skirt flaring from a straight waistband to just above the knee."},
+  {"name": "hooded zip-up jacket", "object": "Dressable Shirt", "appearance": "Heather-grey knit zip-up jacket with a centre-front zip, long sleeves and a hood lying down on the back, worn over the skirt."}]}

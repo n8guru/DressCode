@@ -1,0 +1,9 @@
+{"ref": "studio project 725908 (dressable-g9) step 16 pass_criteria (5) + decision 1994543 (hair/face must not regress)",
+ "items": [
+  {"id": "skirt-aline-knee", "text": "The woman wears an A-line skirt that flares from the waist and ends around knee length"},
+  {"id": "jacket-hooded-zip", "text": "Over it she wears a long-sleeved zip-up jacket with a visible centre-front zip"},
+  {"id": "no-skin-through-cloth", "text": "No bare skin pokes through the skirt or the jacket in any panel (bare feet, hands, legs below the hem, neck and face are expected and do not count)"},
+  {"id": "no-holes-spikes", "text": "No visible holes, tears, spikes or shredded geometry in either garment in any panel"},
+  {"id": "garments-follow-poses", "text": "In the walking, sitting, arms-raised and twisting panels the garments move with the body and stay on it"},
+  {"id": "hair-face-intact", "text": "The character has a full head of long copper/auburn hair and an intact face with eyes (not bald, not featureless)"}
+ ]}

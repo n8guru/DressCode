@@ -1,0 +1,87 @@
+{
+  "contract": "foundry outfit v1 provider wearable (+ provider secondary bones, task-134074)",
+  "provider": "dressable-g9 step 16 (task 142131) generality proof: recorded text prompt -> GarmentCode design params (gc_gen.py + s16_spec.json, no per-garment code) -> Warp drape on G9 (skirt on body, jacket over body+skirt) -> retarget_tighten.py (CLI only) onto amy_a08_v3 -> fit_native_g9_outfit.py (generic fixes: inner-slab push along body normal, skirt hem chains, chain-label CLI) -> fabric_textures.py style JSON",
+  "prompt": "an A-line knee-length skirt, and a hooded zip-up jacket",
+  "prompt_sha256": "ae2b98d684f976926af1cff1d6576f571ee4513886b5830a2cdb983b13787160",
+  "garments": {
+    "Dressable Skirt": {
+      "type": "skirt",
+      "style": "A-line knee-length skirt (GarmentCode SkirtCircle suns 0.3, length 0.36, StraightWB), navy twill",
+      "pattern_sha256": "49d31884700f96ba873e10c7eb3fd3a1d1de38bf10f2df0447f6bc3048d79fe8",
+      "pattern_source": "GarmentCode d449629 design params mapped from the prompt (gc/s16_spec.json)",
+      "layer": 0
+    },
+    "Dressable Shirt": {
+      "type": "shirt",
+      "style": "hooded zip-up jacket (GarmentCode Shirt length 1.65 width 1.1, Hood2Panels hood laid DOWN on the back via spec panel placement, long sleeves 0.8), heather knit with centre-front zip",
+      "pattern_sha256": "b5056e819d619a78bcfdac8d5c6d2f274f6c25e2a2cafa7825876ae77aabc4f6",
+      "pattern_source": "GarmentCode d449629 design params mapped from the prompt (gc/s16_spec.json)",
+      "layer": 1
+    }
+  },
+  "raw_drapes": {
+    "skirt": {
+      "obj_sha256": "cd149dc30964736aceb1d6253c6ca7405fe5fbf5e8ddf1c84194c0a8173be6f9",
+      "drape_body": "g9_amy_m133934"
+    },
+    "shirt": {
+      "obj_sha256": "bda1ef4230c940aab5c39d8a60f90b4ff3542e241d5ca136cff304085f6b05be",
+      "drape_body": "g9_amy_m133934_s16skirt (body + draped skirt)"
+    }
+  },
+  "pattern_specs_sha256": {
+    "aline_knee_skirt": "49d31884700f96ba873e10c7eb3fd3a1d1de38bf10f2df0447f6bc3048d79fe8",
+    "hooded_zip_jacket": "b5056e819d619a78bcfdac8d5c6d2f274f6c25e2a2cafa7825876ae77aabc4f6"
+  },
+  "fit_body": "amy_a08_v3 identity master sha256 20230aa7f62b96af3bb7339c0f878326750f3da0231a1a7b9f1d2324096f53b7",
+  "thickness": "FoundryClothThickness 4mm slab, 5mm skin clearance",
+  "secondary_motion": {
+    "provider_bones": {
+      "shirt_collar_l": {
+        "bones": [
+          "cloth_shirt_l_collar_0",
+          "cloth_shirt_l_collar_1"
+        ],
+        "garment": "shirt",
+        "weighted_vertices": 1105
+      },
+      "shirt_collar_r": {
+        "bones": [
+          "cloth_shirt_r_collar_0",
+          "cloth_shirt_r_collar_1"
+        ],
+        "garment": "shirt",
+        "weighted_vertices": 1122
+      },
+      "skirt_hem_l": {
+        "bones": [
+          "cloth_skirt_l_hem_0",
+          "cloth_skirt_l_hem_1"
+        ],
+        "garment": "skirt",
+        "weighted_vertices": 6890
+      },
+      "skirt_hem_r": {
+        "bones": [
+          "cloth_skirt_r_hem_0",
+          "cloth_skirt_r_hem_1"
+        ],
+        "garment": "skirt",
+        "weighted_vertices": 7132
+      }
+    }
+  },
+  "gates": {
+    "verify": "verify_outfit_gates.py fresh process: gated_all_zero=True (rest, ship, walk, sit80, arms_up45/20, arms_swing15 a/b, step_twist, weight_shift, sit40/55/70); diagnostic fail sit95, stride_133870"
+  },
+  "retarget": {
+    "skirt": "--shirt-keep 1.0 --relax-iters 25 --shirt-relax 0.8 (drape kept, smoothed)",
+    "shirt": "--shirt-ease-mm 10 --shirt-keep 0.45 --sleeve-ease-mm 14 --sleeve-keep 0.6 --relax-iters 12 --shirt-relax 0.3"
+  },
+  "wearable_blend_sha256": "4107d6558755bc50da48eed60add9284fae4dbaafdaaab5a1897ca8fd231a92c",
+  "license": "GarmentCode MIT; Warp fork NVIDIA non-commercial",
+  "task": "task-142131",
+  "styling": {
+    "hair_behind_shoulders": "build opt-in assets.outfit.hair_behind_shoulders=true"
+  }
+}
